@@ -1,5 +1,5 @@
 # uniform layer effect model 
-# Yamaguchi, Kazuo. 1987. “Models for Comparing Mobility Tables: Toward Parsimony and Substance.” American Sociological Review 52(4):482.
+# Yamaguchi, Kazuo. 1987. “Models for Comparing Mobility Tables: Toward Parsimony and Substance.” American Sociological Review 52(4):482-494.
 
 # packages
 library(tidyverse)

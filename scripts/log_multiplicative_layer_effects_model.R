@@ -1,5 +1,5 @@
 # Log-multiplicative layer effects model
-# Xie, Yu. 1992. “The Log-Multiplicative Layer Effect Model for Comparing Mobility Tables.” American Sociological Review 57(3):380.
+# Xie, Yu. 1992. “The Log-Multiplicative Layer Effect Model for Comparing Mobility Tables.” American Sociological Review 57(3):380-395.
 
 # packages
 library(tidyverse)
