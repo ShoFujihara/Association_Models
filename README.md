@@ -24,6 +24,10 @@ Email: sho.fujihara [atmark] iss.u-tokyo.ac.jp
 # Rの使い方
 - 基本的なRの使用方法を説明します．
 
+```
+a <- 1:5
+```
+
 <a id="anchor3"></a>
 # 重要な対数線形・対数乗法モデルの再現
 - 3つの重要な論文のモデルを再現します．
