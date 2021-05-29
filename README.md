@@ -30,10 +30,13 @@ a <- 1:5
 
 <a id="anchor3"></a>
 # 重要な対数線形・対数乗法モデルの再現
-- 3つの重要な論文のモデルを再現します．
-  - Duncan, Otis Dudley. 1979. “How Destination Depends on Origin in the Occupational Mobility Table.” *The American Journal of Sociology* 84(4):793–803.
+3つの重要な論文のモデルを再現します．
+  - Duncan, Otis Dudley. 1979. “How Destination Depends on Origin in the Occupational Mobility Table.” *The American Journal of Sociology* 84(4):793–803. 
   - Yamaguchi, Kazuo. 1987. “Models for Comparing Mobility Tables: Toward Parsimony and Substance.” *American Sociological Review* 52(4):482-494.
   - Xie, Yu. 1992. “The Log-Multiplicative Layer Effect Model for Comparing Mobility Tables.” *American Sociological Review* 57(3):380-395.
+
+Duncan (1979) については`uniform_association_model.R`で，Yamaguchi (1987)については，`uniform_association_model.R`で，そしてXie (1992)については，`uniform_layer_effect_model.R`で行います．
+
 
 <a id="anchor4"></a>
 # 『カテゴリカルデータの連関モデル』
