@@ -1,1 +1,1 @@
-# Association_Models
+# 『カテゴリカルデータの連関モデル』
