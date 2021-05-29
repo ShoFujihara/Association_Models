@@ -6,3 +6,6 @@ sho.fujihara [atmark] iss.u-tokyo.ac.jp
 目次
 =======
 # 『カテゴリカルデータの連関モデル』
+
+
+# Rの使い方
