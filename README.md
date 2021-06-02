@@ -24,9 +24,25 @@ Email: sho.fujihara [atmark] iss.u-tokyo.ac.jp
 # Rの使い方
 - 基本的なRの使用方法を説明します．
 
+
+## Rのインストール {-}
+
+- CRAN（The Comprehensive R Archive Network）のページ（ https://cran.r-project.org ）
+から最新版のRをダウンロードし，インストールてください．
+- 必要であればRStudioもダウンロードし，インストールしてください．
+
 ```
 a <- 1:5
 ```
+
+# LEMの使い方
+
+
+## $l_{\rm EM}$のインストール {-}
+
+- $l_{\rm EM}$はJeroen K. Vermunt氏のホームページ（ https://jeroenvermunt.nl/ ）からダウンロードできる．
+- Software, User Manuals, and VideoのVermunt, J.K  (1997). LEM 1.0: A general program for the analysis of categorical data. Tilburg: Tilburg University. (download) の「 (download) 」をクリック．
+- Windowsで動く．
 
 # 基本的なクロス表の分析方法
 
