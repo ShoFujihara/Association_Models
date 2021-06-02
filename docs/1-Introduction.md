@@ -2,30 +2,7 @@
 
 
 
-
-## 本ページの目的 {-}
-
-- ウォン, レイモンド, S.K. 藤原翔訳．2021．『カテゴリカルデータの連関分析』（共立出版）．のためのサポートページです．
-
-
-## 正誤表 {-}
-- 更新します．
-
-
-## Rのインストール {-}
-
-- CRAN（The Comprehensive R Archive Network）のページ（ https://cran.r-project.org ）
-から最新版のRをダウンロードし，インストールてください．
-- 必要であればRStudioもダウンロードし，インストールしてください．
-
-
-## $l_{\rm EM}$のインストール {-}
-
-- $l_{\rm EM}$はJeroen K. Vermunt氏のホームページ（ https://jeroenvermunt.nl/ ）からダウンロードできる．
-- Software, User Manuals, and VideoのVermunt, J.K  (1997). LEM 1.0: A general program for the analysis of categorical data. Tilburg: Tilburg University. (download) の「 (download) 」をクリック．
-- Windowsで動く．
-
-## シリーズ編者による序文 {-}
+# シリーズ編者による序文 {-}
 
 ### 独立性の検定 {-}
 
@@ -33,47 +10,7 @@
 ```r
 # パッケージの読み込み
 library(tidyverse)
-```
-
-```
-## ─ Attaching packages ──────────────────── tidyverse 1.3.1 ─
-```
-
-```
-## ✓ ggplot2 3.3.3     ✓ purrr   0.3.4
-## ✓ tibble  3.1.0     ✓ dplyr   1.0.5
-## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
-## ✓ readr   1.4.0     ✓ forcats 0.5.1
-```
-
-```
-## ─ Conflicts ───────────────────── tidyverse_conflicts() ─
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()
-```
-
-```r
 library(magrittr)
-```
-
-```
-## 
-##  次のパッケージを付け加えます: 'magrittr'
-```
-
-```
-##  以下のオブジェクトは 'package:purrr' からマスクされています: 
-## 
-##      set_names
-```
-
-```
-##  以下のオブジェクトは 'package:tidyr' からマスクされています: 
-## 
-##      extract
-```
-
-```r
 library(gnm)
 ```
 

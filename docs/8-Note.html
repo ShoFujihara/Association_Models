@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 補足のノート | 『カテゴリカルデータの連関モデル』サポートページ</title>
+  <meta name="description" content="7 補足のノート | 『カテゴリカルデータの連関モデル』サポートページ" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 補足のノート | 『カテゴリカルデータの連関モデル』サポートページ" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 補足のノート | 『カテゴリカルデータの連関モデル』サポートページ" />
+  
+  
+  
+
+<meta name="author" content="藤原翔（Sho Fujihara）" />
+
+
+<meta name="date" content="2021-06-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="7-Chapter_6.html"/>
+
+<script src="libs/header-attrs-2.4/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">『カテゴリカルデータの連関モデル』サポートページ</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html"><i class="fa fa-check"></i>はじめに</a>
+<ul>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html#本ページの目的"><i class="fa fa-check"></i>本ページの目的</a></li>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html#正誤表"><i class="fa fa-check"></i>正誤表</a></li>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html#rのインストール"><i class="fa fa-check"></i>Rのインストール</a></li>
+<li><a href="1-Introduction.html#l_rm-emのインストール"><span class="math inline">\(l_{\rm EM}\)</span>のインストール</a>
+<ul>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html#独立性の検定"><i class="fa fa-check"></i>独立性の検定</a></li>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html#一様連関モデル"><i class="fa fa-check"></i>一様連関モデル</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html#度数行変数列変数のデータからクロス表を作成"><i class="fa fa-check"></i>度数，行変数，列変数のデータからクロス表を作成</a></li>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html#練習問題"><i class="fa fa-check"></i>練習問題</a></li>
+<li class="chapter" data-level="" data-path="1-Introduction.html"><a href="1-Introduction.html#参考文献"><i class="fa fa-check"></i>参考文献</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="2-Chapter_1.html"><a href="2-Chapter_1.html"><i class="fa fa-check"></i><b>1</b> 第1章</a></li>
+<li class="chapter" data-level="2" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html"><i class="fa fa-check"></i><b>2</b> 第2章</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.1-p.8"><i class="fa fa-check"></i><b>2.1</b> 表2.1 (p.8)</a></li>
+<li class="chapter" data-level="2.2" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.3-p.32"><i class="fa fa-check"></i><b>2.2</b> 表2.3 (p.32)</a></li>
+<li class="chapter" data-level="2.3" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.4a"><i class="fa fa-check"></i><b>2.3</b> 表2.4A</a></li>
+<li class="chapter" data-level="2.4" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.4b"><i class="fa fa-check"></i><b>2.4</b> 表2.4B</a></li>
+<li class="chapter" data-level="2.5" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.5a"><i class="fa fa-check"></i><b>2.5</b> 表2.5A</a></li>
+<li class="chapter" data-level="2.6" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#logmultパッケージの利用"><i class="fa fa-check"></i><b>2.6</b> logmultパッケージの利用</a></li>
+<li class="chapter" data-level="2.7" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.6a"><i class="fa fa-check"></i><b>2.7</b> 表2.6A</a></li>
+<li class="chapter" data-level="2.8" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.6b"><i class="fa fa-check"></i><b>2.8</b> 表2.6B</a></li>
+<li class="chapter" data-level="2.9" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.6c"><i class="fa fa-check"></i><b>2.9</b> 表2.6C</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="4-Chapter_3.html"><a href="4-Chapter_3.html"><i class="fa fa-check"></i><b>3</b> 第3章</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="4-Chapter_3.html"><a href="4-Chapter_3.html#表3.1a"><i class="fa fa-check"></i><b>3.1</b> 表3.1A</a></li>
+<li class="chapter" data-level="3.2" data-path="4-Chapter_3.html"><a href="4-Chapter_3.html#表3.1b"><i class="fa fa-check"></i><b>3.2</b> 表3.1B</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="5-Chapter_4.html"><a href="5-Chapter_4.html"><i class="fa fa-check"></i><b>4</b> 第4章</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="5-Chapter_4.html"><a href="5-Chapter_4.html#表4.3"><i class="fa fa-check"></i><b>4.1</b> 表4.3</a></li>
+<li class="chapter" data-level="4.2" data-path="5-Chapter_4.html"><a href="5-Chapter_4.html#表4.6"><i class="fa fa-check"></i><b>4.2</b> 表4.6</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="6-Chapter_5.html"><a href="6-Chapter_5.html"><i class="fa fa-check"></i><b>5</b> 第5章</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="6-Chapter_5.html"><a href="6-Chapter_5.html#表5.1"><i class="fa fa-check"></i><b>5.1</b> 表5.1</a></li>
+<li class="chapter" data-level="5.2" data-path="6-Chapter_5.html"><a href="6-Chapter_5.html#表5.4"><i class="fa fa-check"></i><b>5.2</b> 表5.4</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="7-Chapter_6.html"><a href="7-Chapter_6.html"><i class="fa fa-check"></i><b>6</b> 第6章</a></li>
+<li class="chapter" data-level="7" data-path="8-Note.html"><a href="8-Note.html"><i class="fa fa-check"></i><b>7</b> 補足のノート</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="8-Note.html"><a href="8-Note.html#パッケージ"><i class="fa fa-check"></i><b>7.1</b> パッケージ</a></li>
+<li class="chapter" data-level="7.2" data-path="8-Note.html"><a href="8-Note.html#クロス表の作成"><i class="fa fa-check"></i><b>7.2</b> クロス表の作成</a></li>
+<li class="chapter" data-level="7.3" data-path="8-Note.html"><a href="8-Note.html#集計データの作成"><i class="fa fa-check"></i><b>7.3</b> 集計データの作成</a></li>
+<li class="chapter" data-level="7.4" data-path="8-Note.html"><a href="8-Note.html#glmとgnmの結果の比較"><i class="fa fa-check"></i><b>7.4</b> GLMとGNMの結果の比較</a></li>
+<li class="chapter" data-level="7.5" data-path="8-Note.html"><a href="8-Note.html#期待度数"><i class="fa fa-check"></i><b>7.5</b> 期待度数</a></li>
+<li class="chapter" data-level="7.6" data-path="8-Note.html"><a href="8-Note.html#モザイクプロット"><i class="fa fa-check"></i><b>7.6</b> モザイクプロット</a></li>
+<li class="chapter" data-level="7.7" data-path="8-Note.html"><a href="8-Note.html#正規化"><i class="fa fa-check"></i><b>7.7</b> 正規化</a></li>
+<li class="chapter" data-level="7.8" data-path="8-Note.html"><a href="8-Note.html#初期値"><i class="fa fa-check"></i><b>7.8</b> 初期値</a></li>
+<li class="chapter" data-level="7.9" data-path="8-Note.html"><a href="8-Note.html#位相モデル"><i class="fa fa-check"></i><b>7.9</b> 位相モデル</a></li>
+<li class="chapter" data-level="7.10" data-path="8-Note.html"><a href="8-Note.html#xie"><i class="fa fa-check"></i><b>7.10</b> Xie</a></li>
+</ul></li>
+<li class="divider"></li>
+<li></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">『カテゴリカルデータの連関モデル』サポートページ</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="補足のノート" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> 補足のノート</h1>
+<div id="パッケージ" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> パッケージ</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="8-Note.html#cb1-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="8-Note.html#cb1-2"></a><span class="kw">library</span>(magrittr)</span>
+<span id="cb1-3"><a href="8-Note.html#cb1-3"></a><span class="kw">library</span>(gnm)</span>
+<span id="cb1-4"><a href="8-Note.html#cb1-4"></a><span class="kw">library</span>(vcd)</span></code></pre></div>
+</div>
+<div id="クロス表の作成" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> クロス表の作成</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="8-Note.html#cb2-1"></a>Freq &lt;-<span class="st"> </span><span class="kw">c</span>( <span class="dv">64</span>,  <span class="dv">94</span>, <span class="dv">58</span>, <span class="dv">46</span>, </span>
+<span id="cb2-2"><a href="8-Note.html#cb2-2"></a>           <span class="dv">57</span>,  <span class="dv">94</span>, <span class="dv">54</span>, <span class="dv">40</span>,</span>
+<span id="cb2-3"><a href="8-Note.html#cb2-3"></a>           <span class="dv">57</span>, <span class="dv">105</span>, <span class="dv">65</span>, <span class="dv">60</span>,</span>
+<span id="cb2-4"><a href="8-Note.html#cb2-4"></a>           <span class="dv">72</span>, <span class="dv">141</span>, <span class="dv">77</span>, <span class="dv">94</span>,</span>
+<span id="cb2-5"><a href="8-Note.html#cb2-5"></a>           <span class="dv">36</span>,  <span class="dv">97</span>, <span class="dv">54</span>, <span class="dv">78</span>,</span>
+<span id="cb2-6"><a href="8-Note.html#cb2-6"></a>           <span class="dv">21</span>,  <span class="dv">71</span>, <span class="dv">54</span>, <span class="dv">71</span>)</span>
+<span id="cb2-7"><a href="8-Note.html#cb2-7"></a><span class="co"># byrow = TRUEとすることを忘れずに．</span></span>
+<span id="cb2-8"><a href="8-Note.html#cb2-8"></a>tab &lt;-<span class="st"> </span><span class="kw">matrix</span>(Freq, <span class="dt">nrow =</span> <span class="dv">6</span>, <span class="dt">ncol =</span> <span class="dv">4</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">as.table</span>()</span>
+<span id="cb2-9"><a href="8-Note.html#cb2-9"></a><span class="kw">dimnames</span>(tab)</span></code></pre></div>
+<pre><code>[[1]]
+[1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot;
+
+[[2]]
+[1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot;</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="8-Note.html#cb4-1"></a><span class="kw">dimnames</span>(tab) &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">SES =</span> LETTERS[<span class="dv">1</span><span class="op">:</span><span class="dv">6</span>],</span>
+<span id="cb4-2"><a href="8-Note.html#cb4-2"></a>                      <span class="dt">MHS =</span> <span class="kw">c</span>(<span class="st">&quot;well&quot;</span>, <span class="st">&quot;mild&quot;</span>, <span class="st">&quot;modelrate&quot;</span>, <span class="st">&quot;impared&quot;</span>))</span>
+<span id="cb4-3"><a href="8-Note.html#cb4-3"></a>tab</span></code></pre></div>
+<pre><code>   MHS
+SES well mild modelrate impared
+  A   64   94        58      46
+  B   57   94        54      40
+  C   57  105        65      60
+  D   72  141        77      94
+  E   36   97        54      78
+  F   21   71        54      71</code></pre>
+</div>
+<div id="集計データの作成" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> 集計データの作成</h2>
+<ul>
+<li><p>度数はまず1行目について数値を並べ（1行1列から1行<span class="math inline">\(I\)</span>列まで），次に2行目について数値を並べる（2行1列から2行<span class="math inline">\(I\)</span>列まで）．これを<code>Freq</code>とする．</p></li>
+<li><p>例として「編者による序文」の親の職業と精神的健康の例で考えてみる．これは<span class="math inline">\(6\times4\)</span>のクロス表なので，まず1行1列から1行4列までの数字を入力し，次に2行1列から2行4列まで入力する．これを3行目から6行目まで繰り返す．表との対応を考えて適当な改行をいれるのもよい．ただしRは改行を入れても入れなくても，単に数値の列（ベクトル）として扱う．</p></li>
+<li><p><code>gl</code>によって変数を作成する．度数がどの行と列に対応しているのかに注意してほしい．</p></li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="8-Note.html#cb6-1"></a><span class="co"># 1行1列から1行4列，・・・・，6行1列から6行4列まで順に入力</span></span>
+<span id="cb6-2"><a href="8-Note.html#cb6-2"></a>Freq &lt;-<span class="st"> </span><span class="kw">c</span>( <span class="dv">64</span>, <span class="dv">94</span>, <span class="dv">58</span>, <span class="dv">46</span>, <span class="dv">57</span>, <span class="dv">94</span>, <span class="dv">54</span>, <span class="dv">40</span>, <span class="dv">57</span>, <span class="dv">105</span>, <span class="dv">65</span>, <span class="dv">60</span>, <span class="dv">72</span>, <span class="dv">141</span>, <span class="dv">77</span>, <span class="dv">94</span>, <span class="dv">36</span>,  <span class="dv">97</span>, <span class="dv">54</span>, <span class="dv">78</span>, <span class="dv">21</span>, <span class="dv">71</span>, <span class="dv">54</span>, <span class="dv">71</span>)</span>
+<span id="cb6-3"><a href="8-Note.html#cb6-3"></a></span>
+<span id="cb6-4"><a href="8-Note.html#cb6-4"></a><span class="co"># 表ようにして入力</span></span>
+<span id="cb6-5"><a href="8-Note.html#cb6-5"></a>Freq &lt;-<span class="st"> </span><span class="kw">c</span>( <span class="dv">64</span>,  <span class="dv">94</span>, <span class="dv">58</span>, <span class="dv">46</span>, </span>
+<span id="cb6-6"><a href="8-Note.html#cb6-6"></a>           <span class="dv">57</span>,  <span class="dv">94</span>, <span class="dv">54</span>, <span class="dv">40</span>,</span>
+<span id="cb6-7"><a href="8-Note.html#cb6-7"></a>           <span class="dv">57</span>, <span class="dv">105</span>, <span class="dv">65</span>, <span class="dv">60</span>,</span>
+<span id="cb6-8"><a href="8-Note.html#cb6-8"></a>           <span class="dv">72</span>, <span class="dv">141</span>, <span class="dv">77</span>, <span class="dv">94</span>,</span>
+<span id="cb6-9"><a href="8-Note.html#cb6-9"></a>           <span class="dv">36</span>,  <span class="dv">97</span>, <span class="dv">54</span>, <span class="dv">78</span>,</span>
+<span id="cb6-10"><a href="8-Note.html#cb6-10"></a>           <span class="dv">21</span>,  <span class="dv">71</span>, <span class="dv">54</span>, <span class="dv">71</span>)</span></code></pre></div>
+<ul>
+<li>行カテゴリと列カテゴリの数は<span class="math inline">\(I\)</span>や<span class="math inline">\(J\)</span>となっている．</li>
+<li><code>I</code>を使いたいが，Rの関数にすでに用意されているので別の名前を考える．ここでは<code>NI</code>と<code>NJ</code>とする．</li>
+<li>例のデータでは，行カテゴリ数<span class="math inline">\(I = 4\)</span>，列カテゴリ数<span class="math inline">\(J = 5\)</span>である．</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="8-Note.html#cb7-1"></a>NI &lt;-<span class="st"> </span><span class="dv">4</span></span>
+<span id="cb7-2"><a href="8-Note.html#cb7-2"></a>NJ &lt;-<span class="st"> </span><span class="dv">6</span></span></code></pre></div>
+<ul>
+<li>では，<code>Freq</code>に対応する行カテゴリと列カテゴリを並べてみる．先程の入力のルールにしたがうと，行については1行1列から1行4列までの数字を入力しているので<code>1,1,1,1</code>となり，次に<code>2,2,2,2</code>となる．これを繰り返し最後は<code>6,6,6,6</code>となる．列については，<code>1,2,3,4</code>が6回繰り返される．</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="8-Note.html#cb8-1"></a>Row &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">6</span>,<span class="dv">6</span>,<span class="dv">6</span>)</span>
+<span id="cb8-2"><a href="8-Note.html#cb8-2"></a>Col &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span>
+<span id="cb8-3"><a href="8-Note.html#cb8-3"></a><span class="kw">class</span>(Row)</span></code></pre></div>
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="8-Note.html#cb10-1"></a><span class="kw">class</span>(Col)</span></code></pre></div>
+<pre><code>[1] &quot;numeric&quot;</code></pre>
+<ul>
+<li>属性が数値になっているので<code>as.factor</code>（または<code>factor</code>）で因子（factor）に変換する．</li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="8-Note.html#cb12-1"></a>Row &lt;-<span class="st"> </span><span class="kw">as.factor</span>(Row)</span>
+<span id="cb12-2"><a href="8-Note.html#cb12-2"></a>Col &lt;-<span class="st"> </span><span class="kw">as.factor</span>(Col)</span>
+<span id="cb12-3"><a href="8-Note.html#cb12-3"></a><span class="kw">class</span>(Row);<span class="kw">class</span>(Col)</span></code></pre></div>
+<pre><code>[1] &quot;factor&quot;</code></pre>
+<pre><code>[1] &quot;factor&quot;</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="8-Note.html#cb15-1"></a>Row</span></code></pre></div>
+<pre><code> [1] 1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 5 5 5 5 6 6 6 6
+Levels: 1 2 3 4 5 6</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="8-Note.html#cb17-1"></a>Col</span></code></pre></div>
+<pre><code> [1] 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4
+Levels: 1 2 3 4</code></pre>
+<ul>
+<li>単純な数値の列を作成したければ<code>rep</code>関数が便利である．これは整数（integer）となる．</li>
+</ul>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="8-Note.html#cb19-1"></a>Row &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>, <span class="dt">each =</span> <span class="dv">5</span>)</span>
+<span id="cb19-2"><a href="8-Note.html#cb19-2"></a>Col &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>, <span class="dt">length.out =</span> <span class="dv">20</span>)</span>
+<span id="cb19-3"><a href="8-Note.html#cb19-3"></a><span class="kw">class</span>(Row)</span></code></pre></div>
+<pre><code>[1] &quot;integer&quot;</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="8-Note.html#cb21-1"></a><span class="kw">class</span>(Col)</span></code></pre></div>
+<pre><code>[1] &quot;integer&quot;</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="8-Note.html#cb23-1"></a>Row &lt;-<span class="st"> </span><span class="kw">as.factor</span>(Row)</span>
+<span id="cb23-2"><a href="8-Note.html#cb23-2"></a>Col &lt;-<span class="st"> </span><span class="kw">as.factor</span>(Col)</span>
+<span id="cb23-3"><a href="8-Note.html#cb23-3"></a><span class="kw">class</span>(Row)</span></code></pre></div>
+<pre><code>[1] &quot;factor&quot;</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="8-Note.html#cb25-1"></a><span class="kw">class</span>(Col)</span></code></pre></div>
+<pre><code>[1] &quot;factor&quot;</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="8-Note.html#cb27-1"></a>Row</span></code></pre></div>
+<pre><code> [1] 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3 4 4 4 4 4
+Levels: 1 2 3 4</code></pre>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="8-Note.html#cb29-1"></a>Col</span></code></pre></div>
+<pre><code> [1] 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5
+Levels: 1 2 3 4 5</code></pre>
+<ul>
+<li><code>gl</code>はGenerate Factor Levelsという関数で，<code>rep</code>に似ているが，数値ではなく因子を結果として出力する．</li>
+<li>1から<code>n</code>までの数字をぞれぞれ<code>k</code>回繰り返して出力する．</li>
+</ul>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="8-Note.html#cb31-1"></a>Row &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> <span class="dv">6</span>, <span class="dt">k =</span> <span class="dv">4</span>)</span>
+<span id="cb31-2"><a href="8-Note.html#cb31-2"></a>Col &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> <span class="dv">4</span>, <span class="dt">k =</span> <span class="dv">1</span>, <span class="dt">length =</span> <span class="dv">24</span>)</span>
+<span id="cb31-3"><a href="8-Note.html#cb31-3"></a><span class="kw">class</span>(Row)</span></code></pre></div>
+<pre><code>[1] &quot;factor&quot;</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="8-Note.html#cb33-1"></a><span class="kw">class</span>(Col)</span></code></pre></div>
+<pre><code>[1] &quot;factor&quot;</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="8-Note.html#cb35-1"></a>Row</span></code></pre></div>
+<pre><code> [1] 1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 5 5 5 5 6 6 6 6
+Levels: 1 2 3 4 5 6</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="8-Note.html#cb37-1"></a>Col</span></code></pre></div>
+<pre><code> [1] 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4
+Levels: 1 2 3 4</code></pre>
+<ul>
+<li><code>Freq</code>，<code>Row</code>，<code>Col</code>からデータを作成する．<code>data.frame</code>と<code>tibble</code>のどちらでもよいが，
+<code>tibble</code>の場合は表示させた後に，データの構造（<code>&lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;</code>）が表示される．</li>
+</ul>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="8-Note.html#cb39-1"></a>d &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Freq, Row, Col)</span>
+<span id="cb39-2"><a href="8-Note.html#cb39-2"></a>d</span></code></pre></div>
+<pre><code>   Freq Row Col
+1    64   1   1
+2    94   1   2
+3    58   1   3
+4    46   1   4
+5    57   2   1
+6    94   2   2
+7    54   2   3
+8    40   2   4
+9    57   3   1
+10  105   3   2
+11   65   3   3
+12   60   3   4
+13   72   4   1
+14  141   4   2
+15   77   4   3
+16   94   4   4
+17   36   5   1
+18   97   5   2
+19   54   5   3
+20   78   5   4
+21   21   6   1
+22   71   6   2
+23   54   6   3
+24   71   6   4</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="8-Note.html#cb41-1"></a><span class="co"># tibble でもよい</span></span>
+<span id="cb41-2"><a href="8-Note.html#cb41-2"></a>d &lt;-<span class="st"> </span><span class="kw">tibble</span>(Freq, Row, Col)</span>
+<span id="cb41-3"><a href="8-Note.html#cb41-3"></a>d</span></code></pre></div>
+<pre><code># A tibble: 24 x 3
+    Freq Row   Col  
+   &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;
+ 1    64 1     1    
+ 2    94 1     2    
+ 3    58 1     3    
+ 4    46 1     4    
+ 5    57 2     1    
+ 6    94 2     2    
+ 7    54 2     3    
+ 8    40 2     4    
+ 9    57 3     1    
+10   105 3     2    
+11    65 3     3    
+12    60 3     4    
+13    72 4     1    
+14   141 4     2    
+15    77 4     3    
+16    94 4     4    
+17    36 5     1    
+18    97 5     2    
+19    54 5     3    
+20    78 5     4    
+21    21 6     1    
+22    71 6     2    
+23    54 6     3    
+24    71 6     4    </code></pre>
+<ul>
+<li>以上をまとめると次のようになる．</li>
+</ul>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="8-Note.html#cb43-1"></a>Freq &lt;-<span class="st"> </span><span class="kw">c</span>( <span class="dv">64</span>, <span class="dv">94</span>, <span class="dv">58</span>, <span class="dv">46</span>, <span class="dv">57</span>, <span class="dv">94</span>, <span class="dv">54</span>, <span class="dv">40</span>, <span class="dv">57</span>, <span class="dv">105</span>, <span class="dv">65</span>, <span class="dv">60</span>, <span class="dv">72</span>, <span class="dv">141</span>, <span class="dv">77</span>, <span class="dv">94</span>, <span class="dv">36</span>,  <span class="dv">97</span>, <span class="dv">54</span>, <span class="dv">78</span>, <span class="dv">21</span>, <span class="dv">71</span>, <span class="dv">54</span>, <span class="dv">71</span>)</span>
+<span id="cb43-2"><a href="8-Note.html#cb43-2"></a>NI &lt;-<span class="st"> </span><span class="dv">4</span></span>
+<span id="cb43-3"><a href="8-Note.html#cb43-3"></a>NJ &lt;-<span class="st"> </span><span class="dv">6</span></span>
+<span id="cb43-4"><a href="8-Note.html#cb43-4"></a>Row &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> NI, <span class="dt">k =</span> NJ, <span class="dt">length =</span> NI <span class="op">*</span><span class="st"> </span>NJ)</span>
+<span id="cb43-5"><a href="8-Note.html#cb43-5"></a>Col &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> NJ, <span class="dt">k =</span> <span class="dv">1</span>, <span class="dt">length =</span> NI <span class="op">*</span><span class="st"> </span>NJ)</span>
+<span id="cb43-6"><a href="8-Note.html#cb43-6"></a>d &lt;-<span class="st"> </span><span class="kw">tibble</span>(Freq, Row, Col)</span>
+<span id="cb43-7"><a href="8-Note.html#cb43-7"></a>d</span></code></pre></div>
+<pre><code># A tibble: 24 x 3
+    Freq Row   Col  
+   &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;
+ 1    64 1     1    
+ 2    94 1     2    
+ 3    58 1     3    
+ 4    46 1     4    
+ 5    57 1     5    
+ 6    94 1     6    
+ 7    54 2     1    
+ 8    40 2     2    
+ 9    57 2     3    
+10   105 2     4    
+11    65 2     5    
+12    60 2     6    
+13    72 3     1    
+14   141 3     2    
+15    77 3     3    
+16    94 3     4    
+17    36 3     5    
+18    97 3     6    
+19    54 4     1    
+20    78 4     2    
+21    21 4     3    
+22    71 4     4    
+23    54 4     5    
+24    71 4     6    </code></pre>
+</div>
+<div id="glmとgnmの結果の比較" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> GLMとGNMの結果の比較</h2>
+<ul>
+<li>glmとgnmでは適合度や係数は同じだが，出力されるものが異なる．</li>
+</ul>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="8-Note.html#cb45-1"></a>fit_glm &lt;-<span class="st"> </span><span class="kw">glm</span>(Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col, <span class="dt">data =</span> d, <span class="dt">family =</span> poisson)</span>
+<span id="cb45-2"><a href="8-Note.html#cb45-2"></a>fit_gnm &lt;-<span class="st"> </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col, <span class="dt">data =</span> d, <span class="dt">family =</span> poisson)</span>
+<span id="cb45-3"><a href="8-Note.html#cb45-3"></a>fit_glm</span></code></pre></div>
+<pre><code>
+Call:  glm(formula = Freq ~ Row + Col, family = poisson, data = d)
+
+Coefficients:
+(Intercept)         Row2         Row3         Row4         Col2         Col3  
+    4.10604     -0.08065      0.22460     -0.16838      0.36930     -0.13588  
+       Col4         Col5         Col6  
+    0.25857     -0.14058      0.27738  
+
+Degrees of Freedom: 23 Total (i.e. Null);  15 Residual
+Null Deviance:      217.4 
+Residual Deviance: 112  AIC: 274.2</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="8-Note.html#cb47-1"></a>fit_gnm</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ Row + Col, family = poisson, data = d)
+
+Coefficients:
+(Intercept)         Row2         Row3         Row4         Col2         Col3  
+    4.10604     -0.08065      0.22460     -0.16838      0.36930     -0.13588  
+       Col4         Col5         Col6  
+    0.25857     -0.14058      0.27738  
+
+Deviance:            112.0398 
+Pearson chi-squared: 102.2928 
+Residual df:         15 </code></pre>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="8-Note.html#cb49-1"></a><span class="kw">names</span>(fit_glm)</span></code></pre></div>
+<pre><code> [1] &quot;coefficients&quot;      &quot;residuals&quot;         &quot;fitted.values&quot;    
+ [4] &quot;effects&quot;           &quot;R&quot;                 &quot;rank&quot;             
+ [7] &quot;qr&quot;                &quot;family&quot;            &quot;linear.predictors&quot;
+[10] &quot;deviance&quot;          &quot;aic&quot;               &quot;null.deviance&quot;    
+[13] &quot;iter&quot;              &quot;weights&quot;           &quot;prior.weights&quot;    
+[16] &quot;df.residual&quot;       &quot;df.null&quot;           &quot;y&quot;                
+[19] &quot;converged&quot;         &quot;boundary&quot;          &quot;model&quot;            
+[22] &quot;call&quot;              &quot;formula&quot;           &quot;terms&quot;            
+[25] &quot;data&quot;              &quot;offset&quot;            &quot;control&quot;          
+[28] &quot;method&quot;            &quot;contrasts&quot;         &quot;xlevels&quot;          </code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="8-Note.html#cb51-1"></a><span class="kw">names</span>(fit_gnm)</span></code></pre></div>
+<pre><code> [1] &quot;call&quot;          &quot;formula&quot;       &quot;terms&quot;         &quot;data&quot;         
+ [5] &quot;eliminate&quot;     &quot;ofInterest&quot;    &quot;na.action&quot;     &quot;xlevels&quot;      
+ [9] &quot;offset&quot;        &quot;tolerance&quot;     &quot;iterStart&quot;     &quot;iterMax&quot;      
+[13] &quot;coefficients&quot;  &quot;residuals&quot;     &quot;fitted.values&quot; &quot;rank&quot;         
+[17] &quot;family&quot;        &quot;predictors&quot;    &quot;deviance&quot;      &quot;aic&quot;          
+[21] &quot;iter&quot;          &quot;weights&quot;       &quot;prior.weights&quot; &quot;df.residual&quot;  
+[25] &quot;y&quot;             &quot;converged&quot;     &quot;constrain&quot;     &quot;constrainTo&quot;  
+[29] &quot;x&quot;             &quot;model&quot;        </code></pre>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="8-Note.html#cb53-1"></a><span class="kw">summary</span>(fit_glm)</span></code></pre></div>
+<pre><code>
+Call:
+glm(formula = Freq ~ Row + Col, family = poisson, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-5.0571  -0.4520   0.4274   1.1667   3.5712  
+
+Coefficients:
+            Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)  4.10604    0.07692  53.378  &lt; 2e-16 ***
+Row2        -0.08065    0.07104  -1.135 0.256237    
+Row3         0.22460    0.06600   3.403 0.000666 ***
+Row4        -0.16838    0.07271  -2.316 0.020573 *  
+Col2         0.36930    0.08325   4.436 9.17e-06 ***
+Col3        -0.13588    0.09377  -1.449 0.147336    
+Col4         0.25857    0.08522   3.034 0.002413 ** 
+Col5        -0.14058    0.09389  -1.497 0.134314    
+Col6         0.27738    0.08488   3.268 0.001083 ** 
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 217.40  on 23  degrees of freedom
+Residual deviance: 112.04  on 15  degrees of freedom
+AIC: 274.21
+
+Number of Fisher Scoring iterations: 4</code></pre>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="8-Note.html#cb55-1"></a><span class="kw">summary</span>(fit_gnm)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ Row + Col, family = poisson, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-5.0571  -0.4520   0.4274   1.1667   3.5712  
+
+Coefficients:
+            Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)  4.10604    0.07692  53.378  &lt; 2e-16 ***
+Row2        -0.08065    0.07104  -1.135 0.256237    
+Row3         0.22460    0.06600   3.403 0.000666 ***
+Row4        -0.16838    0.07271  -2.316 0.020573 *  
+Col2         0.36930    0.08325   4.436 9.17e-06 ***
+Col3        -0.13588    0.09377  -1.449 0.147336    
+Col4         0.25857    0.08522   3.034 0.002413 ** 
+Col5        -0.14058    0.09389  -1.497 0.134314    
+Col6         0.27738    0.08488   3.268 0.001083 ** 
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Residual deviance: 112.04 on 15 degrees of freedom
+AIC: 274.21
+
+Number of iterations: 4</code></pre>
+<ul>
+<li>gnmで独立モデルと飽和モデル</li>
+</ul>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="8-Note.html#cb57-1"></a>fit_O &lt;-<span class="st"> </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col, <span class="dt">data =</span> d, <span class="dt">family =</span> poisson)</span>
+<span id="cb57-2"><a href="8-Note.html#cb57-2"></a>fit_S &lt;-<span class="st"> </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col <span class="op">+</span><span class="st"> </span>Row<span class="op">:</span>Col, <span class="dt">data =</span> d, <span class="dt">family =</span> poisson)</span></code></pre></div>
+<ul>
+<li>モデルの比較は<code>anova</code>で可能．</li>
+</ul>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="8-Note.html#cb58-1"></a><span class="kw">anova</span>(fit_O, fit_S)</span></code></pre></div>
+<pre><code>Analysis of Deviance Table
+
+Model 1: Freq ~ Row + Col
+Model 2: Freq ~ Row + Col + Row:Col
+  Resid. Df Resid. Dev Df Deviance
+1        15     112.04            
+2         0       0.00 15   112.04</code></pre>
+</div>
+<div id="期待度数" class="section level2" number="7.5">
+<h2><span class="header-section-number">7.5</span> 期待度数</h2>
+<ul>
+<li>期待度数を保存すれば期待度数についてのクロス表を作成することができる．飽和モデルの場合は，観測度数のクロス表と一致する．また独立モデルでの期待度数をみると，行によって列の幅が異なっていない（列によって行の幅がことなっていない）ことがわかる．</li>
+</ul>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="8-Note.html#cb60-1"></a>d <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">O_Freq =</span> fit_O<span class="op">$</span>fitted.values,</span>
+<span id="cb60-2"><a href="8-Note.html#cb60-2"></a>              <span class="dt">S_Freq =</span> fit_S<span class="op">$</span>fitted.values)</span>
+<span id="cb60-3"><a href="8-Note.html#cb60-3"></a>d <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">xtabs</span>(Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col, <span class="dt">data =</span> .) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mosaic</span>(<span class="dt">shade =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="8-Note_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="8-Note.html#cb61-1"></a>d <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">xtabs</span>(O_Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col, <span class="dt">data =</span> .) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mosaic</span>(<span class="dt">shade =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="8-Note_files/figure-html/unnamed-chunk-16-2.png" width="672" /></p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="8-Note.html#cb62-1"></a>d <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">xtabs</span>(S_Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col, <span class="dt">data =</span> .) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mosaic</span>(<span class="dt">shade =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="8-Note_files/figure-html/unnamed-chunk-16-3.png" width="672" /></p>
+</div>
+<div id="モザイクプロット" class="section level2" number="7.6">
+<h2><span class="header-section-number">7.6</span> モザイクプロット</h2>
+<ul>
+<li><code>gnm</code>パッケージには，<code>mentalHealth</code>が用意されているのでこれを使ってみる．</li>
+</ul>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="8-Note.html#cb63-1"></a>mentalHealth</span></code></pre></div>
+<pre><code>   count SES      MHS
+1     64   A     well
+2     94   A     mild
+3     58   A moderate
+4     46   A impaired
+5     57   B     well
+6     94   B     mild
+7     54   B moderate
+8     40   B impaired
+9     57   C     well
+10   105   C     mild
+11    65   C moderate
+12    60   C impaired
+13    72   D     well
+14   141   D     mild
+15    77   D moderate
+16    94   D impaired
+17    36   E     well
+18    97   E     mild
+19    54   E moderate
+20    78   E impaired
+21    21   F     well
+22    71   F     mild
+23    54   F moderate
+24    71   F impaired</code></pre>
+<ul>
+<li><code>xtabs</code>は集計データからクロス表を作成する際に用いる．<code>xtabs(度数 ~ 行変数 + 列変数, data = データ名)</code>とすればよい．<code>mentalHealth</code>では<code>count</code>が度数を示している．</li>
+</ul>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="8-Note.html#cb65-1"></a>tab_mentalHealth &lt;-<span class="st"> </span><span class="kw">xtabs</span>(count <span class="op">~</span><span class="st"> </span>SES <span class="op">+</span><span class="st"> </span>MHS, <span class="dt">data =</span> mentalHealth)</span>
+<span id="cb65-2"><a href="8-Note.html#cb65-2"></a>tab_mentalHealth</span></code></pre></div>
+<pre><code>   MHS
+SES well mild moderate impaired
+  A   64   94       58       46
+  B   57   94       54       40
+  C   57  105       65       60
+  D   72  141       77       94
+  E   36   97       54       78
+  F   21   71       54       71</code></pre>
+<ul>
+<li><code>mosaic</code>でモザイクプロットを図示．影をつけたければ<code>shade = TRUE</code>とする．</li>
+</ul>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="8-Note.html#cb67-1"></a><span class="kw">mosaic</span>(tab_mentalHealth,</span>
+<span id="cb67-2"><a href="8-Note.html#cb67-2"></a>       <span class="dt">shade =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="8-Note_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<ul>
+<li>モデル適合度を表示するための関数</li>
+</ul>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="8-Note.html#cb68-1"></a>model.summary &lt;-<span class="st"> </span><span class="cf">function</span>(obj) {</span>
+<span id="cb68-2"><a href="8-Note.html#cb68-2"></a>  aic &lt;-<span class="st"> </span>obj<span class="op">$</span>deviance <span class="op">-</span><span class="st"> </span>obj<span class="op">$</span>df <span class="op">*</span><span class="st"> </span><span class="dv">2</span> <span class="co"># AIC(L2)</span></span>
+<span id="cb68-3"><a href="8-Note.html#cb68-3"></a>  bic &lt;-<span class="st"> </span>obj<span class="op">$</span>deviance <span class="op">-</span><span class="st"> </span>obj<span class="op">$</span>df <span class="op">*</span><span class="st"> </span><span class="kw">log</span>(<span class="kw">sum</span>(obj<span class="op">$</span>y)) <span class="co">#BIC(L2)</span></span>
+<span id="cb68-4"><a href="8-Note.html#cb68-4"></a>  delta &lt;-</span>
+<span id="cb68-5"><a href="8-Note.html#cb68-5"></a><span class="st">    </span><span class="dv">100</span> <span class="op">*</span><span class="st"> </span><span class="kw">sum</span>(<span class="kw">abs</span>(obj<span class="op">$</span>y <span class="op">-</span><span class="st"> </span>obj<span class="op">$</span>fitted.values)) <span class="op">/</span><span class="st"> </span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span><span class="kw">sum</span>(obj<span class="op">$</span>y))</span>
+<span id="cb68-6"><a href="8-Note.html#cb68-6"></a>  p &lt;-<span class="st"> </span><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pchisq</span>(obj<span class="op">$</span>deviance, obj<span class="op">$</span>df, <span class="dt">lower.tail =</span> F)</span>
+<span id="cb68-7"><a href="8-Note.html#cb68-7"></a>  Model &lt;-<span class="st"> </span><span class="kw">deparse</span>(<span class="kw">substitute</span>(obj))</span>
+<span id="cb68-8"><a href="8-Note.html#cb68-8"></a>  result &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
+<span id="cb68-9"><a href="8-Note.html#cb68-9"></a>    <span class="st">&quot;Model Description&quot;</span> =<span class="st"> </span>Model,</span>
+<span id="cb68-10"><a href="8-Note.html#cb68-10"></a>    <span class="st">&quot;df&quot;</span> =<span class="st"> </span>obj<span class="op">$</span>df,</span>
+<span id="cb68-11"><a href="8-Note.html#cb68-11"></a>    <span class="st">&quot;L2&quot;</span> =<span class="st"> </span>obj<span class="op">$</span>deviance,</span>
+<span id="cb68-12"><a href="8-Note.html#cb68-12"></a>    <span class="co">#&quot;AIC(L2)&quot; = aic,</span></span>
+<span id="cb68-13"><a href="8-Note.html#cb68-13"></a>    <span class="st">&quot;BIC&quot;</span> =<span class="st"> </span>bic,</span>
+<span id="cb68-14"><a href="8-Note.html#cb68-14"></a>    <span class="st">&quot;Delta&quot;</span> =<span class="st"> </span>delta,</span>
+<span id="cb68-15"><a href="8-Note.html#cb68-15"></a>    <span class="st">&quot;p&quot;</span> =<span class="st"> </span>p</span>
+<span id="cb68-16"><a href="8-Note.html#cb68-16"></a>  )</span>
+<span id="cb68-17"><a href="8-Note.html#cb68-17"></a>  <span class="kw">return</span>(result)</span>
+<span id="cb68-18"><a href="8-Note.html#cb68-18"></a>}</span></code></pre></div>
+<ul>
+<li>変数と係数と係数の順番を表示するための関数</li>
+</ul>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="8-Note.html#cb69-1"></a><span class="co"># 変数と係数と係数の順番を表示</span></span>
+<span id="cb69-2"><a href="8-Note.html#cb69-2"></a>var_num &lt;-<span class="st"> </span><span class="cf">function</span>(model) {</span>
+<span id="cb69-3"><a href="8-Note.html#cb69-3"></a>  <span class="kw">data.frame</span>(<span class="dt">var =</span> <span class="kw">names</span>(model<span class="op">$</span>coefficients),</span>
+<span id="cb69-4"><a href="8-Note.html#cb69-4"></a>             <span class="dt">estimate =</span> model<span class="op">$</span>coefficients) <span class="op">%&gt;%</span></span>
+<span id="cb69-5"><a href="8-Note.html#cb69-5"></a><span class="st">    </span><span class="kw">mutate</span>(<span class="dt">estimate =</span> estimate,</span>
+<span id="cb69-6"><a href="8-Note.html#cb69-6"></a>           <span class="dt">number =</span> <span class="kw">row_number</span>())</span>
+<span id="cb69-7"><a href="8-Note.html#cb69-7"></a>}</span></code></pre></div>
+</div>
+<div id="正規化" class="section level2" number="7.7">
+<h2><span class="header-section-number">7.7</span> 正規化</h2>
+<ul>
+<li>通常のRCモデルでは行スコアと列スコアが正規化されていない．</li>
+<li>Agresti (2002)</li>
+</ul>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="8-Note.html#cb70-1"></a><span class="kw">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb70-2"><a href="8-Note.html#cb70-2"></a><span class="co">##  Goodman Row-Column association model fits well (deviance 3.57, df 8)</span></span>
+<span id="cb70-3"><a href="8-Note.html#cb70-3"></a>mentalHealth<span class="op">$</span>MHS &lt;-<span class="st"> </span><span class="kw">C</span>(mentalHealth<span class="op">$</span>MHS, treatment)</span>
+<span id="cb70-4"><a href="8-Note.html#cb70-4"></a>mentalHealth<span class="op">$</span>SES &lt;-<span class="st"> </span><span class="kw">C</span>(mentalHealth<span class="op">$</span>SES, treatment)</span>
+<span id="cb70-5"><a href="8-Note.html#cb70-5"></a></span>
+<span id="cb70-6"><a href="8-Note.html#cb70-6"></a><span class="co"># Independent Model</span></span>
+<span id="cb70-7"><a href="8-Note.html#cb70-7"></a>O &lt;-<span class="st"> </span><span class="kw">gnm</span>(count <span class="op">~</span><span class="st"> </span>SES <span class="op">+</span><span class="st"> </span>MHS,</span>
+<span id="cb70-8"><a href="8-Note.html#cb70-8"></a>         <span class="dt">family =</span> poisson, <span class="dt">data =</span> mentalHealth)</span>
+<span id="cb70-9"><a href="8-Note.html#cb70-9"></a></span>
+<span id="cb70-10"><a href="8-Note.html#cb70-10"></a><span class="co"># Independent Modelの結果を利用して，初期値を設定</span></span>
+<span id="cb70-11"><a href="8-Note.html#cb70-11"></a>mult1 &lt;-<span class="st"> </span><span class="kw">residSVD</span>(O, SES, MHS)</span>
+<span id="cb70-12"><a href="8-Note.html#cb70-12"></a>RC1 &lt;-<span class="st"> </span><span class="kw">gnm</span>(</span>
+<span id="cb70-13"><a href="8-Note.html#cb70-13"></a>  count <span class="op">~</span><span class="st"> </span>SES <span class="op">+</span><span class="st"> </span>MHS <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, SES, MHS),</span>
+<span id="cb70-14"><a href="8-Note.html#cb70-14"></a>  <span class="dt">start =</span> <span class="kw">c</span>(<span class="kw">coef</span>(O), <span class="dv">1</span>, mult1),</span>
+<span id="cb70-15"><a href="8-Note.html#cb70-15"></a>  <span class="dt">family =</span> poisson,</span>
+<span id="cb70-16"><a href="8-Note.html#cb70-16"></a>  <span class="dt">data =</span> mentalHealth</span>
+<span id="cb70-17"><a href="8-Note.html#cb70-17"></a>)</span></code></pre></div>
+<pre><code>Running main iterations..........
+Done</code></pre>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="8-Note.html#cb72-1"></a><span class="co"># Estimateには数字があるが，Std. ErrorがNAとなっている．これらのパラメータは識別されていない．</span></span>
+<span id="cb72-2"><a href="8-Note.html#cb72-2"></a><span class="kw">summary</span>(RC1)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = count ~ SES + MHS + Mult(1, SES, MHS), family = poisson, 
+    data = mentalHealth, start = c(coef(O), 1, mult1))
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.87231  -0.30982   0.01026   0.29898   0.87866  
+
+Coefficients:
+                             Estimate Std. Error z value Pr(&gt;|z|)
+(Intercept)                  3.866262         NA      NA       NA
+SESB                        -0.067328         NA      NA       NA
+SESC                         0.103101         NA      NA       NA
+SESD                         0.394428         NA      NA       NA
+SESE                         0.005618         NA      NA       NA
+SESF                        -0.227798         NA      NA       NA
+MHSmild                      0.690089         NA      NA       NA
+MHSmoderate                  0.177978         NA      NA       NA
+MHSimpaired                  0.205737         NA      NA       NA
+Mult(., SES, MHS).           1.009621         NA      NA       NA
+Mult(1, ., MHS).SESA        -0.380306         NA      NA       NA
+Mult(1, ., MHS).SESB        -0.383670         NA      NA       NA
+Mult(1, ., MHS).SESC        -0.106430         NA      NA       NA
+Mult(1, ., MHS).SESD         0.040661         NA      NA       NA
+Mult(1, ., MHS).SESE         0.403979         NA      NA       NA
+Mult(1, ., MHS).SESF         0.702468         NA      NA       NA
+Mult(1, SES, .).MHSwell     -0.738572         NA      NA       NA
+Mult(1, SES, .).MHSmild     -0.052542         NA      NA       NA
+Mult(1, SES, .).MHSmoderate  0.071261         NA      NA       NA
+Mult(1, SES, .).MHSimpaired  0.641064         NA      NA       NA
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: 3.5706 on 8 degrees of freedom
+AIC: 179.74
+
+Number of iterations: 10</code></pre>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="8-Note.html#cb74-1"></a><span class="co"># 行スコアと列スコアがどこにあるかを取り出す．</span></span>
+<span id="cb74-2"><a href="8-Note.html#cb74-2"></a><span class="kw">var_num</span>(RC1)</span></code></pre></div>
+<pre><code>                                                    var    estimate number
+(Intercept)                                 (Intercept)  3.86626244      1
+SESB                                               SESB -0.06732842      2
+SESC                                               SESC  0.10310129      3
+SESD                                               SESD  0.39442821      4
+SESE                                               SESE  0.00561777      5
+SESF                                               SESF -0.22779822      6
+MHSmild                                         MHSmild  0.69008918      7
+MHSmoderate                                 MHSmoderate  0.17797824      8
+MHSimpaired                                 MHSimpaired  0.20573705      9
+Mult(., SES, MHS).                   Mult(., SES, MHS).  1.00962097     10
+Mult(1, ., MHS).SESA               Mult(1, ., MHS).SESA -0.38030558     11
+Mult(1, ., MHS).SESB               Mult(1, ., MHS).SESB -0.38367011     12
+Mult(1, ., MHS).SESC               Mult(1, ., MHS).SESC -0.10642962     13
+Mult(1, ., MHS).SESD               Mult(1, ., MHS).SESD  0.04066084     14
+Mult(1, ., MHS).SESE               Mult(1, ., MHS).SESE  0.40397860     15
+Mult(1, ., MHS).SESF               Mult(1, ., MHS).SESF  0.70246790     16
+Mult(1, SES, .).MHSwell         Mult(1, SES, .).MHSwell -0.73857153     17
+Mult(1, SES, .).MHSmild         Mult(1, SES, .).MHSmild -0.05254155     18
+Mult(1, SES, .).MHSmoderate Mult(1, SES, .).MHSmoderate  0.07126103     19
+Mult(1, SES, .).MHSimpaired Mult(1, SES, .).MHSimpaired  0.64106423     20</code></pre>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="8-Note.html#cb76-1"></a><span class="co"># c(11:16,17:20)</span></span>
+<span id="cb76-2"><a href="8-Note.html#cb76-2"></a></span>
+<span id="cb76-3"><a href="8-Note.html#cb76-3"></a><span class="co"># getContrastsによって正規化された推定値とその標準誤差を示す．まずは重み付けのない／単位標準化された解を求める．</span></span>
+<span id="cb76-4"><a href="8-Note.html#cb76-4"></a>mu_unit &lt;-<span class="st"> </span><span class="kw">getContrasts</span>(</span>
+<span id="cb76-5"><a href="8-Note.html#cb76-5"></a>  <span class="dt">model =</span> RC1,</span>
+<span id="cb76-6"><a href="8-Note.html#cb76-6"></a>  <span class="dt">set =</span> <span class="kw">pickCoef</span>(RC1, <span class="st">&quot;[.]SES&quot;</span>),</span>
+<span id="cb76-7"><a href="8-Note.html#cb76-7"></a>  <span class="dt">ref =</span> <span class="st">&quot;mean&quot;</span>,</span>
+<span id="cb76-8"><a href="8-Note.html#cb76-8"></a>  <span class="dt">scaleRef =</span> <span class="st">&quot;mean&quot;</span>,</span>
+<span id="cb76-9"><a href="8-Note.html#cb76-9"></a>  <span class="dt">scaleWeights =</span> <span class="st">&quot;unit&quot;</span></span>
+<span id="cb76-10"><a href="8-Note.html#cb76-10"></a>)</span>
+<span id="cb76-11"><a href="8-Note.html#cb76-11"></a>nu_unit &lt;-<span class="st"> </span><span class="kw">getContrasts</span>(</span>
+<span id="cb76-12"><a href="8-Note.html#cb76-12"></a>  <span class="dt">model =</span> RC1,</span>
+<span id="cb76-13"><a href="8-Note.html#cb76-13"></a>  <span class="dt">set =</span> <span class="kw">pickCoef</span>(RC1, <span class="st">&quot;[.]MHS&quot;</span>),</span>
+<span id="cb76-14"><a href="8-Note.html#cb76-14"></a>  <span class="dt">ref =</span> <span class="st">&quot;mean&quot;</span>,</span>
+<span id="cb76-15"><a href="8-Note.html#cb76-15"></a>  <span class="dt">scaleRef =</span> <span class="st">&quot;mean&quot;</span>,</span>
+<span id="cb76-16"><a href="8-Note.html#cb76-16"></a>  <span class="dt">scaleWeights =</span> <span class="st">&quot;unit&quot;</span></span>
+<span id="cb76-17"><a href="8-Note.html#cb76-17"></a>)</span>
+<span id="cb76-18"><a href="8-Note.html#cb76-18"></a><span class="co"># 正規化された解を表示</span></span>
+<span id="cb76-19"><a href="8-Note.html#cb76-19"></a>mu_unit</span></code></pre></div>
+<pre><code>                         Estimate Std. Error
+Mult(1, ., MHS).SESA -0.437796567 0.11273428
+Mult(1, ., MHS).SESB -0.441250838 0.11417655
+Mult(1, ., MHS).SESC -0.156615503 0.12240952
+Mult(1, ., MHS).SESD -0.005601696 0.11265736
+Mult(1, ., MHS).SESE  0.367406849 0.12407059
+Mult(1, ., MHS).SESF  0.673857756 0.09323652</code></pre>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="8-Note.html#cb78-1"></a>nu_unit</span></code></pre></div>
+<pre><code>                               Estimate Std. Error
+Mult(1, SES, .).MHSwell     -0.73265419 0.06465624
+Mult(1, SES, .).MHSmild     -0.03347417 0.10831243
+Mult(1, SES, .).MHSmoderate  0.09270150 0.12250922
+Mult(1, SES, .).MHSimpaired  0.67342687 0.07862278</code></pre>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="8-Note.html#cb80-1"></a><span class="co"># 正規化制約を確認</span></span>
+<span id="cb80-2"><a href="8-Note.html#cb80-2"></a><span class="kw">all.equal</span>(<span class="kw">sum</span>(mu_unit<span class="op">$</span>qvframe[, <span class="dv">1</span>]), <span class="dv">0</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="8-Note.html#cb82-1"></a><span class="kw">all.equal</span>(<span class="kw">sum</span>(nu_unit<span class="op">$</span>qvframe[, <span class="dv">1</span>]), <span class="dv">0</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="8-Note.html#cb84-1"></a><span class="kw">all.equal</span>(<span class="kw">sum</span>(mu_unit<span class="op">$</span>qvframe[, <span class="dv">1</span>] <span class="op">^</span><span class="st"> </span><span class="dv">2</span>), <span class="dv">1</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="8-Note.html#cb86-1"></a><span class="kw">all.equal</span>(<span class="kw">sum</span>(nu_unit<span class="op">$</span>qvframe[, <span class="dv">1</span>] <span class="op">^</span><span class="st"> </span><span class="dv">2</span>), <span class="dv">1</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="8-Note.html#cb88-1"></a><span class="co"># 値の制約</span></span>
+<span id="cb88-2"><a href="8-Note.html#cb88-2"></a>con &lt;-<span class="st"> </span><span class="kw">c</span>(mu_unit<span class="op">$</span>qvframe[, <span class="dv">1</span>][<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">6</span>)], nu_unit<span class="op">$</span>qvframe[, <span class="dv">1</span>][<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>)])</span>
+<span id="cb88-3"><a href="8-Note.html#cb88-3"></a>con</span></code></pre></div>
+<pre><code>[1] -0.4377966  0.6738578 -0.7326542  0.6734269</code></pre>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="8-Note.html#cb90-1"></a>RC1 &lt;-<span class="st"> </span><span class="kw">gnm</span>(</span>
+<span id="cb90-2"><a href="8-Note.html#cb90-2"></a>  count <span class="op">~</span><span class="st"> </span>SES <span class="op">+</span><span class="st"> </span>MHS <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, SES, MHS),</span>
+<span id="cb90-3"><a href="8-Note.html#cb90-3"></a>  <span class="dt">constrain =</span> <span class="kw">c</span>(<span class="dv">11</span>, <span class="dv">16</span>, <span class="dv">17</span>, <span class="dv">20</span>),</span>
+<span id="cb90-4"><a href="8-Note.html#cb90-4"></a>  <span class="dt">constrainTo =</span> con,</span>
+<span id="cb90-5"><a href="8-Note.html#cb90-5"></a>  <span class="dt">start =</span> <span class="kw">c</span>(<span class="kw">coef</span>(O), <span class="ot">NA</span>, mult1),</span>
+<span id="cb90-6"><a href="8-Note.html#cb90-6"></a>  <span class="dt">family =</span> poisson,</span>
+<span id="cb90-7"><a href="8-Note.html#cb90-7"></a>  <span class="dt">data =</span> mentalHealth</span>
+<span id="cb90-8"><a href="8-Note.html#cb90-8"></a>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations.........
+Done</code></pre>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="8-Note.html#cb92-1"></a><span class="kw">summary</span>(RC1)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = count ~ SES + MHS + Mult(1, SES, MHS), constrain = c(11, 
+    16, 17, 20), constrainTo = con, family = poisson, data = mentalHealth, 
+    start = c(coef(O), NA, mult1))
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.87231  -0.30982   0.01026   0.29898   0.87866  
+
+Coefficients:
+                             Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                  3.840354   0.100134  38.352  &lt; 2e-16 ***
+SESB                        -0.067262   0.089460  -0.752   0.4521    
+SESC                         0.097655   0.088726   1.101   0.2711    
+SESD                         0.386057   0.087802   4.397 1.10e-05 ***
+SESE                        -0.009979   0.110426  -0.090   0.9280    
+SESF                        -0.249331   0.133563  -1.867   0.0619 .  
+MHSmild                      0.722031   0.096153   7.509 5.95e-14 ***
+MHSmoderate                  0.215685   0.108885   1.981   0.0476 *  
+MHSimpaired                  0.269974   0.148273   1.821   0.0686 .  
+Mult(., SES, MHS).           0.964895   0.191615   5.036 4.76e-07 ***
+Mult(1, ., MHS).SESA        -0.437797         NA      NA       NA    
+Mult(1, ., MHS).SESB        -0.441251   0.201840  -2.186   0.0288 *  
+Mult(1, ., MHS).SESC        -0.156615   0.176666  -0.887   0.3753    
+Mult(1, ., MHS).SESD        -0.005602   0.160260  -0.035   0.9721    
+Mult(1, ., MHS).SESE         0.367407   0.191566   1.918   0.0551 .  
+Mult(1, ., MHS).SESF         0.673858         NA      NA       NA    
+Mult(1, SES, .).MHSwell     -0.732654         NA      NA       NA    
+Mult(1, SES, .).MHSmild     -0.033474   0.159023  -0.210   0.8333    
+Mult(1, SES, .).MHSmoderate  0.092701   0.180220   0.514   0.6070    
+Mult(1, SES, .).MHSimpaired  0.673427         NA      NA       NA    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: 3.5706 on 8 degrees of freedom
+AIC: 179.74
+
+Number of iterations: 9</code></pre>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="8-Note.html#cb94-1"></a><span class="co"># intrinsic association parameter</span></span>
+<span id="cb94-2"><a href="8-Note.html#cb94-2"></a>phi &lt;-<span class="st"> </span><span class="kw">summary</span>(RC1)<span class="op">$</span>coefficients[<span class="st">&quot;Mult(., SES, MHS).&quot;</span>, <span class="dv">1</span>]</span>
+<span id="cb94-3"><a href="8-Note.html#cb94-3"></a>rho &lt;-<span class="st"> </span>(<span class="op">-</span><span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="dv">4</span> <span class="op">*</span><span class="st"> </span>phi <span class="op">^</span><span class="st"> </span><span class="dv">2</span>)) <span class="op">/</span><span class="st"> </span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span>phi)</span>
+<span id="cb94-4"><a href="8-Note.html#cb94-4"></a>eta &lt;-<span class="st"> </span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span>phi) <span class="op">^</span><span class="st"> </span>(<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb94-5"><a href="8-Note.html#cb94-5"></a>tau &lt;-<span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>eta <span class="op">^</span><span class="st"> </span><span class="dv">2</span>) <span class="op">^</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">/</span><span class="st"> </span><span class="dv">2</span>) <span class="op">-</span><span class="st"> </span>eta</span>
+<span id="cb94-6"><a href="8-Note.html#cb94-6"></a><span class="kw">list</span>(phi, rho, eta, tau)</span></code></pre></div>
+<pre><code>[[1]]
+[1] 0.9648954
+
+[[2]]
+[1] 0.6080959
+
+[[3]]
+[1] 0.5181909
+
+[[4]]
+[1] 0.6080959</code></pre>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="8-Note.html#cb96-1"></a><span class="kw">all.equal</span>(rho, tau)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="8-Note.html#cb98-1"></a><span class="co">## Marginal weighted solution</span></span>
+<span id="cb98-2"><a href="8-Note.html#cb98-2"></a>rowProbs &lt;-<span class="st"> </span><span class="kw">with</span>(mentalHealth, <span class="kw">tapply</span>(count, SES, sum) <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(count))</span>
+<span id="cb98-3"><a href="8-Note.html#cb98-3"></a>colProbs &lt;-<span class="st"> </span><span class="kw">with</span>(mentalHealth, <span class="kw">tapply</span>(count, MHS, sum) <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(count))</span>
+<span id="cb98-4"><a href="8-Note.html#cb98-4"></a>mu &lt;-<span class="st"> </span><span class="kw">getContrasts</span>(</span>
+<span id="cb98-5"><a href="8-Note.html#cb98-5"></a>  <span class="dt">model =</span> RC1,</span>
+<span id="cb98-6"><a href="8-Note.html#cb98-6"></a>  <span class="dt">set =</span> <span class="kw">pickCoef</span>(RC1, <span class="st">&quot;[.]SES&quot;</span>),</span>
+<span id="cb98-7"><a href="8-Note.html#cb98-7"></a>  <span class="dt">ref =</span> rowProbs,</span>
+<span id="cb98-8"><a href="8-Note.html#cb98-8"></a>  <span class="dt">scaleRef =</span> rowProbs,</span>
+<span id="cb98-9"><a href="8-Note.html#cb98-9"></a>  <span class="dt">scaleWeights =</span> rowProbs</span>
+<span id="cb98-10"><a href="8-Note.html#cb98-10"></a>)</span>
+<span id="cb98-11"><a href="8-Note.html#cb98-11"></a>nu &lt;-<span class="st"> </span><span class="kw">getContrasts</span>(</span>
+<span id="cb98-12"><a href="8-Note.html#cb98-12"></a>  <span class="dt">model =</span> RC1,</span>
+<span id="cb98-13"><a href="8-Note.html#cb98-13"></a>  <span class="dt">set =</span> <span class="kw">pickCoef</span>(RC1, <span class="st">&quot;[.]MHS&quot;</span>),</span>
+<span id="cb98-14"><a href="8-Note.html#cb98-14"></a>  <span class="dt">ref =</span> colProbs,</span>
+<span id="cb98-15"><a href="8-Note.html#cb98-15"></a>  <span class="dt">scaleRef =</span> colProbs,</span>
+<span id="cb98-16"><a href="8-Note.html#cb98-16"></a>  <span class="dt">scaleWeights =</span> colProbs</span>
+<span id="cb98-17"><a href="8-Note.html#cb98-17"></a>)</span>
+<span id="cb98-18"><a href="8-Note.html#cb98-18"></a>con &lt;-<span class="st"> </span><span class="kw">c</span>(mu<span class="op">$</span>qvframe[, <span class="dv">1</span>][<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">6</span>)], nu<span class="op">$</span>qvframe[, <span class="dv">1</span>][<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>)])</span>
+<span id="cb98-19"><a href="8-Note.html#cb98-19"></a>mu</span></code></pre></div>
+<pre><code>                        Estimate Std. Error
+Mult(1, ., MHS).SESA -1.11233093  0.2990944
+Mult(1, ., MHS).SESB -1.12143720  0.3138906
+Mult(1, ., MHS).SESC -0.37107614  0.3194546
+Mult(1, ., MHS).SESD  0.02702955  0.2734878
+Mult(1, ., MHS).SESE  1.01036159  0.3149487
+Mult(1, ., MHS).SESF  1.81823273  0.2824637</code></pre>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="8-Note.html#cb100-1"></a>nu</span></code></pre></div>
+<pre><code>                              Estimate Std. Error
+Mult(1, SES, .).MHSwell     -1.6775143  0.1941179
+Mult(1, SES, .).MHSmild     -0.1403989  0.2002803
+Mult(1, SES, .).MHSmoderate  0.1369924  0.2799954
+Mult(1, SES, .).MHSimpaired  1.4136910  0.1724133</code></pre>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="8-Note.html#cb102-1"></a>con</span></code></pre></div>
+<pre><code>[1] -1.112331  1.818233 -1.677514  1.413691</code></pre>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="8-Note.html#cb104-1"></a><span class="co"># 正規化制約を確認</span></span>
+<span id="cb104-2"><a href="8-Note.html#cb104-2"></a><span class="kw">all.equal</span>(<span class="kw">sum</span>(mu<span class="op">$</span>qvframe[, <span class="dv">1</span>] <span class="op">*</span><span class="st"> </span>rowProbs), <span class="dv">0</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="8-Note.html#cb106-1"></a><span class="kw">all.equal</span>(<span class="kw">sum</span>(nu<span class="op">$</span>qvframe[, <span class="dv">1</span>] <span class="op">*</span><span class="st"> </span>colProbs), <span class="dv">0</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="8-Note.html#cb108-1"></a><span class="kw">all.equal</span>(<span class="kw">sum</span>(mu<span class="op">$</span>qvframe[, <span class="dv">1</span>] <span class="op">^</span><span class="st"> </span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>rowProbs), <span class="dv">1</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="8-Note.html#cb110-1"></a><span class="kw">all.equal</span>(<span class="kw">sum</span>(nu<span class="op">$</span>qvframe[, <span class="dv">1</span>] <span class="op">^</span><span class="st"> </span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>colProbs), <span class="dv">1</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="8-Note.html#cb112-1"></a>RC1 &lt;-<span class="st"> </span><span class="kw">gnm</span>(</span>
+<span id="cb112-2"><a href="8-Note.html#cb112-2"></a>  count <span class="op">~</span><span class="st"> </span>SES <span class="op">+</span><span class="st"> </span>MHS <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, SES, MHS),</span>
+<span id="cb112-3"><a href="8-Note.html#cb112-3"></a>  <span class="dt">constrain =</span> <span class="kw">c</span>(<span class="dv">11</span>, <span class="dv">16</span>, <span class="dv">17</span>, <span class="dv">20</span>),</span>
+<span id="cb112-4"><a href="8-Note.html#cb112-4"></a>  <span class="dt">constrainTo =</span> con,</span>
+<span id="cb112-5"><a href="8-Note.html#cb112-5"></a>  <span class="dt">start =</span> <span class="kw">c</span>(<span class="kw">coef</span>(O), <span class="ot">NA</span>, mult1),</span>
+<span id="cb112-6"><a href="8-Note.html#cb112-6"></a>  <span class="dt">family =</span> poisson,</span>
+<span id="cb112-7"><a href="8-Note.html#cb112-7"></a>  <span class="dt">data =</span> mentalHealth,</span>
+<span id="cb112-8"><a href="8-Note.html#cb112-8"></a>  <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb112-9"><a href="8-Note.html#cb112-9"></a>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations.........................................
+Done</code></pre>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="8-Note.html#cb114-1"></a><span class="kw">summary</span>(RC1)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = count ~ SES + MHS + Mult(1, SES, MHS), constrain = c(11, 
+    16, 17, 20), constrainTo = con, family = poisson, data = mentalHealth, 
+    start = c(coef(O), NA, mult1), tolerance = 1e-12)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.87231  -0.30982   0.01026   0.29898   0.87866  
+
+Coefficients:
+                            Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                  3.83919    0.10014  38.338  &lt; 2e-16 ***
+SESB                        -0.06736    0.09033  -0.746   0.4558    
+SESC                         0.10590    0.08929   1.186   0.2356    
+SESD                         0.39873    0.08826   4.517 6.26e-06 ***
+SESE                         0.01363    0.11020   0.124   0.9016    
+SESF                        -0.21674    0.13232  -1.638   0.1014    
+MHSmild                      0.71134    0.09556   7.444 9.77e-14 ***
+MHSmoderate                  0.20306    0.10841   1.873   0.0611 .  
+MHSimpaired                  0.24846    0.14842   1.674   0.0941 .  
+Mult(., SES, MHS).           0.16649    0.03306   5.036 4.76e-07 ***
+Mult(1, ., MHS).SESA        -1.11233         NA      NA       NA    
+Mult(1, ., MHS).SESB        -1.12144    0.53209  -2.108   0.0351 *  
+Mult(1, ., MHS).SESC        -0.37108    0.46573  -0.797   0.4256    
+Mult(1, ., MHS).SESD         0.02703    0.42248   0.064   0.9490    
+Mult(1, ., MHS).SESE         1.01036    0.50501   2.001   0.0454 *  
+Mult(1, ., MHS).SESF         1.81823         NA      NA       NA    
+Mult(1, SES, .).MHSwell     -1.67751         NA      NA       NA    
+Mult(1, SES, .).MHSmild     -0.14040    0.34961  -0.402   0.6880    
+Mult(1, SES, .).MHSmoderate  0.13699    0.39621   0.346   0.7295    
+Mult(1, SES, .).MHSimpaired  1.41369         NA      NA       NA    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: 3.5706 on 8 degrees of freedom
+AIC: 179.74
+
+Number of iterations: 41</code></pre>
+</div>
+<div id="初期値" class="section level2" number="7.8">
+<h2><span class="header-section-number">7.8</span> 初期値</h2>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="8-Note.html#cb116-1"></a><span class="co"># データの準備</span></span>
+<span id="cb116-2"><a href="8-Note.html#cb116-2"></a>Freq &lt;-<span class="st"> </span><span class="kw">c</span>( <span class="dv">39</span>, <span class="dv">50</span>, <span class="dv">18</span>,  <span class="dv">4</span>,</span>
+<span id="cb116-3"><a href="8-Note.html#cb116-3"></a>          <span class="dv">140</span>,<span class="dv">178</span>, <span class="dv">85</span>, <span class="dv">23</span>,</span>
+<span id="cb116-4"><a href="8-Note.html#cb116-4"></a>          <span class="dv">108</span>,<span class="dv">195</span>, <span class="dv">97</span>, <span class="dv">23</span>,</span>
+<span id="cb116-5"><a href="8-Note.html#cb116-5"></a>          <span class="dv">238</span>,<span class="dv">598</span>,<span class="dv">363</span>,<span class="dv">111</span>,</span>
+<span id="cb116-6"><a href="8-Note.html#cb116-6"></a>           <span class="dv">78</span>,<span class="dv">250</span>,<span class="dv">150</span>, <span class="dv">55</span>,</span>
+<span id="cb116-7"><a href="8-Note.html#cb116-7"></a>           <span class="dv">50</span>,<span class="dv">200</span>,<span class="dv">208</span>, <span class="dv">74</span>,</span>
+<span id="cb116-8"><a href="8-Note.html#cb116-8"></a>            <span class="dv">8</span>, <span class="dv">29</span>, <span class="dv">46</span>, <span class="dv">21</span>)</span>
+<span id="cb116-9"><a href="8-Note.html#cb116-9"></a></span>
+<span id="cb116-10"><a href="8-Note.html#cb116-10"></a></span>
+<span id="cb116-11"><a href="8-Note.html#cb116-11"></a>tab_<span class="fl">2.3</span>A &lt;-</span>
+<span id="cb116-12"><a href="8-Note.html#cb116-12"></a><span class="st">  </span><span class="kw">matrix</span>(Freq,</span>
+<span id="cb116-13"><a href="8-Note.html#cb116-13"></a>         <span class="dt">nrow =</span> <span class="dv">7</span>,</span>
+<span id="cb116-14"><a href="8-Note.html#cb116-14"></a>         <span class="dt">ncol =</span> <span class="dv">4</span>,</span>
+<span id="cb116-15"><a href="8-Note.html#cb116-15"></a>         <span class="dt">byrow =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">as.table</span>()</span>
+<span id="cb116-16"><a href="8-Note.html#cb116-16"></a></span>
+<span id="cb116-17"><a href="8-Note.html#cb116-17"></a>polviews &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> <span class="dv">7</span>, <span class="dt">k =</span> <span class="dv">4</span>)</span>
+<span id="cb116-18"><a href="8-Note.html#cb116-18"></a>fefam &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> <span class="dv">4</span>, <span class="dt">k =</span> <span class="dv">1</span>, <span class="dt">length =</span> <span class="dv">28</span>)</span>
+<span id="cb116-19"><a href="8-Note.html#cb116-19"></a>freq_tab_<span class="fl">2.3</span>A &lt;-<span class="st"> </span><span class="kw">tibble</span>(Freq, polviews, fefam)</span>
+<span id="cb116-20"><a href="8-Note.html#cb116-20"></a>freq_tab_<span class="fl">2.3</span>A</span></code></pre></div>
+<pre><code># A tibble: 28 x 3
+    Freq polviews fefam
+   &lt;dbl&gt; &lt;fct&gt;    &lt;fct&gt;
+ 1    39 1        1    
+ 2    50 1        2    
+ 3    18 1        3    
+ 4     4 1        4    
+ 5   140 2        1    
+ 6   178 2        2    
+ 7    85 2        3    
+ 8    23 2        4    
+ 9   108 3        1    
+10   195 3        2    
+11    97 3        3    
+12    23 3        4    
+13   238 4        1    
+14   598 4        2    
+15   363 4        3    
+16   111 4        4    
+17    78 5        1    
+18   250 5        2    
+19   150 5        3    
+20    55 5        4    
+21    50 6        1    
+22   200 6        2    
+23   208 6        3    
+24    74 6        4    
+25     8 7        1    
+26    29 7        2    
+27    46 7        3    
+28    21 7        4    </code></pre>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="8-Note.html#cb118-1"></a><span class="co"># 独立モデル</span></span>
+<span id="cb118-2"><a href="8-Note.html#cb118-2"></a>O &lt;-<span class="st"> </span><span class="kw">gnm</span>(</span>
+<span id="cb118-3"><a href="8-Note.html#cb118-3"></a>  Freq <span class="op">~</span><span class="st"> </span>polviews <span class="op">+</span><span class="st"> </span>fefam,</span>
+<span id="cb118-4"><a href="8-Note.html#cb118-4"></a>  <span class="dt">family =</span> poisson,</span>
+<span id="cb118-5"><a href="8-Note.html#cb118-5"></a>  <span class="dt">data =</span> freq_tab_<span class="fl">2.3</span>A,</span>
+<span id="cb118-6"><a href="8-Note.html#cb118-6"></a>  <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb118-7"><a href="8-Note.html#cb118-7"></a>)</span>
+<span id="cb118-8"><a href="8-Note.html#cb118-8"></a></span>
+<span id="cb118-9"><a href="8-Note.html#cb118-9"></a><span class="kw">var_num</span>(O)</span></code></pre></div>
+<pre><code>                    var   estimate number
+(Intercept) (Intercept)  3.0603480      1
+polviews2     polviews2  1.3449091      2
+polviews3     polviews3  1.3378420      3
+polviews4     polviews4  2.4682522      4
+polviews5     polviews5  1.5689912      5
+polviews6     polviews6  1.5671133      6
+polviews7     polviews7 -0.0651393      7
+fefam2           fefam2  0.8194665      8
+fefam3           fefam3  0.3804447      9
+fefam4           fefam4 -0.7539609     10</code></pre>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="8-Note.html#cb120-1"></a>RC &lt;-<span class="st"> </span>freq_tab_<span class="fl">2.3</span>A <span class="op">%&gt;%</span></span>
+<span id="cb120-2"><a href="8-Note.html#cb120-2"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb120-3"><a href="8-Note.html#cb120-3"></a>    Freq <span class="op">~</span><span class="st"> </span>polviews <span class="op">+</span><span class="st"> </span>fefam <span class="op">+</span></span>
+<span id="cb120-4"><a href="8-Note.html#cb120-4"></a><span class="st">      </span><span class="kw">Mult</span>(<span class="dv">1</span>, polviews, fefam),</span>
+<span id="cb120-5"><a href="8-Note.html#cb120-5"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb120-6"><a href="8-Note.html#cb120-6"></a>    <span class="dt">data =</span> .,</span>
+<span id="cb120-7"><a href="8-Note.html#cb120-7"></a>    <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb120-8"><a href="8-Note.html#cb120-8"></a>  )</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations.............................
+Done</code></pre>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="8-Note.html#cb122-1"></a><span class="kw">var_num</span>(RC)</span></code></pre></div>
+<pre><code>                                                    var     estimate number
+(Intercept)                                 (Intercept)  2.902702351      1
+polviews2                                     polviews2  1.390548385      2
+polviews3                                     polviews3  1.427149259      3
+polviews4                                     polviews4  2.586614669      4
+polviews5                                     polviews5  1.686005670      5
+polviews6                                     polviews6  1.625948840      6
+polviews7                                     polviews7 -0.114101970      7
+fefam2                                           fefam2  0.889280567      8
+fefam3                                           fefam3  0.414411068      9
+fefam4                                           fefam4 -0.767263370     10
+Mult(., polviews, fefam).     Mult(., polviews, fefam).  0.354847803     11
+Mult(1, ., fefam).polviews1 Mult(1, ., fefam).polviews1 -4.642973712     12
+Mult(1, ., fefam).polviews2 Mult(1, ., fefam).polviews2 -3.587221086     13
+Mult(1, ., fefam).polviews3 Mult(1, ., fefam).polviews3 -2.177313147     14
+Mult(1, ., fefam).polviews4 Mult(1, ., fefam).polviews4 -0.001967734     15
+Mult(1, ., fefam).polviews5 Mult(1, ., fefam).polviews5  0.933577006     16
+Mult(1, ., fefam).polviews6 Mult(1, ., fefam).polviews6  3.992993583     17
+Mult(1, ., fefam).polviews7 Mult(1, ., fefam).polviews7  6.608154593     18
+Mult(1, polviews, .).fefam1 Mult(1, polviews, .).fefam1 -0.468986130     19
+Mult(1, polviews, .).fefam2 Mult(1, polviews, .).fefam2 -0.061831609     20
+Mult(1, polviews, .).fefam3 Mult(1, polviews, .).fefam3  0.255547101     21
+Mult(1, polviews, .).fefam4 Mult(1, polviews, .).fefam4  0.406103105     22</code></pre>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="8-Note.html#cb124-1"></a>mult1 &lt;-<span class="st"> </span><span class="kw">residSVD</span>(O, polviews, fefam)</span>
+<span id="cb124-2"><a href="8-Note.html#cb124-2"></a>mult2 &lt;-<span class="st"> </span><span class="kw">residSVD</span>(O, polviews, fefam, <span class="dt">d =</span> <span class="dv">2</span>)</span>
+<span id="cb124-3"><a href="8-Note.html#cb124-3"></a>mult3 &lt;-<span class="st"> </span><span class="kw">residSVD</span>(O, polviews, fefam, <span class="dt">d =</span> <span class="dv">3</span>)</span>
+<span id="cb124-4"><a href="8-Note.html#cb124-4"></a></span>
+<span id="cb124-5"><a href="8-Note.html#cb124-5"></a>RC &lt;-<span class="st"> </span>freq_tab_<span class="fl">2.3</span>A <span class="op">%&gt;%</span></span>
+<span id="cb124-6"><a href="8-Note.html#cb124-6"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb124-7"><a href="8-Note.html#cb124-7"></a>    Freq <span class="op">~</span><span class="st"> </span>polviews <span class="op">+</span><span class="st"> </span>fefam <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, polviews, fefam),</span>
+<span id="cb124-8"><a href="8-Note.html#cb124-8"></a>    <span class="dt">start =</span> <span class="kw">c</span>(<span class="kw">coef</span>(O), <span class="ot">NA</span>, mult1),</span>
+<span id="cb124-9"><a href="8-Note.html#cb124-9"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb124-10"><a href="8-Note.html#cb124-10"></a>    <span class="dt">data =</span> .,</span>
+<span id="cb124-11"><a href="8-Note.html#cb124-11"></a>    <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb124-12"><a href="8-Note.html#cb124-12"></a>  )</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations........................................
+Done</code></pre>
+<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="8-Note.html#cb126-1"></a><span class="kw">summary</span>(RC)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ polviews + fefam + Mult(1, polviews, fefam), 
+    family = poisson, data = ., start = c(coef(O), NA, mult1), 
+    tolerance = 1e-12)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-1.07428  -0.27239   0.03038   0.36792   1.03721  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(&gt;|z|)
+(Intercept)                  2.9230044         NA      NA       NA
+polviews2                    1.3860689         NA      NA       NA
+polviews3                    1.4166876         NA      NA       NA
+polviews4                    2.5669231         NA      NA       NA
+polviews5                    1.6623446         NA      NA       NA
+polviews6                    1.5893068         NA      NA       NA
+polviews7                   -0.1618400         NA      NA       NA
+fefam2                       0.8887442         NA      NA       NA
+fefam3                       0.4134566         NA      NA       NA
+fefam4                      -0.7684162         NA      NA       NA
+Mult(., polviews, fefam).    1.0565632         NA      NA       NA
+Mult(1, ., fefam).polviews1 -0.6984575         NA      NA       NA
+Mult(1, ., fefam).polviews2 -0.5395102         NA      NA       NA
+Mult(1, ., fefam).polviews3 -0.3272434         NA      NA       NA
+Mult(1, ., fefam).polviews4  0.0002627         NA      NA       NA
+Mult(1, ., fefam).polviews5  0.1411123         NA      NA       NA
+Mult(1, ., fefam).polviews6  0.6017186         NA      NA       NA
+Mult(1, ., fefam).polviews7  0.9954405         NA      NA       NA
+Mult(1, polviews, .).fefam1 -1.0195282         NA      NA       NA
+Mult(1, polviews, .).fefam2 -0.1112587         NA      NA       NA
+Mult(1, polviews, .).fefam3  0.5967413         NA      NA       NA
+Mult(1, polviews, .).fefam4  0.9325976         NA      NA       NA
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: 8.0718 on 10 degrees of freedom
+AIC: 215.43
+
+Number of iterations: 40</code></pre>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="8-Note.html#cb128-1"></a>RC2 &lt;-<span class="st"> </span>freq_tab_<span class="fl">2.3</span>A <span class="op">%&gt;%</span></span>
+<span id="cb128-2"><a href="8-Note.html#cb128-2"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb128-3"><a href="8-Note.html#cb128-3"></a>    Freq <span class="op">~</span><span class="st"> </span>polviews <span class="op">+</span><span class="st"> </span>fefam <span class="op">+</span></span>
+<span id="cb128-4"><a href="8-Note.html#cb128-4"></a><span class="st">      </span><span class="kw">Mult</span>(<span class="dv">1</span>, polviews, fefam, <span class="dt">inst =</span> <span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb128-5"><a href="8-Note.html#cb128-5"></a><span class="st">      </span><span class="kw">Mult</span>(<span class="dv">1</span>, polviews, fefam, <span class="dt">inst =</span> <span class="dv">2</span>),</span>
+<span id="cb128-6"><a href="8-Note.html#cb128-6"></a>    <span class="dt">start =</span> <span class="kw">c</span>(<span class="kw">coef</span>(O), <span class="ot">NA</span>, mult2[, <span class="dv">1</span>], <span class="ot">NA</span>, mult2[, <span class="dv">2</span>]),</span>
+<span id="cb128-7"><a href="8-Note.html#cb128-7"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb128-8"><a href="8-Note.html#cb128-8"></a>    <span class="dt">data =</span> .,</span>
+<span id="cb128-9"><a href="8-Note.html#cb128-9"></a>    <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb128-10"><a href="8-Note.html#cb128-10"></a>  )</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations.........................................................
+.......................
+Done</code></pre>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="8-Note.html#cb130-1"></a><span class="kw">summary</span>(RC2)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ polviews + fefam + Mult(1, polviews, fefam, 
+    inst = 1) + Mult(1, polviews, fefam, inst = 2), family = poisson, 
+    data = ., start = c(coef(O), NA, mult2[, 1], NA, mult2[, 
+        2]), tolerance = 1e-12)
+
+Deviance Residuals: 
+      Min         1Q     Median         3Q        Max  
+-0.500439  -0.068726  -0.002705   0.066147   0.535693  
+
+Coefficients:
+                                      Estimate Std. Error z value Pr(&gt;|z|)
+(Intercept)                            2.91818         NA      NA       NA
+polviews2                              1.39397         NA      NA       NA
+polviews3                              1.41864         NA      NA       NA
+polviews4                              2.56797         NA      NA       NA
+polviews5                              1.65784         NA      NA       NA
+polviews6                              1.59467         NA      NA       NA
+polviews7                             -0.14115         NA      NA       NA
+fefam2                                 0.88413         NA      NA       NA
+fefam3                                 0.42556         NA      NA       NA
+fefam4                                -0.75373         NA      NA       NA
+Mult(., polviews, fefam, inst = 1).    1.00493         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews1 -0.75964         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews2 -0.52028         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews3 -0.35691         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews4 -0.01452         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews5  0.12908         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews6  0.60927         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews7  0.95886         NA      NA       NA
+Mult(1, polviews, ., inst = 1).fefam1 -0.91476         NA      NA       NA
+Mult(1, polviews, ., inst = 1).fefam2 -0.19195         NA      NA       NA
+Mult(1, polviews, ., inst = 1).fefam3  0.63323         NA      NA       NA
+Mult(1, polviews, ., inst = 1).fefam4  0.96988         NA      NA       NA
+Mult(., polviews, fefam, inst = 2).    0.63836         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews1  0.14115         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews2  0.43421         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews3  0.06788         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews4 -0.07766         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews5 -0.33262         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews6 -0.06627         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews7  0.39888         NA      NA       NA
+Mult(1, polviews, ., inst = 2).fefam1  0.53563         NA      NA       NA
+Mult(1, polviews, ., inst = 2).fefam2 -0.41196         NA      NA       NA
+Mult(1, polviews, ., inst = 2).fefam3  0.20278         NA      NA       NA
+Mult(1, polviews, ., inst = 2).fefam4  0.06538         NA      NA       NA
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: 1.3691 on 4 degrees of freedom
+AIC: 220.72
+
+Number of iterations: 80</code></pre>
+<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="8-Note.html#cb132-1"></a>RC3 &lt;-<span class="st"> </span>freq_tab_<span class="fl">2.3</span>A <span class="op">%&gt;%</span></span>
+<span id="cb132-2"><a href="8-Note.html#cb132-2"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb132-3"><a href="8-Note.html#cb132-3"></a>    Freq <span class="op">~</span><span class="st"> </span>polviews <span class="op">+</span><span class="st"> </span>fefam <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, polviews, fefam, <span class="dt">inst =</span> <span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb132-4"><a href="8-Note.html#cb132-4"></a><span class="st">      </span><span class="kw">Mult</span>(<span class="dv">1</span>, polviews, fefam, <span class="dt">inst =</span> <span class="dv">2</span>) <span class="op">+</span></span>
+<span id="cb132-5"><a href="8-Note.html#cb132-5"></a><span class="st">      </span><span class="kw">Mult</span>(<span class="dv">1</span>, polviews, fefam, <span class="dt">inst =</span> <span class="dv">3</span>),</span>
+<span id="cb132-6"><a href="8-Note.html#cb132-6"></a>    <span class="dt">start =</span> <span class="kw">c</span>(<span class="kw">coef</span>(O), <span class="ot">NA</span>, mult3[, <span class="dv">1</span>], <span class="ot">NA</span>, mult3[, <span class="dv">2</span>], <span class="ot">NA</span>, mult3[, <span class="dv">3</span>]),</span>
+<span id="cb132-7"><a href="8-Note.html#cb132-7"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb132-8"><a href="8-Note.html#cb132-8"></a>    <span class="dt">data =</span> .,</span>
+<span id="cb132-9"><a href="8-Note.html#cb132-9"></a>    <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb132-10"><a href="8-Note.html#cb132-10"></a>  )</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations....
+Done</code></pre>
+<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="8-Note.html#cb134-1"></a><span class="kw">summary</span>(RC3)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ polviews + fefam + Mult(1, polviews, fefam, 
+    inst = 1) + Mult(1, polviews, fefam, inst = 2) + Mult(1, 
+    polviews, fefam, inst = 3), family = poisson, data = ., start = c(coef(O), 
+    NA, mult3[, 1], NA, mult3[, 2], NA, mult3[, 3]), tolerance = 1e-12)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+     0       0       0       0       0  
+
+Coefficients:
+                                      Estimate Std. Error z value Pr(&gt;|z|)
+(Intercept)                            2.91911         NA      NA       NA
+polviews2                              1.39510         NA      NA       NA
+polviews3                              1.41762         NA      NA       NA
+polviews4                              2.56789         NA      NA       NA
+polviews5                              1.65780         NA      NA       NA
+polviews6                              1.59247         NA      NA       NA
+polviews7                             -0.13766         NA      NA       NA
+fefam2                                 0.88275         NA      NA       NA
+fefam3                                 0.42469         NA      NA       NA
+fefam4                                -0.75453         NA      NA       NA
+Mult(., polviews, fefam, inst = 1).    1.00012         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews1 -0.77447         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews2 -0.50580         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews3 -0.39714         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews4 -0.01256         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews5  0.16821         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews6  0.59267         NA      NA       NA
+Mult(1, ., fefam, inst = 1).polviews7  0.93686         NA      NA       NA
+Mult(1, polviews, ., inst = 1).fefam1 -0.91235         NA      NA       NA
+Mult(1, polviews, ., inst = 1).fefam2 -0.18084         NA      NA       NA
+Mult(1, polviews, ., inst = 1).fefam3  0.60069         NA      NA       NA
+Mult(1, polviews, ., inst = 1).fefam4  1.02514         NA      NA       NA
+Mult(., polviews, fefam, inst = 2).    0.61713         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews1  0.11253         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews2  0.48025         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews3 -0.03267         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews4 -0.07847         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews5 -0.22089         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews6 -0.15511         NA      NA       NA
+Mult(1, ., fefam, inst = 2).polviews7  0.45886         NA      NA       NA
+Mult(1, polviews, ., inst = 2).fefam1  0.55593         NA      NA       NA
+Mult(1, polviews, ., inst = 2).fefam2 -0.37731         NA      NA       NA
+Mult(1, polviews, ., inst = 2).fefam3  0.06148         NA      NA       NA
+Mult(1, polviews, ., inst = 2).fefam4  0.29589         NA      NA       NA
+Mult(., polviews, fefam, inst = 3).    0.93372         NA      NA       NA
+Mult(1, ., fefam, inst = 3).polviews1  0.02726         NA      NA       NA
+Mult(1, ., fefam, inst = 3).polviews2 -0.03814         NA      NA       NA
+Mult(1, ., fefam, inst = 3).polviews3  0.19104         NA      NA       NA
+Mult(1, ., fefam, inst = 3).polviews4 -0.02432         NA      NA       NA
+Mult(1, ., fefam, inst = 3).polviews5 -0.30078         NA      NA       NA
+Mult(1, ., fefam, inst = 3).polviews6  0.18379         NA      NA       NA
+Mult(1, ., fefam, inst = 3).polviews7  0.15199         NA      NA       NA
+Mult(1, polviews, ., inst = 3).fefam1 -0.03233         NA      NA       NA
+Mult(1, polviews, ., inst = 3).fefam2 -0.14527         NA      NA       NA
+Mult(1, polviews, ., inst = 3).fefam3  0.29780         NA      NA       NA
+Mult(1, polviews, ., inst = 3).fefam4 -0.18814         NA      NA       NA
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: -2.3537e-14 on 0 degrees of freedom
+AIC: 227.35
+
+Number of iterations: 4</code></pre>
+<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="8-Note.html#cb136-1"></a><span class="kw">library</span>(logmult)</span>
+<span id="cb136-2"><a href="8-Note.html#cb136-2"></a>anoas_model &lt;-<span class="st"> </span><span class="kw">anoas</span>(tab_<span class="fl">2.3</span>A, <span class="dt">nd =</span> <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>Fitting independence model...
+Fitting model with 1 dimension...
+Initialising
+Running start-up iterations..
+Running main iterations..............
+Done
+Fitting model with 2 dimensions...
+Initialising
+Running start-up iterations..
+Running main iterations.......................
+Done
+Fitting model with 3 dimensions...
+Initialising
+Running start-up iterations..
+Running main iterations...
+Done</code></pre>
+<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="8-Note.html#cb138-1"></a>anoas_model</span></code></pre></div>
+<pre><code>       Res. Df            Res. Dev     Dev./Indep. (%)     Dissim. (%)
+Indep.      18 211.695089741757073 100.000000000000000 8.0917102896466
+RC(1)       10   8.071818928150059   3.812945750417132 1.7673079271677
+RC(2)        4   1.369090988460774   0.646727796157626 0.4963921459458
+RC(3)        0   0.000000000000004   0.000000000000002 0.0000000000002
+                       BIC                 AIC Dev. Df
+Indep.  65.122241553976295 175.695089741757073   NA NA
+RC(1)  -73.357541176172589 -11.928181071849941 -204 -8
+RC(2)  -31.202653053268289  -6.630909011539226   -7 -6
+RC(3)    0.000000000000004   0.000000000000004   -1 -4</code></pre>
+<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="8-Note.html#cb140-1"></a><span class="kw">summary</span>(anoas_model)</span></code></pre></div>
+<pre><code>       Res. Df            Res. Dev     Dev./Indep. (%)     Dissim. (%)
+Indep.      18 211.695089741757073 100.000000000000000 8.0917102896466
+RC(1)       10   8.071818928150059   3.812945750417132 1.7673079271677
+RC(2)        4   1.369090988460774   0.646727796157626 0.4963921459458
+RC(3)        0   0.000000000000004   0.000000000000002 0.0000000000002
+                       BIC                 AIC Dev. Df
+Indep.  65.122241553976295 175.695089741757073   NA NA
+RC(1)  -73.357541176172589 -11.928181071849941 -204 -8
+RC(2)  -31.202653053268289  -6.630909011539226   -7 -6
+RC(3)    0.000000000000004   0.000000000000004   -1 -4</code></pre>
+<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="8-Note.html#cb142-1"></a><span class="kw">rc</span>(tab_<span class="fl">2.3</span>A, <span class="dt">d =</span> <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations............
+Done</code></pre>
+<pre><code>Call:
+rc(tab = tab_2.3A, diagonal = 3)
+
+Intrinsic association coefficients:
+ Dim1 
+0.259 
+
+Normalized row scores (Rows):
+      A       B       C       D       E       F       G 
+ 1.4876  1.3963  1.1207 -0.0203 -0.3155 -1.4779 -2.4334 
+
+Normalized column scores (Columns):
+     A      B      C      D 
+ 1.475  0.354 -1.077 -1.492 
+
+Diagonal coefficients:
+    A:A     B:B     C:C     D:D     E:A     F:B     G:C 
+ 0.2586 -0.2981  0.2310 -0.0498  0.2586 -0.2981  0.2310 
+
+Normalization weights: marginal
+Deviance:              3.191348
+Pearson chi-squared:   3.221668
+Dissimilarity index:   0.9476085%
+Residual df:           6
+BIC:                   -45.66627
+AIC:                   -8.808652</code></pre>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="8-Note.html#cb145-1"></a><span class="kw">bind_rows</span>(<span class="kw">model.summary</span>(O),</span>
+<span id="cb145-2"><a href="8-Note.html#cb145-2"></a>          <span class="kw">model.summary</span>(RC),</span>
+<span id="cb145-3"><a href="8-Note.html#cb145-3"></a>          <span class="kw">model.summary</span>(RC2),</span>
+<span id="cb145-4"><a href="8-Note.html#cb145-4"></a>          <span class="kw">model.summary</span>(RC3))</span></code></pre></div>
+<pre><code># A tibble: 4 x 6
+  `Model Description`    df        L2       BIC    Delta     p
+  &lt;chr&gt;               &lt;int&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;
+1 O                      18  2.12e+ 2  6.51e+ 1 8.09e+ 0 1    
+2 RC                     10  8.07e+ 0 -7.34e+ 1 1.77e+ 0 0.378
+3 RC2                     4  1.37e+ 0 -3.12e+ 1 4.96e- 1 0.150
+4 RC3                     0 -2.35e-14 -2.35e-14 2.65e-14 0    </code></pre>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="8-Note.html#cb147-1"></a><span class="co">## 表2.3B</span></span>
+<span id="cb147-2"><a href="8-Note.html#cb147-2"></a>Freq &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">518</span>,  <span class="dv">95</span>, <span class="dv">6</span>, <span class="dv">35</span>, <span class="dv">5</span>,</span>
+<span id="cb147-3"><a href="8-Note.html#cb147-3"></a>         　 <span class="dv">81</span>,  <span class="dv">67</span>, <span class="dv">4</span>, <span class="dv">49</span>, <span class="dv">2</span>,</span>
+<span id="cb147-4"><a href="8-Note.html#cb147-4"></a>          <span class="dv">452</span>,<span class="dv">1003</span>,<span class="dv">67</span>,<span class="dv">630</span>, <span class="dv">5</span>,</span>
+<span id="cb147-5"><a href="8-Note.html#cb147-5"></a>           <span class="dv">71</span>, <span class="dv">157</span>,<span class="dv">37</span>,<span class="dv">562</span>,<span class="dv">12</span>)</span>
+<span id="cb147-6"><a href="8-Note.html#cb147-6"></a></span>
+<span id="cb147-7"><a href="8-Note.html#cb147-7"></a></span>
+<span id="cb147-8"><a href="8-Note.html#cb147-8"></a><span class="co"># データを表形式に変換</span></span>
+<span id="cb147-9"><a href="8-Note.html#cb147-9"></a>tab_<span class="fl">2.3</span>B &lt;-</span>
+<span id="cb147-10"><a href="8-Note.html#cb147-10"></a><span class="st">  </span><span class="kw">matrix</span>(Freq,</span>
+<span id="cb147-11"><a href="8-Note.html#cb147-11"></a>         <span class="dt">nrow =</span> <span class="dv">4</span>,</span>
+<span id="cb147-12"><a href="8-Note.html#cb147-12"></a>         <span class="dt">ncol =</span> <span class="dv">5</span>,</span>
+<span id="cb147-13"><a href="8-Note.html#cb147-13"></a>         <span class="dt">byrow =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">as.table</span>()</span>
+<span id="cb147-14"><a href="8-Note.html#cb147-14"></a></span>
+<span id="cb147-15"><a href="8-Note.html#cb147-15"></a>tab_<span class="fl">2.3</span>B</span></code></pre></div>
+<pre><code>     A    B    C    D    E
+A  518   95    6   35    5
+B   81   67    4   49    2
+C  452 1003   67  630    5
+D   71  157   37  562   12</code></pre>
+<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="8-Note.html#cb149-1"></a><span class="co"># 度数，行変数，列変数からなる集計データを作成</span></span>
+<span id="cb149-2"><a href="8-Note.html#cb149-2"></a>Educ &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> <span class="dv">4</span>, <span class="dt">k =</span> <span class="dv">5</span>)</span>
+<span id="cb149-3"><a href="8-Note.html#cb149-3"></a>Occ &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> <span class="dv">5</span>, <span class="dt">k =</span> <span class="dv">1</span>, <span class="dt">length =</span> <span class="dv">20</span>)</span>
+<span id="cb149-4"><a href="8-Note.html#cb149-4"></a>freq_tab_<span class="fl">2.3</span>B &lt;-<span class="st"> </span><span class="kw">tibble</span>(Freq, Educ, Occ)</span>
+<span id="cb149-5"><a href="8-Note.html#cb149-5"></a>freq_tab_<span class="fl">2.3</span>B</span></code></pre></div>
+<pre><code># A tibble: 20 x 3
+    Freq Educ  Occ  
+   &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;
+ 1   518 1     1    
+ 2    95 1     2    
+ 3     6 1     3    
+ 4    35 1     4    
+ 5     5 1     5    
+ 6    81 2     1    
+ 7    67 2     2    
+ 8     4 2     3    
+ 9    49 2     4    
+10     2 2     5    
+11   452 3     1    
+12  1003 3     2    
+13    67 3     3    
+14   630 3     4    
+15     5 3     5    
+16    71 4     1    
+17   157 4     2    
+18    37 4     3    
+19   562 4     4    
+20    12 4     5    </code></pre>
+<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="8-Note.html#cb151-1"></a>O &lt;-<span class="st"> </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>Educ <span class="op">+</span><span class="st"> </span>Occ,</span>
+<span id="cb151-2"><a href="8-Note.html#cb151-2"></a>         <span class="dt">family =</span> poisson,</span>
+<span id="cb151-3"><a href="8-Note.html#cb151-3"></a>         <span class="dt">data =</span> freq_tab_<span class="fl">2.3</span>B,</span>
+<span id="cb151-4"><a href="8-Note.html#cb151-4"></a>         <span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span>
+<span id="cb151-5"><a href="8-Note.html#cb151-5"></a></span>
+<span id="cb151-6"><a href="8-Note.html#cb151-6"></a>mult1 &lt;-<span class="st"> </span><span class="kw">residSVD</span>(O, Educ, Occ)</span>
+<span id="cb151-7"><a href="8-Note.html#cb151-7"></a>mult2 &lt;-<span class="st"> </span><span class="kw">residSVD</span>(O, Educ, Occ, <span class="dt">d =</span> <span class="dv">2</span>)</span>
+<span id="cb151-8"><a href="8-Note.html#cb151-8"></a>mult3 &lt;-<span class="st"> </span><span class="kw">residSVD</span>(O, Educ, Occ, <span class="dt">d =</span> <span class="dv">3</span>)</span>
+<span id="cb151-9"><a href="8-Note.html#cb151-9"></a></span>
+<span id="cb151-10"><a href="8-Note.html#cb151-10"></a>RC &lt;-<span class="st"> </span>freq_tab_<span class="fl">2.3</span>B <span class="op">%&gt;%</span></span>
+<span id="cb151-11"><a href="8-Note.html#cb151-11"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb151-12"><a href="8-Note.html#cb151-12"></a>    Freq <span class="op">~</span><span class="st"> </span>Educ <span class="op">+</span><span class="st"> </span>Occ <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, Educ, Occ),</span>
+<span id="cb151-13"><a href="8-Note.html#cb151-13"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb151-14"><a href="8-Note.html#cb151-14"></a>    <span class="dt">data =</span> .,</span>
+<span id="cb151-15"><a href="8-Note.html#cb151-15"></a>    <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb151-16"><a href="8-Note.html#cb151-16"></a>  )</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations.........................................................
+.............
+Done</code></pre>
+<div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="8-Note.html#cb153-1"></a><span class="kw">var_num</span>(RC)</span></code></pre></div>
+<pre><code>                                        var    estimate number
+(Intercept)                     (Intercept)  4.84228734      1
+Educ2                                 Educ2 -0.83267338      2
+Educ3                                 Educ3  1.44242350      3
+Educ4                                 Educ4 -0.18953287      4
+Occ2                                   Occ2  0.47811221      5
+Occ3                                   Occ3 -2.08212146      6
+Occ4                                   Occ4  0.15944538      7
+Occ5                                   Occ5 -3.57932338      8
+Mult(., Educ, Occ).     Mult(., Educ, Occ). -8.94312183      9
+Mult(1, ., Occ).Educ1 Mult(1, ., Occ).Educ1 -0.93109262     10
+Mult(1, ., Occ).Educ2 Mult(1, ., Occ).Educ2 -0.20019786     11
+Mult(1, ., Occ).Educ3 Mult(1, ., Occ).Educ3  0.03703327     12
+Mult(1, ., Occ).Educ4 Mult(1, ., Occ).Educ4  0.65249407     13
+Mult(1, Educ, .).Occ1 Mult(1, Educ, .).Occ1  0.16481820     14
+Mult(1, Educ, .).Occ2 Mult(1, Educ, .).Occ2 -0.04958694     15
+Mult(1, Educ, .).Occ3 Mult(1, Educ, .).Occ3 -0.16515958     16
+Mult(1, Educ, .).Occ4 Mult(1, Educ, .).Occ4 -0.25122572     17
+Mult(1, Educ, .).Occ5 Mult(1, Educ, .).Occ5 -0.11995115     18</code></pre>
+<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="8-Note.html#cb155-1"></a>RC &lt;-<span class="st"> </span>freq_tab_<span class="fl">2.3</span>B <span class="op">%&gt;%</span></span>
+<span id="cb155-2"><a href="8-Note.html#cb155-2"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb155-3"><a href="8-Note.html#cb155-3"></a>    Freq <span class="op">~</span><span class="st"> </span>Educ <span class="op">+</span><span class="st"> </span>Occ <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, Educ, Occ),</span>
+<span id="cb155-4"><a href="8-Note.html#cb155-4"></a>    <span class="dt">start =</span> <span class="kw">c</span>(<span class="kw">coef</span>(O), <span class="dv">10</span>, mult1),</span>
+<span id="cb155-5"><a href="8-Note.html#cb155-5"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb155-6"><a href="8-Note.html#cb155-6"></a>    <span class="dt">data =</span> .,</span>
+<span id="cb155-7"><a href="8-Note.html#cb155-7"></a>    <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb155-8"><a href="8-Note.html#cb155-8"></a>  )</span></code></pre></div>
+<pre><code>Running main iterations.........................................................
+........................
+Done</code></pre>
+<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="8-Note.html#cb157-1"></a>RC2 &lt;-<span class="st"> </span>freq_tab_<span class="fl">2.3</span>B <span class="op">%&gt;%</span></span>
+<span id="cb157-2"><a href="8-Note.html#cb157-2"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb157-3"><a href="8-Note.html#cb157-3"></a>    Freq <span class="op">~</span><span class="st"> </span>Educ <span class="op">+</span><span class="st"> </span>Occ <span class="op">+</span><span class="st"> </span><span class="kw">instances</span>(<span class="kw">Mult</span>(<span class="dv">1</span>, Educ, Occ), <span class="dv">2</span>),</span>
+<span id="cb157-4"><a href="8-Note.html#cb157-4"></a>    <span class="co">#      start = c(coef(O), NA, mult2[,1], NA, mult2[,2]),</span></span>
+<span id="cb157-5"><a href="8-Note.html#cb157-5"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb157-6"><a href="8-Note.html#cb157-6"></a>    <span class="dt">data =</span> .,</span>
+<span id="cb157-7"><a href="8-Note.html#cb157-7"></a>    <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb157-8"><a href="8-Note.html#cb157-8"></a>  )</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations........................
+Done</code></pre>
+<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="8-Note.html#cb159-1"></a>RC2</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ Educ + Occ + instances(Mult(1, Educ, Occ), 
+    2), family = poisson, data = ., tolerance = 1e-12)
+
+Coefficients:
+                    (Intercept)                            Educ2  
+                        5.08611                         -0.94740  
+                          Educ3                            Educ4  
+                        1.02546                          0.15018  
+                           Occ2                             Occ3  
+                        0.41826                         -2.08862  
+                           Occ4                             Occ5  
+                        0.19014                         -3.99813  
+  Mult(., Educ, Occ, inst = 1).  Mult(1, ., Occ, inst = 1).Educ1  
+                       11.88745                          0.66539  
+Mult(1, ., Occ, inst = 1).Educ2  Mult(1, ., Occ, inst = 1).Educ3  
+                        0.18460                         -0.08627  
+Mult(1, ., Occ, inst = 1).Educ4  Mult(1, Educ, ., inst = 1).Occ1  
+                       -0.24059                          0.16592  
+Mult(1, Educ, ., inst = 1).Occ2  Mult(1, Educ, ., inst = 1).Occ3  
+                       -0.08774                         -0.16440  
+Mult(1, Educ, ., inst = 1).Occ4  Mult(1, Educ, ., inst = 1).Occ5  
+                       -0.22670                          0.02076  
+  Mult(., Educ, Occ, inst = 2).  Mult(1, ., Occ, inst = 2).Educ1  
+                       -0.15456                         -5.97628  
+Mult(1, ., Occ, inst = 2).Educ2  Mult(1, ., Occ, inst = 2).Educ3  
+                       -4.15107                          6.90477  
+Mult(1, ., Occ, inst = 2).Educ4  Mult(1, Educ, ., inst = 2).Occ1  
+                      -20.09459                         -0.16109  
+Mult(1, Educ, ., inst = 2).Occ2  Mult(1, Educ, ., inst = 2).Occ3  
+                       -0.27298                         -0.00488  
+Mult(1, Educ, ., inst = 2).Occ4  Mult(1, Educ, ., inst = 2).Occ5  
+                        0.08269                          0.42296  
+
+Deviance:            0.6001022 
+Pearson chi-squared: 0.5746549 
+Residual df:         2 </code></pre>
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="8-Note.html#cb161-1"></a>RC3 &lt;-<span class="st"> </span>freq_tab_<span class="fl">2.3</span>B <span class="op">%&gt;%</span></span>
+<span id="cb161-2"><a href="8-Note.html#cb161-2"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb161-3"><a href="8-Note.html#cb161-3"></a>    Freq <span class="op">~</span><span class="st"> </span>Educ <span class="op">+</span><span class="st"> </span>Occ <span class="op">+</span><span class="st"> </span><span class="kw">instances</span>(<span class="kw">Mult</span>(<span class="dv">1</span>, Educ, Occ), <span class="dv">3</span>),</span>
+<span id="cb161-4"><a href="8-Note.html#cb161-4"></a>    <span class="dt">start =</span> <span class="kw">c</span>(<span class="kw">coef</span>(O), <span class="ot">NA</span>, mult3[, <span class="dv">1</span>], <span class="ot">NA</span>, mult3[, <span class="dv">2</span>], <span class="ot">NA</span>, mult3[, <span class="dv">3</span>]),</span>
+<span id="cb161-5"><a href="8-Note.html#cb161-5"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb161-6"><a href="8-Note.html#cb161-6"></a>    <span class="dt">data =</span> .,</span>
+<span id="cb161-7"><a href="8-Note.html#cb161-7"></a>    <span class="dt">tolerance =</span> <span class="fl">1e-12</span></span>
+<span id="cb161-8"><a href="8-Note.html#cb161-8"></a>  )</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations......
+Done</code></pre>
+<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="8-Note.html#cb163-1"></a>RC3</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ Educ + Occ + instances(Mult(1, Educ, Occ), 
+    3), family = poisson, data = ., start = c(coef(O), NA, mult3[, 
+    1], NA, mult3[, 2], NA, mult3[, 3]), tolerance = 1e-12)
+
+Coefficients:
+                    (Intercept)                            Educ2  
+                        4.72385                         -0.74353  
+                          Educ3                            Educ4  
+                        1.59795                          0.41892  
+                           Occ2                             Occ3  
+                        0.25233                         -2.15106  
+                           Occ4                             Occ5  
+                        0.11579                         -3.83099  
+  Mult(., Educ, Occ, inst = 1).  Mult(1, ., Occ, inst = 1).Educ1  
+                        0.92522                          1.33787  
+Mult(1, ., Occ, inst = 1).Educ2  Mult(1, ., Occ, inst = 1).Educ3  
+                        0.30336                         -0.07232  
+Mult(1, ., Occ, inst = 1).Educ4  Mult(1, Educ, ., inst = 1).Occ1  
+                       -0.99358                          1.16529  
+Mult(1, Educ, ., inst = 1).Occ2  Mult(1, Educ, ., inst = 1).Occ3  
+                       -0.17639                         -0.63075  
+Mult(1, Educ, ., inst = 1).Occ4  Mult(1, Educ, ., inst = 1).Occ5  
+                       -1.07146                          0.12669  
+  Mult(., Educ, Occ, inst = 2).  Mult(1, ., Occ, inst = 2).Educ1  
+                        0.79669                          0.40226  
+Mult(1, ., Occ, inst = 2).Educ2  Mult(1, ., Occ, inst = 2).Educ3  
+                        0.49568                         -0.62304  
+Mult(1, ., Occ, inst = 2).Educ4  Mult(1, Educ, ., inst = 2).Occ1  
+                        0.90711                          0.26018  
+Mult(1, Educ, ., inst = 2).Occ2  Mult(1, Educ, ., inst = 2).Occ3  
+                       -0.62000                         -0.01683  
+Mult(1, Educ, ., inst = 2).Occ4  Mult(1, Educ, ., inst = 2).Occ5  
+                        0.13370                          1.73569  
+  Mult(., Educ, Occ, inst = 3).  Mult(1, ., Occ, inst = 3).Educ1  
+                        0.37121                         -0.01965  
+Mult(1, ., Occ, inst = 3).Educ2  Mult(1, ., Occ, inst = 3).Educ3  
+                        0.99469                          0.06372  
+Mult(1, ., Occ, inst = 3).Educ4  Mult(1, Educ, ., inst = 3).Occ1  
+                       -0.19768                         -0.04247  
+Mult(1, Educ, ., inst = 3).Occ2  Mult(1, Educ, ., inst = 3).Occ3  
+                        0.72146                         -0.70219  
+Mult(1, Educ, ., inst = 3).Occ4  Mult(1, Educ, ., inst = 3).Occ5  
+                        0.11819                         -0.47984  
+
+Deviance:            -2.193801e-13 
+Pearson chi-squared: 2.344746e-27 
+Residual df:         0 </code></pre>
+<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="8-Note.html#cb165-1"></a><span class="kw">bind_rows</span>(<span class="kw">model.summary</span>(O),</span>
+<span id="cb165-2"><a href="8-Note.html#cb165-2"></a>          <span class="kw">model.summary</span>(RC),</span>
+<span id="cb165-3"><a href="8-Note.html#cb165-3"></a>          <span class="kw">model.summary</span>(RC2),</span>
+<span id="cb165-4"><a href="8-Note.html#cb165-4"></a>          <span class="kw">model.summary</span>(RC3))</span></code></pre></div>
+<pre><code># A tibble: 4 x 6
+  `Model Description`    df        L2       BIC    Delta     p
+  &lt;chr&gt;               &lt;int&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;
+1 O                      12  1.37e+ 3  1.27e+ 3 2.39e+ 1 1    
+2 RC                      6  1.25e+ 2  7.55e+ 1 6.44e+ 0 1    
+3 RC2                     2  6.00e- 1 -1.59e+ 1 9.35e- 2 0.259
+4 RC3                     0 -2.19e-13 -2.19e-13 3.45e-14 0    </code></pre>
+<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="8-Note.html#cb167-1"></a>anoas_model &lt;-<span class="st"> </span><span class="kw">anoas</span>(tab_<span class="fl">2.3</span>B, <span class="dt">nd =</span> <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>Fitting independence model...
+Fitting model with 1 dimension...
+Initialising
+Running start-up iterations..
+Running main iterations......................................................
+Done
+Fitting model with 2 dimensions...
+Initialising
+Running start-up iterations..
+Running main iterations.........
+Done
+Fitting model with 3 dimensions...
+Initialising
+Running start-up iterations..
+Running main iterations....
+Done</code></pre>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="8-Note.html#cb169-1"></a>anoas_model</span></code></pre></div>
+<pre><code>       Res. Df            Res. Dev     Dev./Indep. (%)   Dissim. (%)
+Indep.      12 1373.17576565224499 100.000000000000000 23.8615752953
+RC(1)        6  125.05974855014684   9.107337289101130  6.4360390981
+RC(2)        2    0.60010223526794   0.043701778772865  0.0935165802
+RC(3)        0   -0.00000000000009  -0.000000000000007  0.0000000003
+                       BIC                 AIC    Dev. Df
+Indep. 1274.08091533065681 1349.17576565224499      NA NA
+RC(1)    75.51232338935279  113.05974855014684 -1248.1 -6
+RC(2)   -15.91570615166341   -3.39989776473206  -124.5 -4
+RC(3)    -0.00000000000009   -0.00000000000009    -0.6 -2</code></pre>
+</div>
+<div id="位相モデル" class="section level2" number="7.9">
+<h2><span class="header-section-number">7.9</span> 位相モデル</h2>
+<div class="sourceCode" id="cb171"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb171-1"><a href="8-Note.html#cb171-1"></a>occupationalStatus</span></code></pre></div>
+<pre><code>      destination
+origin   1   2   3   4   5   6   7   8
+     1  50  19  26   8   7  11   6   2
+     2  16  40  34  18  11  20   8   3
+     3  12  35  65  66  35  88  23  21
+     4  11  20  58 110  40 183  64  32
+     5   2   8  12  23  25  46  28  12
+     6  12  28 102 162  90 554 230 177
+     7   0   6  19  40  21 158 143  71
+     8   0   3  14  32  15 126  91 106</code></pre>
+<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="8-Note.html#cb173-1"></a>freq_occupationalStatus &lt;-<span class="st"> </span><span class="kw">data.frame</span>(occupationalStatus)</span>
+<span id="cb173-2"><a href="8-Note.html#cb173-2"></a>freq_occupationalStatus <span class="op">%&lt;&gt;%</span></span>
+<span id="cb173-3"><a href="8-Note.html#cb173-3"></a><span class="st">  </span><span class="kw">mutate</span>(</span>
+<span id="cb173-4"><a href="8-Note.html#cb173-4"></a>    <span class="dt">diag =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span>destination, origin, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>(),</span>
+<span id="cb173-5"><a href="8-Note.html#cb173-5"></a>    <span class="dt">Rscore =</span> <span class="kw">scale</span>(<span class="kw">as.numeric</span>(origin), <span class="dt">scale =</span> <span class="ot">FALSE</span>),</span>
+<span id="cb173-6"><a href="8-Note.html#cb173-6"></a>    <span class="dt">Cscore =</span> <span class="kw">scale</span>(<span class="kw">as.numeric</span>(destination), <span class="dt">scale =</span> <span class="ot">FALSE</span>)</span>
+<span id="cb173-7"><a href="8-Note.html#cb173-7"></a>  )</span>
+<span id="cb173-8"><a href="8-Note.html#cb173-8"></a></span>
+<span id="cb173-9"><a href="8-Note.html#cb173-9"></a>fit_O &lt;-</span>
+<span id="cb173-10"><a href="8-Note.html#cb173-10"></a><span class="st">  </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination, <span class="dt">family =</span> poisson, <span class="dt">data =</span> freq_occupationalStatus)</span>
+<span id="cb173-11"><a href="8-Note.html#cb173-11"></a>fit_QI &lt;-</span>
+<span id="cb173-12"><a href="8-Note.html#cb173-12"></a><span class="st">  </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>diag,</span>
+<span id="cb173-13"><a href="8-Note.html#cb173-13"></a>      <span class="dt">family =</span> poisson,</span>
+<span id="cb173-14"><a href="8-Note.html#cb173-14"></a>      <span class="dt">data =</span> freq_occupationalStatus)</span>
+<span id="cb173-15"><a href="8-Note.html#cb173-15"></a>fit_U &lt;-</span>
+<span id="cb173-16"><a href="8-Note.html#cb173-16"></a><span class="st">  </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>Rscore<span class="op">:</span>Cscore,</span>
+<span id="cb173-17"><a href="8-Note.html#cb173-17"></a>      <span class="dt">family =</span> poisson,</span>
+<span id="cb173-18"><a href="8-Note.html#cb173-18"></a>      <span class="dt">data =</span> freq_occupationalStatus)</span>
+<span id="cb173-19"><a href="8-Note.html#cb173-19"></a>fit_QI_U &lt;-</span>
+<span id="cb173-20"><a href="8-Note.html#cb173-20"></a><span class="st">  </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>diag <span class="op">+</span><span class="st"> </span>Rscore<span class="op">:</span>Cscore,</span>
+<span id="cb173-21"><a href="8-Note.html#cb173-21"></a>      <span class="dt">family =</span> poisson,</span>
+<span id="cb173-22"><a href="8-Note.html#cb173-22"></a>      <span class="dt">data =</span> freq_occupationalStatus)</span>
+<span id="cb173-23"><a href="8-Note.html#cb173-23"></a>fit_S &lt;-</span>
+<span id="cb173-24"><a href="8-Note.html#cb173-24"></a><span class="st">  </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>origin<span class="op">:</span>destination,</span>
+<span id="cb173-25"><a href="8-Note.html#cb173-25"></a>      <span class="dt">family =</span> poisson,</span>
+<span id="cb173-26"><a href="8-Note.html#cb173-26"></a>      <span class="dt">data =</span> freq_occupationalStatus)</span>
+<span id="cb173-27"><a href="8-Note.html#cb173-27"></a></span>
+<span id="cb173-28"><a href="8-Note.html#cb173-28"></a>freq_occupationalStatus <span class="op">%&lt;&gt;%</span></span>
+<span id="cb173-29"><a href="8-Note.html#cb173-29"></a><span class="st">  </span><span class="kw">mutate</span>(</span>
+<span id="cb173-30"><a href="8-Note.html#cb173-30"></a>    <span class="dt">diag1 =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span><span class="dv">1</span> <span class="op">&amp;</span></span>
+<span id="cb173-31"><a href="8-Note.html#cb173-31"></a><span class="st">                     </span>origin <span class="op">==</span><span class="st"> </span>destination, <span class="dv">1</span>, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>(),</span>
+<span id="cb173-32"><a href="8-Note.html#cb173-32"></a>    <span class="dt">diag2 =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span><span class="dv">2</span> <span class="op">&amp;</span></span>
+<span id="cb173-33"><a href="8-Note.html#cb173-33"></a><span class="st">                     </span>origin <span class="op">==</span><span class="st"> </span>destination, <span class="dv">1</span>, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>(),</span>
+<span id="cb173-34"><a href="8-Note.html#cb173-34"></a>    <span class="dt">diag3 =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span><span class="dv">3</span> <span class="op">&amp;</span></span>
+<span id="cb173-35"><a href="8-Note.html#cb173-35"></a><span class="st">                     </span>origin <span class="op">==</span><span class="st"> </span>destination, <span class="dv">1</span>, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>(),</span>
+<span id="cb173-36"><a href="8-Note.html#cb173-36"></a>    <span class="dt">diag4 =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span><span class="dv">4</span> <span class="op">&amp;</span></span>
+<span id="cb173-37"><a href="8-Note.html#cb173-37"></a><span class="st">                     </span>origin <span class="op">==</span><span class="st"> </span>destination, <span class="dv">1</span>, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>(),</span>
+<span id="cb173-38"><a href="8-Note.html#cb173-38"></a>    <span class="dt">diag5 =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span><span class="dv">5</span> <span class="op">&amp;</span></span>
+<span id="cb173-39"><a href="8-Note.html#cb173-39"></a><span class="st">                     </span>origin <span class="op">==</span><span class="st"> </span>destination, <span class="dv">1</span>, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>(),</span>
+<span id="cb173-40"><a href="8-Note.html#cb173-40"></a>    <span class="dt">diag6 =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span><span class="dv">6</span> <span class="op">&amp;</span></span>
+<span id="cb173-41"><a href="8-Note.html#cb173-41"></a><span class="st">                     </span>origin <span class="op">==</span><span class="st"> </span>destination, <span class="dv">1</span>, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>(),</span>
+<span id="cb173-42"><a href="8-Note.html#cb173-42"></a>    <span class="dt">diag7 =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span><span class="dv">7</span> <span class="op">&amp;</span></span>
+<span id="cb173-43"><a href="8-Note.html#cb173-43"></a><span class="st">                     </span>origin <span class="op">==</span><span class="st"> </span>destination, <span class="dv">1</span>, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>(),</span>
+<span id="cb173-44"><a href="8-Note.html#cb173-44"></a>    <span class="dt">diag8 =</span> <span class="kw">ifelse</span>(origin <span class="op">==</span><span class="st"> </span><span class="dv">8</span> <span class="op">&amp;</span></span>
+<span id="cb173-45"><a href="8-Note.html#cb173-45"></a><span class="st">                     </span>origin <span class="op">==</span><span class="st"> </span>destination, <span class="dv">1</span>, <span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">factor</span>()</span>
+<span id="cb173-46"><a href="8-Note.html#cb173-46"></a>  )</span>
+<span id="cb173-47"><a href="8-Note.html#cb173-47"></a></span>
+<span id="cb173-48"><a href="8-Note.html#cb173-48"></a>fit_QI2 &lt;-</span>
+<span id="cb173-49"><a href="8-Note.html#cb173-49"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb173-50"><a href="8-Note.html#cb173-50"></a>    Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>diag1 <span class="op">+</span><span class="st"> </span>diag2 <span class="op">+</span><span class="st"> </span>diag3 <span class="op">+</span><span class="st"> </span>diag4 <span class="op">+</span><span class="st"> </span>diag5 <span class="op">+</span><span class="st"> </span>diag6 <span class="op">+</span><span class="st"> </span>diag7 <span class="op">+</span><span class="st"> </span>diag8,</span>
+<span id="cb173-51"><a href="8-Note.html#cb173-51"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb173-52"><a href="8-Note.html#cb173-52"></a>    <span class="dt">data =</span> freq_occupationalStatus</span>
+<span id="cb173-53"><a href="8-Note.html#cb173-53"></a>  )</span>
+<span id="cb173-54"><a href="8-Note.html#cb173-54"></a></span>
+<span id="cb173-55"><a href="8-Note.html#cb173-55"></a><span class="kw">summary</span>(fit_QI)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ origin + destination + diag, family = poisson, 
+    data = freq_occupationalStatus)
+
+Deviance Residuals: 
+       Min          1Q      Median          3Q         Max  
+-4.567e+00  -2.318e+00  -7.780e-08   1.018e+00   6.152e+00  
+
+Coefficients:
+             Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)   0.36346    0.17892   2.031 0.042211 *  
+origin2       0.35445    0.14755   2.402 0.016292 *  
+origin3       1.34923    0.12758  10.575  &lt; 2e-16 ***
+origin4       1.76957    0.12322  14.362  &lt; 2e-16 ***
+origin5       0.56615    0.14257   3.971 7.16e-05 ***
+origin6       2.72612    0.11933  22.845  &lt; 2e-16 ***
+origin7       1.54999    0.12619  12.283  &lt; 2e-16 ***
+origin8       1.37488    0.12757  10.777  &lt; 2e-16 ***
+destination2  0.82044    0.16521   4.966 6.83e-07 ***
+destination3  1.69007    0.15065  11.219  &lt; 2e-16 ***
+destination4  2.02648    0.14771  13.719  &lt; 2e-16 ***
+destination5  1.43966    0.15317   9.399  &lt; 2e-16 ***
+destination6  2.96856    0.14439  20.559  &lt; 2e-16 ***
+destination7  2.24512    0.14547  15.434  &lt; 2e-16 ***
+destination8  1.87534    0.14855  12.624  &lt; 2e-16 ***
+diag1         3.54857    0.22806  15.560  &lt; 2e-16 ***
+diag2         2.15053    0.20737  10.370  &lt; 2e-16 ***
+diag3         0.77163    0.15275   5.052 4.38e-07 ***
+diag4         0.54098    0.12287   4.403 1.07e-05 ***
+diag5         0.84961    0.22965   3.700 0.000216 ***
+diag6         0.25903    0.07531   3.439 0.000583 ***
+diag7         0.80428    0.11438   7.031 2.04e-12 ***
+diag8         1.04976    0.12946   8.109  &lt; 2e-16 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Residual deviance: 446.84 on 41 degrees of freedom
+AIC: 815.18
+
+Number of iterations: 5</code></pre>
+<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="8-Note.html#cb175-1"></a><span class="kw">summary</span>(fit_QI2)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ origin + destination + diag1 + diag2 + diag3 + 
+    diag4 + diag5 + diag6 + diag7 + diag8, family = poisson, 
+    data = freq_occupationalStatus)
+
+Deviance Residuals: 
+       Min          1Q      Median          3Q         Max  
+-4.567e+00  -2.318e+00  -7.780e-08   1.018e+00   6.152e+00  
+
+Coefficients:
+             Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)   0.36346    0.17892   2.031 0.042211 *  
+origin2       0.35445    0.14755   2.402 0.016292 *  
+origin3       1.34923    0.12758  10.575  &lt; 2e-16 ***
+origin4       1.76957    0.12322  14.362  &lt; 2e-16 ***
+origin5       0.56615    0.14257   3.971 7.16e-05 ***
+origin6       2.72612    0.11933  22.845  &lt; 2e-16 ***
+origin7       1.54999    0.12619  12.283  &lt; 2e-16 ***
+origin8       1.37488    0.12757  10.777  &lt; 2e-16 ***
+destination2  0.82044    0.16521   4.966 6.83e-07 ***
+destination3  1.69007    0.15065  11.219  &lt; 2e-16 ***
+destination4  2.02648    0.14771  13.719  &lt; 2e-16 ***
+destination5  1.43966    0.15317   9.399  &lt; 2e-16 ***
+destination6  2.96856    0.14439  20.559  &lt; 2e-16 ***
+destination7  2.24512    0.14547  15.434  &lt; 2e-16 ***
+destination8  1.87534    0.14855  12.624  &lt; 2e-16 ***
+diag11        3.54857    0.22806  15.560  &lt; 2e-16 ***
+diag21        2.15053    0.20737  10.370  &lt; 2e-16 ***
+diag31        0.77163    0.15275   5.052 4.38e-07 ***
+diag41        0.54098    0.12287   4.403 1.07e-05 ***
+diag51        0.84961    0.22965   3.700 0.000216 ***
+diag61        0.25903    0.07531   3.439 0.000583 ***
+diag71        0.80428    0.11438   7.031 2.04e-12 ***
+diag81        1.04976    0.12946   8.109  &lt; 2e-16 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Residual deviance: 446.84 on 41 degrees of freedom
+AIC: 815.18
+
+Number of iterations: 5</code></pre>
+<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="8-Note.html#cb177-1"></a><span class="kw">anova</span>(fit_O, fit_QI, fit_U, fit_QI_U, fit_S)</span></code></pre></div>
+<pre><code>Analysis of Deviance Table
+
+Model 1: Freq ~ origin + destination
+Model 2: Freq ~ origin + destination + diag
+Model 3: Freq ~ origin + destination + Rscore:Cscore
+Model 4: Freq ~ origin + destination + diag + Rscore:Cscore
+Model 5: Freq ~ origin + destination + origin:destination
+  Resid. Df Resid. Dev Df Deviance
+1        49     954.49            
+2        41     446.84  8   507.65
+3        48     164.33 -7   282.51
+4        40      58.44  8   105.89
+5         0       0.00 40    58.44</code></pre>
+<div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="8-Note.html#cb179-1"></a><span class="kw">bind_rows</span>(</span>
+<span id="cb179-2"><a href="8-Note.html#cb179-2"></a>  <span class="kw">model.summary</span>(fit_O),</span>
+<span id="cb179-3"><a href="8-Note.html#cb179-3"></a>  <span class="kw">model.summary</span>(fit_QI),</span>
+<span id="cb179-4"><a href="8-Note.html#cb179-4"></a>  <span class="kw">model.summary</span>(fit_U),</span>
+<span id="cb179-5"><a href="8-Note.html#cb179-5"></a>  <span class="kw">model.summary</span>(fit_QI_U),</span>
+<span id="cb179-6"><a href="8-Note.html#cb179-6"></a>  <span class="kw">model.summary</span>(fit_S)</span>
+<span id="cb179-7"><a href="8-Note.html#cb179-7"></a>)</span></code></pre></div>
+<pre><code># A tibble: 5 x 6
+  `Model Description`    df      L2      BIC    Delta     p
+  &lt;chr&gt;               &lt;int&gt;   &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;
+1 fit_O                  49 9.54e+2  5.55e+2 1.66e+ 1 1    
+2 fit_QI                 41 4.47e+2  1.12e+2 1.00e+ 1 1    
+3 fit_U                  48 1.64e+2 -2.27e+2 7.26e+ 0 1.00 
+4 fit_QI_U               40 5.84e+1 -2.68e+2 3.53e+ 0 0.970
+5 fit_S                   0 4.50e-8  4.50e-8 3.22e-10 1    </code></pre>
+<div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="8-Note.html#cb181-1"></a><span class="kw">data</span>(erikson)</span>
+<span id="cb181-2"><a href="8-Note.html#cb181-2"></a>erikson</span></code></pre></div>
+<pre><code>, , country = EW
+
+      destination
+origin    I   II  III  IVa  IVb  IVc V/VI VIIa VIIb
+  I     311  130   79   24   22    7   70   44    1
+  II    161  128   66   22   11    6  112   47    1
+  III   128  109   89   26   25    3  197  113    4
+  IVa    88   83   43   72   41    5  112   64    4
+  IVb    36   45   38   27   47    3  110   80    4
+  IVc    43   23   25   16   14   99   86   81   40
+  V/VI  356  375  325  108  140    5 1506  839   22
+  VIIa  150  180  187   48   74    9  802  685   15
+  VIIb   12   14   18    5   18   10   96  114   56
+
+, , country = F
+
+      destination
+origin    I   II  III  IVa  IVb  IVc V/VI VIIa VIIb
+  I     105   72   19    9    8    3   26   11    1
+  II     59  113   37    9   14    0   54   34    2
+  III    40   86   64   10   20    4  103   61    4
+  IVa    38   37   17   38   23    2   36   22    1
+  IVb    40   68   55   38   95   10   92   74    7
+  IVc    27   74   77   27   52  461  156  286   73
+  V/VI   36  138   93   22   38    5  339  189    9
+  VIIa   22   88   79   18   24    8  235  209   11
+  VIIb    4   18   26    9   14   19   68  107   47
+
+, , country = S
+
+      destination
+origin    I   II  III  IVa  IVb  IVc V/VI VIIa VIIb
+  I      52   15   13    3    2    0   11    7    0
+  II     30   27   14    3    4    0   27   12    2
+  III    10   19   10    2    4    0   16   11    1
+  IVa    26   24    5   20    8    1   33   22    0
+  IVb     8   13    6    3    9    4   31   20    1
+  IVc    24   47   44   17   22   92  132  144   21
+  V/VI   33   89   40   13   18    5  188  104    5
+  VIIa   32   49   28   14   17    5  159  109    4
+  VIIb    5   10    3    0    6    3   33   42    8</code></pre>
+<div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="8-Note.html#cb183-1"></a><span class="kw">dimnames</span>(erikson)</span></code></pre></div>
+<pre><code>$origin
+[1] &quot;I&quot;    &quot;II&quot;   &quot;III&quot;  &quot;IVa&quot;  &quot;IVb&quot;  &quot;IVc&quot;  &quot;V/VI&quot; &quot;VIIa&quot; &quot;VIIb&quot;
+
+$destination
+[1] &quot;I&quot;    &quot;II&quot;   &quot;III&quot;  &quot;IVa&quot;  &quot;IVb&quot;  &quot;IVc&quot;  &quot;V/VI&quot; &quot;VIIa&quot; &quot;VIIb&quot;
+
+$country
+[1] &quot;EW&quot; &quot;F&quot;  &quot;S&quot; </code></pre>
+<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="8-Note.html#cb185-1"></a><span class="kw">dimnames</span>(erikson)<span class="op">$</span>origin &lt;-</span>
+<span id="cb185-2"><a href="8-Note.html#cb185-2"></a><span class="st">  </span><span class="kw">c</span>(<span class="st">&quot;I+II&quot;</span>,<span class="st">&quot;I+II&quot;</span>,<span class="st">&quot;III&quot;</span>,<span class="st">&quot;IVab&quot;</span>,<span class="st">&quot;IVab&quot;</span>,<span class="st">&quot;IVc&quot;</span>,<span class="st">&quot;V/VI&quot;</span>,<span class="st">&quot;VIIa&quot;</span>,<span class="st">&quot;VIIb&quot;</span>)</span>
+<span id="cb185-3"><a href="8-Note.html#cb185-3"></a><span class="kw">dimnames</span>(erikson)<span class="op">$</span>destination &lt;-</span>
+<span id="cb185-4"><a href="8-Note.html#cb185-4"></a><span class="st">  </span><span class="kw">c</span>(<span class="st">&quot;I+II&quot;</span>,<span class="st">&quot;I+II&quot;</span>,<span class="st">&quot;III&quot;</span>,<span class="st">&quot;IVab&quot;</span>,<span class="st">&quot;IVab&quot;</span>,<span class="st">&quot;IVc&quot;</span>,<span class="st">&quot;V/VI&quot;</span>,<span class="st">&quot;VIIa&quot;</span>,<span class="st">&quot;VIIb&quot;</span>)</span>
+<span id="cb185-5"><a href="8-Note.html#cb185-5"></a>freq_erikson &lt;-<span class="st"> </span><span class="kw">data.frame</span>(erikson)</span>
+<span id="cb185-6"><a href="8-Note.html#cb185-6"></a>erikson2 &lt;-</span>
+<span id="cb185-7"><a href="8-Note.html#cb185-7"></a><span class="st">  </span><span class="kw">xtabs</span>(Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>country, <span class="dt">data =</span> freq_erikson)</span>
+<span id="cb185-8"><a href="8-Note.html#cb185-8"></a>freq_erikson &lt;-<span class="st"> </span><span class="kw">data.frame</span>(erikson2)</span>
+<span id="cb185-9"><a href="8-Note.html#cb185-9"></a></span>
+<span id="cb185-10"><a href="8-Note.html#cb185-10"></a>levelMatrix &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">6</span>,</span>
+<span id="cb185-11"><a href="8-Note.html#cb185-11"></a>                     <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>,</span>
+<span id="cb185-12"><a href="8-Note.html#cb185-12"></a>                     <span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>,</span>
+<span id="cb185-13"><a href="8-Note.html#cb185-13"></a>                     <span class="dv">6</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">2</span>,</span>
+<span id="cb185-14"><a href="8-Note.html#cb185-14"></a>                     <span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>,</span>
+<span id="cb185-15"><a href="8-Note.html#cb185-15"></a>                     <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">5</span>,</span>
+<span id="cb185-16"><a href="8-Note.html#cb185-16"></a>                     <span class="dv">6</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">1</span>), <span class="dt">times =</span> <span class="dv">3</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">as.factor</span>()</span>
+<span id="cb185-17"><a href="8-Note.html#cb185-17"></a>d &lt;-<span class="st"> </span><span class="kw">bind_cols</span>(freq_erikson, <span class="dt">levelMatrix =</span> levelMatrix)</span>
+<span id="cb185-18"><a href="8-Note.html#cb185-18"></a></span>
+<span id="cb185-19"><a href="8-Note.html#cb185-19"></a>fit_O &lt;-</span>
+<span id="cb185-20"><a href="8-Note.html#cb185-20"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb185-21"><a href="8-Note.html#cb185-21"></a>    Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>country <span class="op">+</span><span class="st"> </span>origin <span class="op">*</span><span class="st"> </span>country <span class="op">+</span></span>
+<span id="cb185-22"><a href="8-Note.html#cb185-22"></a><span class="st">      </span>destination <span class="op">*</span><span class="st"> </span>country,</span>
+<span id="cb185-23"><a href="8-Note.html#cb185-23"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb185-24"><a href="8-Note.html#cb185-24"></a>    <span class="dt">data =</span> d</span>
+<span id="cb185-25"><a href="8-Note.html#cb185-25"></a>  )</span>
+<span id="cb185-26"><a href="8-Note.html#cb185-26"></a></span>
+<span id="cb185-27"><a href="8-Note.html#cb185-27"></a></span>
+<span id="cb185-28"><a href="8-Note.html#cb185-28"></a>fit_Common &lt;-<span class="st"> </span><span class="kw">gnm</span>(</span>
+<span id="cb185-29"><a href="8-Note.html#cb185-29"></a>  Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>country <span class="op">+</span></span>
+<span id="cb185-30"><a href="8-Note.html#cb185-30"></a><span class="st">    </span>origin <span class="op">*</span><span class="st"> </span>country <span class="op">+</span><span class="st"> </span>destination <span class="op">*</span><span class="st"> </span>country <span class="op">+</span></span>
+<span id="cb185-31"><a href="8-Note.html#cb185-31"></a><span class="st">    </span>origin <span class="op">*</span><span class="st"> </span>destination,</span>
+<span id="cb185-32"><a href="8-Note.html#cb185-32"></a>  <span class="dt">family =</span> poisson,</span>
+<span id="cb185-33"><a href="8-Note.html#cb185-33"></a>  <span class="dt">data =</span> d</span>
+<span id="cb185-34"><a href="8-Note.html#cb185-34"></a>)</span>
+<span id="cb185-35"><a href="8-Note.html#cb185-35"></a></span>
+<span id="cb185-36"><a href="8-Note.html#cb185-36"></a>fit_Common_Pattern &lt;-<span class="st"> </span><span class="kw">gnm</span>(</span>
+<span id="cb185-37"><a href="8-Note.html#cb185-37"></a>  Freq <span class="op">~</span><span class="st"> </span>origin <span class="op">+</span><span class="st"> </span>destination <span class="op">+</span><span class="st"> </span>country <span class="op">+</span></span>
+<span id="cb185-38"><a href="8-Note.html#cb185-38"></a><span class="st">    </span>origin <span class="op">*</span><span class="st"> </span>country <span class="op">+</span><span class="st"> </span>destination <span class="op">*</span><span class="st"> </span>country <span class="op">+</span><span class="st"> </span>levelMatrix,</span>
+<span id="cb185-39"><a href="8-Note.html#cb185-39"></a>  <span class="dt">family =</span> poisson,</span>
+<span id="cb185-40"><a href="8-Note.html#cb185-40"></a>  <span class="dt">data =</span> d</span>
+<span id="cb185-41"><a href="8-Note.html#cb185-41"></a>)</span>
+<span id="cb185-42"><a href="8-Note.html#cb185-42"></a></span>
+<span id="cb185-43"><a href="8-Note.html#cb185-43"></a>d <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(</span>
+<span id="cb185-44"><a href="8-Note.html#cb185-44"></a>  <span class="dt">pred1 =</span> fit_O<span class="op">$</span>fitted.values,</span>
+<span id="cb185-45"><a href="8-Note.html#cb185-45"></a>  <span class="dt">pred2 =</span> fit_Common<span class="op">$</span>fitted.values,</span>
+<span id="cb185-46"><a href="8-Note.html#cb185-46"></a>  <span class="dt">pred3 =</span> fit_Common_Pattern<span class="op">$</span>fitted.values</span>
+<span id="cb185-47"><a href="8-Note.html#cb185-47"></a>)</span>
+<span id="cb185-48"><a href="8-Note.html#cb185-48"></a></span>
+<span id="cb185-49"><a href="8-Note.html#cb185-49"></a><span class="kw">summary</span>(fit_O)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ origin + destination + country + origin * 
+    country + destination * country, family = poisson, data = d)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-12.763   -3.562   -1.393    1.767   22.208  
+
+Coefficients:
+                         Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)               5.74389    0.03348 171.575  &lt; 2e-16 ***
+originIII                -0.58201    0.04739 -12.281  &lt; 2e-16 ***
+originIVab               -0.31986    0.04375  -7.312 2.64e-13 ***
+originIVc                -1.06769    0.05610 -19.032  &lt; 2e-16 ***
+originV/VI                1.08510    0.03282  33.062  &lt; 2e-16 ***
+originVIIa                0.54874    0.03564  15.397  &lt; 2e-16 ***
+originVIIb               -1.28675    0.06100 -21.095  &lt; 2e-16 ***
+destinationIII           -1.00300    0.03964 -25.305  &lt; 2e-16 ***
+destinationIVab          -1.16484    0.04211 -27.664  &lt; 2e-16 ***
+destinationIVc           -2.78106    0.08498 -32.724  &lt; 2e-16 ***
+destinationV/VI           0.26476    0.02730   9.699  &lt; 2e-16 ***
+destinationVIIa          -0.13764    0.03009  -4.574 4.78e-06 ***
+destinationVIIb          -2.78106    0.08500 -32.720  &lt; 2e-16 ***
+countryF                 -0.88695    0.05988 -14.811  &lt; 2e-16 ***
+countryS                 -1.74777    0.08424 -20.747  &lt; 2e-16 ***
+originIII:countryF        0.19716    0.08083   2.439 0.014718 *  
+originIVab:countryF       0.50479    0.07136   7.073 1.51e-12 ***
+originIVc:countryF        1.82879    0.07546  24.235  &lt; 2e-16 ***
+originV/VI:countryF      -0.67387    0.06296 -10.703  &lt; 2e-16 ***
+originVIIa:countryF      -0.36238    0.06669  -5.434 5.51e-08 ***
+originVIIb:countryF       0.67364    0.09307   7.238 4.55e-13 ***
+originIII:countryS       -0.53021    0.14300  -3.708 0.000209 ***
+originIVab:countryS       0.37251    0.10340   3.603 0.000315 ***
+originIVc:countryS        1.96213    0.09743  20.138  &lt; 2e-16 ***
+originV/VI:countryS      -0.28322    0.08719  -3.248 0.001161 ** 
+originVIIa:countryS       0.08166    0.09040   0.903 0.366354    
+originVIIb:countryS       0.58455    0.13159   4.442 8.90e-06 ***
+destinationIII:countryF   0.17859    0.06820   2.619 0.008827 ** 
+destinationIVab:countryF  0.34258    0.06963   4.920 8.66e-07 ***
+destinationIVc:countryF   2.04865    0.10057  20.370  &lt; 2e-16 ***
+destinationV/VI:countryF -0.22428    0.05085  -4.411 1.03e-05 ***
+destinationVIIa:countryF  0.06764    0.05340   1.267 0.205290    
+destinationVIIb:countryF  0.85375    0.12089   7.062 1.64e-12 ***
+destinationIII:countryS  -0.14353    0.09826  -1.461 0.144099    
+destinationIVab:countryS  0.03051    0.09891   0.308 0.757741    
+destinationIVc:countryS   1.24126    0.13514   9.185  &lt; 2e-16 ***
+destinationV/VI:countryS -0.05932    0.06543  -0.907 0.364667    
+destinationVIIa:countryS  0.05222    0.07055   0.740 0.459234    
+destinationVIIb:countryS  0.27845    0.18161   1.533 0.125225    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Residual deviance: 4860 on 108 degrees of freedom
+AIC: 5752.1
+
+Number of iterations: 6</code></pre>
+<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="8-Note.html#cb187-1"></a><span class="kw">names</span>(fit_Common)</span></code></pre></div>
+<pre><code> [1] &quot;call&quot;          &quot;formula&quot;       &quot;terms&quot;         &quot;data&quot;         
+ [5] &quot;eliminate&quot;     &quot;ofInterest&quot;    &quot;na.action&quot;     &quot;xlevels&quot;      
+ [9] &quot;offset&quot;        &quot;tolerance&quot;     &quot;iterStart&quot;     &quot;iterMax&quot;      
+[13] &quot;coefficients&quot;  &quot;residuals&quot;     &quot;fitted.values&quot; &quot;rank&quot;         
+[17] &quot;family&quot;        &quot;predictors&quot;    &quot;deviance&quot;      &quot;aic&quot;          
+[21] &quot;iter&quot;          &quot;weights&quot;       &quot;prior.weights&quot; &quot;df.residual&quot;  
+[25] &quot;y&quot;             &quot;converged&quot;     &quot;constrain&quot;     &quot;constrainTo&quot;  
+[29] &quot;x&quot;             &quot;model&quot;        </code></pre>
+<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="8-Note.html#cb189-1"></a><span class="kw">names</span>(<span class="kw">summary</span>(fit_Common))</span></code></pre></div>
+<pre><code> [1] &quot;call&quot;           &quot;ofInterest&quot;     &quot;family&quot;         &quot;deviance&quot;      
+ [5] &quot;aic&quot;            &quot;df.residual&quot;    &quot;iter&quot;           &quot;deviance.resid&quot;
+ [9] &quot;coefficients&quot;   &quot;eliminated&quot;     &quot;dispersion&quot;     &quot;df&quot;            
+[13] &quot;cov.scaled&quot;    </code></pre>
+<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="8-Note.html#cb191-1"></a><span class="kw">summary</span>(fit_Common)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ origin + destination + country + origin * 
+    country + destination * country + origin * destination, family = poisson, 
+    data = d)
+
+Deviance Residuals: 
+      Min         1Q     Median         3Q        Max  
+-2.894368  -0.493141  -0.001321   0.470201   2.903940  
+
+Coefficients:
+                           Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                 6.59629    0.03453 191.003  &lt; 2e-16 ***
+originIII                  -1.13823    0.06560 -17.351  &lt; 2e-16 ***
+originIVab                 -1.07370    0.06143 -17.479  &lt; 2e-16 ***
+originIVc                  -2.70361    0.09016 -29.987  &lt; 2e-16 ***
+originV/VI                  0.01007    0.04703   0.214 0.830527    
+originVIIa                 -0.77338    0.05726 -13.507  &lt; 2e-16 ***
+originVIIb                 -3.26650    0.13781 -23.702  &lt; 2e-16 ***
+destinationIII             -1.69227    0.07692 -22.001  &lt; 2e-16 ***
+destinationIVab            -2.25353    0.09612 -23.445  &lt; 2e-16 ***
+destinationIVc             -4.55452    0.25826 -17.635  &lt; 2e-16 ***
+destinationV/VI            -1.34800    0.06703 -20.112  &lt; 2e-16 ***
+destinationVIIa            -2.03630    0.08773 -23.212  &lt; 2e-16 ***
+destinationVIIb            -5.12499    0.38197 -13.417  &lt; 2e-16 ***
+countryF                   -0.79371    0.05423 -14.637  &lt; 2e-16 ***
+countryS                   -1.65837    0.07661 -21.646  &lt; 2e-16 ***
+originIII:countryF          0.20390    0.08179   2.493 0.012668 *  
+originIVab:countryF         0.48071    0.07350   6.540 6.15e-11 ***
+originIVc:countryF          1.61954    0.08393  19.295  &lt; 2e-16 ***
+originV/VI:countryF        -0.64330    0.06586  -9.767  &lt; 2e-16 ***
+originVIIa:countryF        -0.33935    0.07019  -4.835 1.33e-06 ***
+originVIIb:countryF         0.64616    0.09861   6.553 5.65e-11 ***
+originIII:countryS         -0.49402    0.14390  -3.433 0.000597 ***
+originIVab:countryS         0.42215    0.10589   3.987 6.70e-05 ***
+originIVc:countryS          2.10894    0.10644  19.814  &lt; 2e-16 ***
+originV/VI:countryS        -0.23466    0.09102  -2.578 0.009934 ** 
+originVIIa:countryS         0.14235    0.09505   1.498 0.134221    
+originVIIb:countryS         0.72346    0.13754   5.260 1.44e-07 ***
+destinationIII:countryF     0.17483    0.07130   2.452 0.014209 *  
+destinationIVab:countryF    0.18250    0.07402   2.465 0.013684 *  
+destinationIVc:countryF     0.73972    0.11572   6.392 1.64e-10 ***
+destinationV/VI:countryF   -0.11294    0.05496  -2.055 0.039884 *  
+destinationVIIa:countryF    0.02129    0.05885   0.362 0.717449    
+destinationVIIb:countryF    0.11636    0.13452   0.865 0.387023    
+destinationIII:countryS    -0.22236    0.10142  -2.192 0.028352 *  
+destinationIVab:countryS   -0.17172    0.10342  -1.660 0.096839 .  
+destinationIVc:countryS    -0.38697    0.15155  -2.553 0.010668 *  
+destinationV/VI:countryS   -0.09561    0.07021  -1.362 0.173263    
+destinationVIIa:countryS   -0.17583    0.07672  -2.292 0.021913 *  
+destinationVIIb:countryS   -0.64986    0.19498  -3.333 0.000859 ***
+originIII:destinationIII    0.76642    0.11807   6.491 8.52e-11 ***
+originIVab:destinationIII   0.52595    0.11560   4.550 5.37e-06 ***
+originIVc:destinationIII    1.17849    0.13041   9.037  &lt; 2e-16 ***
+originV/VI:destinationIII   0.87374    0.09195   9.502  &lt; 2e-16 ***
+originVIIa:destinationIII   1.10866    0.10285  10.779  &lt; 2e-16 ***
+originVIIb:destinationIII   1.36163    0.20619   6.604 4.01e-11 ***
+originIII:destinationIVab   0.69419    0.15016   4.623 3.78e-06 ***
+originIVab:destinationIVab  2.02108    0.11352  17.804  &lt; 2e-16 ***
+originIVc:destinationIVab   1.73618    0.14216  12.213  &lt; 2e-16 ***
+originV/VI:destinationIVab  1.12813    0.11169  10.101  &lt; 2e-16 ***
+originVIIa:destinationIVab  1.25162    0.12471  10.036  &lt; 2e-16 ***
+originVIIb:destinationIVab  2.01369    0.20909   9.631  &lt; 2e-16 ***
+originIII:destinationIVc    0.23560    0.45713   0.515 0.606273    
+originIVab:destinationIVc   1.24669    0.32500   3.836 0.000125 ***
+originIVc:destinationIVc    5.21749    0.26575  19.633  &lt; 2e-16 ***
+originV/VI:destinationIVc   0.18607    0.36231   0.514 0.607553    
+originVIIa:destinationIVc   1.22166    0.33304   3.668 0.000244 ***
+originVIIb:destinationIVc   3.56730    0.33324  10.705  &lt; 2e-16 ***
+originIII:destinationV/VI   1.17516    0.09949  11.812  &lt; 2e-16 ***
+originIVab:destinationV/VI  1.20044    0.09270  12.950  &lt; 2e-16 ***
+originIVc:destinationV/VI   1.88309    0.10710  17.582  &lt; 2e-16 ***
+originV/VI:destinationV/VI  2.05945    0.07524  27.372  &lt; 2e-16 ***
+originVIIa:destinationV/VI  2.21492    0.08327  26.601  &lt; 2e-16 ***
+originVIIb:destinationV/VI  2.54647    0.15871  16.045  &lt; 2e-16 ***
+originIII:destinationVIIa   1.28947    0.12352  10.440  &lt; 2e-16 ***
+originIVab:destinationVIIa  1.46717    0.11334  12.944  &lt; 2e-16 ***
+originIVc:destinationVIIa   2.84331    0.11806  24.084  &lt; 2e-16 ***
+originV/VI:destinationVIIa  2.14755    0.09583  22.410  &lt; 2e-16 ***
+originVIIa:destinationVIIa  2.70994    0.10109  26.807  &lt; 2e-16 ***
+originVIIb:destinationVIIa  3.48535    0.16446  21.193  &lt; 2e-16 ***
+originIII:destinationVIIb   1.34327    0.50723   2.648 0.008091 ** 
+originIVab:destinationVIIb  1.75599    0.45232   3.882 0.000104 ***
+originIVc:destinationVIIb   4.65198    0.39743  11.705  &lt; 2e-16 ***
+originV/VI:destinationVIIb  1.80532    0.41541   4.346 1.39e-05 ***
+originVIIa:destinationVIIb  2.31365    0.42297   5.470 4.50e-08 ***
+originVIIb:destinationVIIb  5.72803    0.41103  13.936  &lt; 2e-16 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Residual deviance: 121.3 on 72 degrees of freedom
+AIC: 1085.4
+
+Number of iterations: 4</code></pre>
+<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="8-Note.html#cb193-1"></a><span class="kw">anova</span>(fit_O, fit_Common_Pattern, fit_Common)</span></code></pre></div>
+<pre><code>Analysis of Deviance Table
+
+Model 1: Freq ~ origin + destination + country + origin:country + destination:country
+Model 2: Freq ~ origin + destination + country + origin:country + destination:country + 
+    levelMatrix
+Model 3: Freq ~ origin + destination + country + origin:country + destination:country + 
+    origin:destination
+  Resid. Df Resid. Dev Df Deviance
+1       108     4860.0            
+2       103      505.6  5   4354.4
+3        72      121.3 31    384.3</code></pre>
+</div>
+<div id="xie" class="section level2" number="7.10">
+<h2><span class="header-section-number">7.10</span> Xie</h2>
+<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="8-Note.html#cb195-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb195-2"><a href="8-Note.html#cb195-2"></a><span class="kw">library</span>(magrittr)</span>
+<span id="cb195-3"><a href="8-Note.html#cb195-3"></a><span class="kw">library</span>(gnm)</span>
+<span id="cb195-4"><a href="8-Note.html#cb195-4"></a>Freq &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">6</span>, <span class="dv">26</span>, <span class="dv">11</span>, <span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">23</span>, <span class="dv">11</span>, <span class="dv">1</span>, <span class="dv">2</span>)</span>
+<span id="cb195-5"><a href="8-Note.html#cb195-5"></a>Row &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> <span class="dv">4</span>, <span class="dt">k =</span> <span class="dv">4</span>)</span>
+<span id="cb195-6"><a href="8-Note.html#cb195-6"></a>Col &lt;-<span class="st"> </span><span class="kw">gl</span>(<span class="dt">n =</span> <span class="dv">4</span>, <span class="dt">k =</span> <span class="dv">1</span>, <span class="dt">length =</span> <span class="dv">16</span>)</span>
+<span id="cb195-7"><a href="8-Note.html#cb195-7"></a>d &lt;-<span class="st"> </span><span class="kw">tibble</span>(Freq, Row, Col)</span>
+<span id="cb195-8"><a href="8-Note.html#cb195-8"></a></span>
+<span id="cb195-9"><a href="8-Note.html#cb195-9"></a>fit &lt;-</span>
+<span id="cb195-10"><a href="8-Note.html#cb195-10"></a><span class="st">  </span><span class="kw">gnm</span>(Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, Row, Col),</span>
+<span id="cb195-11"><a href="8-Note.html#cb195-11"></a>      <span class="dt">family =</span> poisson,</span>
+<span id="cb195-12"><a href="8-Note.html#cb195-12"></a>      <span class="dt">data =</span> d)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations........
+Done</code></pre>
+<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb197-1"><a href="8-Note.html#cb197-1"></a><span class="kw">summary</span>(fit)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ Row + Col + Mult(1, Row, Col), family = poisson, 
+    data = d)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.51267  -0.25916  -0.03574   0.25369   0.66120  
+
+Coefficients:
+                      Estimate Std. Error z value Pr(&gt;|z|)
+(Intercept)            2.26787         NA      NA       NA
+Row2                  -0.11845         NA      NA       NA
+Row3                   0.60428         NA      NA       NA
+Row4                   0.15022         NA      NA       NA
+Col2                  -0.53064         NA      NA       NA
+Col3                  -1.15468         NA      NA       NA
+Col4                  -0.79274         NA      NA       NA
+Mult(., Row, Col).   -13.05260         NA      NA       NA
+Mult(1, ., Col).Row1   0.46488         NA      NA       NA
+Mult(1, ., Col).Row2   0.36051         NA      NA       NA
+Mult(1, ., Col).Row3  -0.21228         NA      NA       NA
+Mult(1, ., Col).Row4  -0.46968         NA      NA       NA
+Mult(1, Row, .).Col1   0.12239         NA      NA       NA
+Mult(1, Row, .).Col2   0.06808         NA      NA       NA
+Mult(1, Row, .).Col3  -0.20718         NA      NA       NA
+Mult(1, Row, .).Col4  -0.13544         NA      NA       NA
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: 1.7442 on 4 degrees of freedom
+AIC: 84.814
+
+Number of iterations: 8</code></pre>
+<div class="sourceCode" id="cb199"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb199-1"><a href="8-Note.html#cb199-1"></a>rowProbs &lt;-<span class="st"> </span><span class="kw">with</span>(d, <span class="kw">tapply</span>(Freq, Row, sum) <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(Freq))</span>
+<span id="cb199-2"><a href="8-Note.html#cb199-2"></a>colProbs &lt;-<span class="st"> </span><span class="kw">with</span>(d, <span class="kw">tapply</span>(Freq, Col, sum) <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(Freq))</span>
+<span id="cb199-3"><a href="8-Note.html#cb199-3"></a>mu &lt;-<span class="st"> </span><span class="kw">getContrasts</span>(</span>
+<span id="cb199-4"><a href="8-Note.html#cb199-4"></a>  fit,</span>
+<span id="cb199-5"><a href="8-Note.html#cb199-5"></a>  <span class="kw">pickCoef</span>(fit, <span class="st">&quot;[.]Row&quot;</span>),</span>
+<span id="cb199-6"><a href="8-Note.html#cb199-6"></a>  <span class="dt">ref =</span> rowProbs,</span>
+<span id="cb199-7"><a href="8-Note.html#cb199-7"></a>  <span class="dt">scaleRef =</span> rowProbs,</span>
+<span id="cb199-8"><a href="8-Note.html#cb199-8"></a>  <span class="dt">scaleWeights =</span> rowProbs</span>
+<span id="cb199-9"><a href="8-Note.html#cb199-9"></a>)</span>
+<span id="cb199-10"><a href="8-Note.html#cb199-10"></a>nu &lt;-<span class="st"> </span><span class="kw">getContrasts</span>(</span>
+<span id="cb199-11"><a href="8-Note.html#cb199-11"></a>  fit,</span>
+<span id="cb199-12"><a href="8-Note.html#cb199-12"></a>  <span class="kw">pickCoef</span>(fit, <span class="st">&quot;[.]Col&quot;</span>),</span>
+<span id="cb199-13"><a href="8-Note.html#cb199-13"></a>  <span class="dt">ref =</span> colProbs,</span>
+<span id="cb199-14"><a href="8-Note.html#cb199-14"></a>  <span class="dt">scaleRef =</span> colProbs,</span>
+<span id="cb199-15"><a href="8-Note.html#cb199-15"></a>  <span class="dt">scaleWeights =</span> colProbs</span>
+<span id="cb199-16"><a href="8-Note.html#cb199-16"></a>)</span>
+<span id="cb199-17"><a href="8-Note.html#cb199-17"></a>fit &lt;-</span>
+<span id="cb199-18"><a href="8-Note.html#cb199-18"></a><span class="st">  </span><span class="kw">gnm</span>(</span>
+<span id="cb199-19"><a href="8-Note.html#cb199-19"></a>    Freq <span class="op">~</span><span class="st"> </span>Row <span class="op">+</span><span class="st"> </span>Col <span class="op">+</span><span class="st"> </span><span class="kw">Mult</span>(<span class="dv">1</span>, Row, Col),</span>
+<span id="cb199-20"><a href="8-Note.html#cb199-20"></a>    <span class="dt">family =</span> poisson,</span>
+<span id="cb199-21"><a href="8-Note.html#cb199-21"></a>    <span class="dt">data =</span> d,</span>
+<span id="cb199-22"><a href="8-Note.html#cb199-22"></a>    <span class="dt">constrain =</span> <span class="dv">9</span><span class="op">:</span><span class="dv">16</span>,</span>
+<span id="cb199-23"><a href="8-Note.html#cb199-23"></a>    <span class="dt">constrainTo =</span> <span class="kw">c</span>(mu<span class="op">$</span>qvframe[, <span class="dv">1</span>], <span class="dv">-1</span> <span class="op">*</span><span class="st"> </span>nu<span class="op">$</span>qvframe[, <span class="dv">1</span>])</span>
+<span id="cb199-24"><a href="8-Note.html#cb199-24"></a>  )</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...
+Done</code></pre>
+<div class="sourceCode" id="cb201"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb201-1"><a href="8-Note.html#cb201-1"></a>mu_score &lt;-<span class="st"> </span><span class="kw">rep</span>(mu<span class="op">$</span>qvframe[, <span class="dv">1</span>], <span class="dt">each =</span> <span class="dv">4</span>)</span>
+<span id="cb201-2"><a href="8-Note.html#cb201-2"></a>nu_score &lt;-<span class="st"> </span><span class="kw">rep</span>(nu<span class="op">$</span>qvframe[, <span class="dv">1</span>], <span class="dv">4</span>)</span>
+<span id="cb201-3"><a href="8-Note.html#cb201-3"></a>d <span class="op">%&lt;&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">mu =</span> mu_score,</span>
+<span id="cb201-4"><a href="8-Note.html#cb201-4"></a>              <span class="dt">nu =</span> nu_score)</span>
+<span id="cb201-5"><a href="8-Note.html#cb201-5"></a></span>
+<span id="cb201-6"><a href="8-Note.html#cb201-6"></a><span class="co"># Canonical correlation</span></span>
+<span id="cb201-7"><a href="8-Note.html#cb201-7"></a><span class="kw">library</span>(wCorr)</span>
+<span id="cb201-8"><a href="8-Note.html#cb201-8"></a><span class="kw">with</span>(d, <span class="kw">weightedCorr</span>(mu, nu, <span class="dt">weights =</span> Freq))</span></code></pre></div>
+<pre><code>[1] -0.5585432</code></pre>
+<div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="8-Note.html#cb203-1"></a><span class="kw">summary</span>(fit)</span></code></pre></div>
+<pre><code>
+Call:
+gnm(formula = Freq ~ Row + Col + Mult(1, Row, Col), constrain = 9:16, 
+    constrainTo = c(mu$qvframe[, 1], -1 * nu$qvframe[, 1]), family = poisson, 
+    data = d)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-0.51267  -0.25916  -0.03574   0.25369   0.66120  
+
+Coefficients:
+                     Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)            2.2730     0.2679   8.484  &lt; 2e-16 ***
+Row2                  -0.1064     0.2823  -0.377 0.706328    
+Row3                   0.6827     0.2698   2.530 0.011397 *  
+Row4                   0.2584     0.2844   0.908 0.363656    
+Col2                  -0.5588     0.2278  -2.454 0.014141 *  
+Col3                  -1.3258     0.3082  -4.301 1.70e-05 ***
+Col4                  -0.9266     0.2677  -3.462 0.000536 ***
+Mult(., Row, Col).     0.6577     0.1127   5.836 5.35e-09 ***
+Mult(1, ., Col).Row1   1.3355         NA      NA       NA    
+Mult(1, ., Col).Row2   1.0593         NA      NA       NA    
+Mult(1, ., Col).Row3  -0.4565         NA      NA       NA    
+Mult(1, ., Col).Row4  -1.1376         NA      NA       NA    
+Mult(1, Row, .).Col1  -0.8514         NA      NA       NA    
+Mult(1, Row, .).Col2  -0.4441         NA      NA       NA    
+Mult(1, Row, .).Col3   1.6203         NA      NA       NA    
+Mult(1, Row, .).Col4   1.0823         NA      NA       NA    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: 1.7442 on 8 degrees of freedom
+AIC: 76.814
+
+Number of iterations: 3</code></pre>
+<div class="sourceCode" id="cb205"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb205-1"><a href="8-Note.html#cb205-1"></a>phi &lt;-<span class="st"> </span>fit<span class="op">$</span>coefficients[<span class="st">&quot;Mult(., Row, Col).&quot;</span>] <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">abs</span>()</span>
+<span id="cb205-2"><a href="8-Note.html#cb205-2"></a>rho &lt;-<span class="st"> </span>(<span class="op">-</span><span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="dv">4</span> <span class="op">*</span><span class="st"> </span>phi <span class="op">^</span><span class="st"> </span><span class="dv">2</span>)) <span class="op">/</span><span class="st"> </span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span>phi)</span>
+<span id="cb205-3"><a href="8-Note.html#cb205-3"></a>eta &lt;-<span class="st"> </span>(<span class="dv">2</span> <span class="op">*</span><span class="st"> </span>phi) <span class="op">^</span><span class="st"> </span>(<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb205-4"><a href="8-Note.html#cb205-4"></a>tau &lt;-<span class="st"> </span>(<span class="dv">1</span> <span class="op">+</span><span class="st"> </span>eta <span class="op">^</span><span class="st"> </span><span class="dv">2</span>) <span class="op">^</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">/</span><span class="st"> </span><span class="dv">2</span>) <span class="op">-</span><span class="st"> </span>eta</span>
+<span id="cb205-5"><a href="8-Note.html#cb205-5"></a>mu</span></code></pre></div>
+<pre><code>                       Estimate Std. Error
+Mult(1, ., Col).Row1  1.3354658  0.1909635
+Mult(1, ., Col).Row2  1.0592605  0.2590555
+Mult(1, ., Col).Row3 -0.4564888  0.2467937
+Mult(1, ., Col).Row4 -1.1376491  0.2191522</code></pre>
+<div class="sourceCode" id="cb207"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb207-1"><a href="8-Note.html#cb207-1"></a>nu</span></code></pre></div>
+<pre><code>                       Estimate Std. Error
+Mult(1, Row, .).Col1  0.8513968  0.1194283
+Mult(1, Row, .).Col2  0.4440776  0.2763713
+Mult(1, Row, .).Col3 -1.6203060  0.2558555
+Mult(1, Row, .).Col4 -1.0822644  0.2870932</code></pre>
+<div class="sourceCode" id="cb209"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb209-1"><a href="8-Note.html#cb209-1"></a>phi</span></code></pre></div>
+<pre><code>Mult(., Row, Col). 
+         0.6576831 </code></pre>
+<div class="sourceCode" id="cb211"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb211-1"><a href="8-Note.html#cb211-1"></a>rho</span></code></pre></div>
+<pre><code>Mult(., Row, Col). 
+         0.4959289 </code></pre>
+<div class="sourceCode" id="cb213"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb213-1"><a href="8-Note.html#cb213-1"></a>tau</span></code></pre></div>
+<pre><code>Mult(., Row, Col). 
+         0.4959289 </code></pre>
+<div class="sourceCode" id="cb215"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb215-1"><a href="8-Note.html#cb215-1"></a>delta_mu &lt;-<span class="st"> </span><span class="kw">abs</span>((<span class="op">-</span><span class="fl">1.3354658</span> <span class="op">-</span><span class="st"> </span><span class="fl">1.1376491</span>) <span class="op">/</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="dv">4</span>))</span>
+<span id="cb215-2"><a href="8-Note.html#cb215-2"></a>delta_nu &lt;-<span class="st"> </span><span class="kw">abs</span>((<span class="op">-</span><span class="fl">0.8513968</span> <span class="op">-</span><span class="st"> </span><span class="fl">1.0822644</span>) <span class="op">/</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="dv">4</span>))</span>
+<span id="cb215-3"><a href="8-Note.html#cb215-3"></a><span class="co"># Adjusted</span></span>
+<span id="cb215-4"><a href="8-Note.html#cb215-4"></a>tau <span class="op">*</span><span class="st"> </span>((<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>delta_mu <span class="op">/</span><span class="st"> </span><span class="dv">12</span>) <span class="op">*</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>delta_nu <span class="op">/</span><span class="st"> </span><span class="dv">12</span>)) <span class="op">^</span><span class="st"> </span>(<span class="op">-</span><span class="dv">1</span> <span class="op">/</span><span class="st"> </span><span class="dv">2</span>)</span></code></pre></div>
+<pre><code>Mult(., Row, Col). 
+         0.5282781 </code></pre>
+<div class="sourceCode" id="cb217"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb217-1"><a href="8-Note.html#cb217-1"></a><span class="kw">library</span>(logmult)</span>
+<span id="cb217-2"><a href="8-Note.html#cb217-2"></a>tab &lt;-<span class="st"> </span><span class="kw">matrix</span>(Freq,</span>
+<span id="cb217-3"><a href="8-Note.html#cb217-3"></a>              <span class="dt">nrow =</span> <span class="dv">4</span>,</span>
+<span id="cb217-4"><a href="8-Note.html#cb217-4"></a>              <span class="dt">ncol =</span> <span class="dv">4</span>,</span>
+<span id="cb217-5"><a href="8-Note.html#cb217-5"></a>              <span class="dt">byrow =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb217-6"><a href="8-Note.html#cb217-6"></a>rc2 &lt;-<span class="st"> </span><span class="kw">rc</span>(tab,</span>
+<span id="cb217-7"><a href="8-Note.html#cb217-7"></a>          <span class="dt">nd =</span> <span class="dv">1</span>,</span>
+<span id="cb217-8"><a href="8-Note.html#cb217-8"></a>          <span class="dt">weighting =</span> <span class="st">&quot;marginal&quot;</span>,</span>
+<span id="cb217-9"><a href="8-Note.html#cb217-9"></a>          <span class="dt">se =</span> <span class="st">&quot;bootstrap&quot;</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations............
+Done
+Computing bootstrap standard errors...
+.</code></pre>
+<div class="sourceCode" id="cb219"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb219-1"><a href="8-Note.html#cb219-1"></a><span class="kw">summary</span>(rc2)</span></code></pre></div>
+<pre><code>Call:
+rc(tab = tab, nd = 1, weighting = &quot;marginal&quot;, se = &quot;bootstrap&quot;)
+
+Deviance Residuals:
+    Columns
+Rows         A         B         C         D
+   A   0.18575  -0.40583  -0.21673   0.32921
+   B  -0.38647   0.66120   0.30497  -0.51267
+   C   0.23692  -0.44850  -0.07819   0.21153
+   D  -0.15877   0.30399   0.00672  -0.14657
+
+Association coefficients:
+               Normalized  Adjusted  Std. error   Pr(&gt;|z|)     
+Dim1              0.65768        NA      0.2664  0.0135689  *  
+Dim1:RowsA        1.33547   1.08303      0.2484  7.561e-08  ***
+Dim1:RowsB        1.05926   0.85904      0.3122  0.0006924  ***
+Dim1:RowsC       -0.45649  -0.37020      0.2653  0.0852820  .  
+Dim1:RowsD       -1.13765  -0.92261      0.2762  3.801e-05  ***
+Dim1:ColumnsA    -0.85140  -0.69046      0.1389  8.915e-10  ***
+Dim1:ColumnsB    -0.44408  -0.36014      0.3212  0.1667834     
+Dim1:ColumnsC     1.62031   1.31403      0.3316  1.029e-06  ***
+Dim1:ColumnsD     1.08226   0.87769      0.3666  0.0031545  ** 
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Normalization weights: marginal
+Deviance:              1.744218
+Pearson chi-squared:   1.760665
+Dissimilarity index:   4.670712%
+Residual df:           4
+BIC:                   -17.87688
+AIC:                   -6.255782</code></pre>
+<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb221-1"><a href="8-Note.html#cb221-1"></a><span class="kw">assoc</span>(rc2)</span></code></pre></div>
+<pre><code>$phi
+          Dim1
+[1,] 0.6576832
+
+$row
+, , 1
+
+        Dim1
+A  1.3354659
+B  1.0592602
+C -0.4564886
+D -1.1376492
+
+
+$col
+, , 1
+
+        Dim1
+A -0.8513968
+B -0.4440776
+C  1.6203060
+D  1.0822643
+
+
+$diagonal
+numeric(0)
+
+$weighting
+[1] &quot;marginal&quot;
+
+$row.weights
+  [,1]
+A   29
+B   23
+C   46
+D   37
+
+$col.weights
+  [,1]
+A   58
+B   30
+C   22
+D   25
+
+$vars
+[1] &quot;Rows&quot;    &quot;Columns&quot;
+
+attr(,&quot;class&quot;)
+[1] &quot;assoc.rc&quot; &quot;assoc&quot;   </code></pre>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="7-Chapter_6.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["カテゴリカルデータの連関モデル.pdf", "カテゴリカルデータの連関モデル.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

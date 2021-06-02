@@ -19,5 +19,7 @@ link-citations: yes
 
 
 
-- このページはRaymond Wong著・藤原翔訳．2021．『カテゴリカルデータの連関分析』（共立出版）．のためのサポートページである．
-- 英語版のサポートページは www.sagepub.com/wongstudy にあるのでそちらを参考にしてほしい．
+- このページはRaymond Wong著・藤原翔訳．2021．『カテゴリカルデータの連関分析』（共立出版）．のためのサポートページです．
+- 英語版のサポートページは www.sagepub.com/wongstudy にあるのでそちらを参考にしてください．
+
+- Rのプログラム等については https://github.com/ShoFujihara/Association_Models の scripts というフォルダに保存されているので，そちらを参照してください．
