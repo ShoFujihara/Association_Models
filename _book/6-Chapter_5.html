@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 第5章 | 『カテゴリカルデータの連関モデル』サポートページ</title>
+  <meta name="description" content="6 第5章 | 『カテゴリカルデータの連関モデル』サポートページ" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 第5章 | 『カテゴリカルデータの連関モデル』サポートページ" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 第5章 | 『カテゴリカルデータの連関モデル』サポートページ" />
+  
+  
+  
+
+<meta name="author" content="藤原翔（Sho Fujihara）" />
+
+
+<meta name="date" content="2020-09-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="5-Chapter_4.html"/>
+<link rel="next" href="7-Chapter_6.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">『カテゴリカルデータの連関モデル』サポートページ</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="1-Introduction.html"><a href="1-Introduction.html"><i class="fa fa-check"></i><b>1</b> はじめに</a><ul>
+<li class="chapter" data-level="1.1" data-path="1-Introduction.html"><a href="1-Introduction.html#本ページの目的"><i class="fa fa-check"></i><b>1.1</b> 本ページの目的</a></li>
+<li class="chapter" data-level="1.2" data-path="1-Introduction.html"><a href="1-Introduction.html#正誤表"><i class="fa fa-check"></i><b>1.2</b> 正誤表</a></li>
+<li class="chapter" data-level="1.3" data-path="1-Introduction.html"><a href="1-Introduction.html#rのインストール"><i class="fa fa-check"></i><b>1.3</b> Rのインストール</a></li>
+<li class="chapter" data-level="1.4" data-path="1-Introduction.html"><a href="1-Introduction.html#l_rm-emのインストール"><i class="fa fa-check"></i><b>1.4</b> <span class="math inline">\(l_{\rm EM}\)</span>のインストール</a></li>
+<li class="chapter" data-level="1.5" data-path="1-Introduction.html"><a href="1-Introduction.html#シリーズ編者による序文"><i class="fa fa-check"></i><b>1.5</b> シリーズ編者による序文</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="1-Introduction.html"><a href="1-Introduction.html#独立性の検定"><i class="fa fa-check"></i><b>1.5.1</b> 独立性の検定</a></li>
+<li class="chapter" data-level="1.5.2" data-path="1-Introduction.html"><a href="1-Introduction.html#一様連関モデル"><i class="fa fa-check"></i><b>1.5.2</b> 一様連関モデル</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="1-Introduction.html"><a href="1-Introduction.html#度数行変数列変数のデータからクロス表を作成"><i class="fa fa-check"></i><b>1.6</b> 度数，行変数，列変数のデータからクロス表を作成</a></li>
+<li class="chapter" data-level="1.7" data-path="1-Introduction.html"><a href="1-Introduction.html#練習問題"><i class="fa fa-check"></i><b>1.7</b> 練習問題</a></li>
+<li class="chapter" data-level="1.8" data-path="1-Introduction.html"><a href="1-Introduction.html#参考文献"><i class="fa fa-check"></i><b>1.8</b> 参考文献</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="2-Chapter_1.html"><a href="2-Chapter_1.html"><i class="fa fa-check"></i><b>2</b> 第1章</a></li>
+<li class="chapter" data-level="3" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html"><i class="fa fa-check"></i><b>3</b> 第2章</a><ul>
+<li class="chapter" data-level="3.1" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.1-p.8"><i class="fa fa-check"></i><b>3.1</b> 表2.1 (p.8)</a></li>
+<li class="chapter" data-level="3.2" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.3-p.32"><i class="fa fa-check"></i><b>3.2</b> 表2.3 (p.32)</a></li>
+<li class="chapter" data-level="3.3" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.4a"><i class="fa fa-check"></i><b>3.3</b> 表2.4A</a></li>
+<li class="chapter" data-level="3.4" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.4b"><i class="fa fa-check"></i><b>3.4</b> 表2.4B</a></li>
+<li class="chapter" data-level="3.5" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.5a"><i class="fa fa-check"></i><b>3.5</b> 表2.5A</a></li>
+<li class="chapter" data-level="3.6" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#logmultパッケージの利用"><i class="fa fa-check"></i><b>3.6</b> logmultパッケージの利用</a></li>
+<li class="chapter" data-level="3.7" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.6a"><i class="fa fa-check"></i><b>3.7</b> 表2.6A</a></li>
+<li class="chapter" data-level="3.8" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.6b"><i class="fa fa-check"></i><b>3.8</b> 表2.6B</a></li>
+<li class="chapter" data-level="3.9" data-path="3-Chapter_2.html"><a href="3-Chapter_2.html#表2.6c"><i class="fa fa-check"></i><b>3.9</b> 表2.6C</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="4-Chapter_3.html"><a href="4-Chapter_3.html"><i class="fa fa-check"></i><b>4</b> 第3章</a><ul>
+<li class="chapter" data-level="4.1" data-path="4-Chapter_3.html"><a href="4-Chapter_3.html#表3.1a"><i class="fa fa-check"></i><b>4.1</b> 表3.1A</a></li>
+<li class="chapter" data-level="4.2" data-path="4-Chapter_3.html"><a href="4-Chapter_3.html#表3.1b"><i class="fa fa-check"></i><b>4.2</b> 表3.1B</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="5-Chapter_4.html"><a href="5-Chapter_4.html"><i class="fa fa-check"></i><b>5</b> 第4章</a></li>
+<li class="chapter" data-level="6" data-path="6-Chapter_5.html"><a href="6-Chapter_5.html"><i class="fa fa-check"></i><b>6</b> 第5章</a><ul>
+<li class="chapter" data-level="6.1" data-path="6-Chapter_5.html"><a href="6-Chapter_5.html#表5.1"><i class="fa fa-check"></i><b>6.1</b> 表5.1</a></li>
+<li class="chapter" data-level="6.2" data-path="6-Chapter_5.html"><a href="6-Chapter_5.html#表5.4"><i class="fa fa-check"></i><b>6.2</b> 表5.4</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="7-Chapter_6.html"><a href="7-Chapter_6.html"><i class="fa fa-check"></i><b>7</b> 第6章</a></li>
+<li class="divider"></li>
+<li></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">『カテゴリカルデータの連関モデル』サポートページ</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="第5章" class="section level1">
+<h1><span class="header-section-number">6</span> 第5章</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="6-Chapter_5.html#cb1-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="6-Chapter_5.html#cb1-2"></a><span class="kw">library</span>(magrittr)</span>
+<span id="cb1-3"><a href="6-Chapter_5.html#cb1-3"></a><span class="kw">library</span>(gnm)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="6-Chapter_5.html#cb2-1"></a><span class="co"># Specify the constrasts</span></span>
+<span id="cb2-2"><a href="6-Chapter_5.html#cb2-2"></a><span class="co"># Here, we use sum to zero contrast.</span></span>
+<span id="cb2-3"><a href="6-Chapter_5.html#cb2-3"></a><span class="kw">options</span>(<span class="dt">width=</span><span class="dv">90</span>,<span class="dt">contrasts =</span> <span class="kw">c</span>(<span class="dt">factor=</span><span class="st">&quot;contr.sum&quot;</span>, <span class="dt">ordered=</span><span class="st">&quot;contr.treatment&quot;</span>))</span>
+<span id="cb2-4"><a href="6-Chapter_5.html#cb2-4"></a></span>
+<span id="cb2-5"><a href="6-Chapter_5.html#cb2-5"></a><span class="co"># Define a function which calculation BIC based on L2 statistics</span></span>
+<span id="cb2-6"><a href="6-Chapter_5.html#cb2-6"></a>model.summary&lt;-<span class="cf">function</span>(obj){</span>
+<span id="cb2-7"><a href="6-Chapter_5.html#cb2-7"></a>     aic&lt;-obj<span class="op">$</span>deviance<span class="op">-</span>obj<span class="op">$</span>df<span class="op">*</span><span class="dv">2</span>   <span class="co"># AIC(L2)</span></span>
+<span id="cb2-8"><a href="6-Chapter_5.html#cb2-8"></a>     bic&lt;-obj<span class="op">$</span>deviance<span class="op">-</span>obj<span class="op">$</span>df<span class="op">*</span><span class="kw">log</span>(<span class="kw">sum</span>(obj<span class="op">$</span>y))   <span class="co">#BIC(L2)</span></span>
+<span id="cb2-9"><a href="6-Chapter_5.html#cb2-9"></a>     <span class="co">#Index of Dissimilarity (%)</span></span>
+<span id="cb2-10"><a href="6-Chapter_5.html#cb2-10"></a>     delta&lt;-<span class="dv">100</span><span class="op">*</span><span class="kw">sum</span>(<span class="kw">abs</span>(obj<span class="op">$</span>y<span class="op">-</span>obj<span class="op">$</span>fitted.values))<span class="op">/</span>(<span class="dv">2</span><span class="op">*</span><span class="kw">sum</span>(obj<span class="op">$</span>y))</span>
+<span id="cb2-11"><a href="6-Chapter_5.html#cb2-11"></a>     p&lt;-<span class="kw">pchisq</span>(obj<span class="op">$</span>deviance, obj<span class="op">$</span>df, <span class="dt">lower.tail=</span>F)</span>
+<span id="cb2-12"><a href="6-Chapter_5.html#cb2-12"></a>     <span class="co">#p&lt;-ifelse(p&lt;0.001,&quot;&lt;0.001&quot;,p)</span></span>
+<span id="cb2-13"><a href="6-Chapter_5.html#cb2-13"></a>     result&lt;-<span class="kw">matrix</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">6</span>)</span>
+<span id="cb2-14"><a href="6-Chapter_5.html#cb2-14"></a>     <span class="kw">rownames</span>(result)&lt;-<span class="st">&quot;&quot;</span></span>
+<span id="cb2-15"><a href="6-Chapter_5.html#cb2-15"></a>     <span class="kw">colnames</span>(result)&lt;-<span class="kw">c</span>(<span class="st">&quot;Df&quot;</span>,<span class="st">&quot;L2&quot;</span>,<span class="st">&quot;p&quot;</span>,<span class="st">&quot;AIC(L2)&quot;</span>,<span class="st">&quot;BIC(L2)&quot;</span>,<span class="st">&quot;Delta&quot;</span>)</span>
+<span id="cb2-16"><a href="6-Chapter_5.html#cb2-16"></a>     <span class="co">#exp.freq=obj$fitted.values</span></span>
+<span id="cb2-17"><a href="6-Chapter_5.html#cb2-17"></a>     result[<span class="dv">1</span>,]&lt;-<span class="kw">c</span>(obj<span class="op">$</span>df,obj<span class="op">$</span>deviance,p,aic,bic,delta)</span>
+<span id="cb2-18"><a href="6-Chapter_5.html#cb2-18"></a>     <span class="kw">print</span>(<span class="st">&quot;Model Summary:&quot;</span>)</span>
+<span id="cb2-19"><a href="6-Chapter_5.html#cb2-19"></a>     <span class="kw">return</span>(result)</span>
+<span id="cb2-20"><a href="6-Chapter_5.html#cb2-20"></a>}</span></code></pre></div>
+<div id="表5.1" class="section level2">
+<h2><span class="header-section-number">6.1</span> 表5.1</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="6-Chapter_5.html#cb3-1"></a><span class="co"># Table 5.1</span></span>
+<span id="cb3-2"><a href="6-Chapter_5.html#cb3-2"></a>Freq&lt;-<span class="kw">c</span>(<span class="dv">118</span>, <span class="dv">28</span>,  <span class="dv">32</span>,  <span class="dv">6</span>,  <span class="dv">7</span>,</span>
+<span id="cb3-3"><a href="6-Chapter_5.html#cb3-3"></a>        <span class="dv">218</span>, <span class="dv">28</span>,  <span class="dv">97</span>, <span class="dv">12</span>, <span class="dv">14</span>,</span>
+<span id="cb3-4"><a href="6-Chapter_5.html#cb3-4"></a>         <span class="dv">11</span>,  <span class="dv">2</span>,   <span class="dv">4</span>,  <span class="dv">1</span>,  <span class="dv">1</span>,</span>
+<span id="cb3-5"><a href="6-Chapter_5.html#cb3-5"></a>        <span class="dv">104</span>, <span class="dv">22</span>,  <span class="dv">61</span>,  <span class="dv">8</span>,  <span class="dv">5</span>,</span>
+<span id="cb3-6"><a href="6-Chapter_5.html#cb3-6"></a>        <span class="dv">117</span>, <span class="dv">24</span>,  <span class="dv">70</span>,  <span class="dv">9</span>,  <span class="dv">7</span>,</span>
+<span id="cb3-7"><a href="6-Chapter_5.html#cb3-7"></a>         <span class="dv">42</span>,  <span class="dv">6</span>,  <span class="dv">20</span>,  <span class="dv">2</span>,  <span class="dv">0</span>,</span>
+<span id="cb3-8"><a href="6-Chapter_5.html#cb3-8"></a>         <span class="dv">48</span>, <span class="dv">16</span>, <span class="dv">104</span>, <span class="dv">14</span>,  <span class="dv">9</span>,</span>
+<span id="cb3-9"><a href="6-Chapter_5.html#cb3-9"></a>        <span class="dv">128</span>, <span class="dv">52</span>,  <span class="dv">81</span>, <span class="dv">14</span>, <span class="dv">12</span>)</span>
+<span id="cb3-10"><a href="6-Chapter_5.html#cb3-10"></a></span>
+<span id="cb3-11"><a href="6-Chapter_5.html#cb3-11"></a></span>
+<span id="cb3-12"><a href="6-Chapter_5.html#cb3-12"></a>Worries&lt;-<span class="kw">gl</span>(<span class="dv">8</span>,<span class="dv">5</span>)</span>
+<span id="cb3-13"><a href="6-Chapter_5.html#cb3-13"></a>Situations&lt;-<span class="kw">gl</span>(<span class="dv">5</span>,<span class="dv">1</span>,<span class="dv">8</span><span class="op">*</span><span class="dv">5</span>)</span>
+<span id="cb3-14"><a href="6-Chapter_5.html#cb3-14"></a></span>
+<span id="cb3-15"><a href="6-Chapter_5.html#cb3-15"></a></span>
+<span id="cb3-16"><a href="6-Chapter_5.html#cb3-16"></a><span class="co"># Model 1 - Independence</span></span>
+<span id="cb3-17"><a href="6-Chapter_5.html#cb3-17"></a>m1&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Worries<span class="op">+</span>Situations,<span class="dt">family=</span>poisson,<span class="dt">trace=</span>F,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span>
+<span id="cb3-18"><a href="6-Chapter_5.html#cb3-18"></a><span class="kw">model.summary</span>(m1)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code> Df       L2            p  AIC(L2)   BIC(L2)    Delta
+ 28 121.4661 1.307612e-13 65.46607 -84.29438 9.844607</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="6-Chapter_5.html#cb6-1"></a><span class="co"># Model 2 - RC(1)</span></span>
+<span id="cb6-2"><a href="6-Chapter_5.html#cb6-2"></a>m2&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Worries<span class="op">+</span>Situations<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Worries,Situations),<span class="dt">family=</span>poisson,</span>
+<span id="cb6-3"><a href="6-Chapter_5.html#cb6-3"></a>         <span class="dt">trace=</span>F,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+.........................................................................
+Done</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="6-Chapter_5.html#cb8-1"></a><span class="kw">model.summary</span>(m2)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code> Df       L2            p  AIC(L2)   BIC(L2)    Delta
+ 27 121.4954 5.976333e-14 67.49541 -76.91645 9.833758</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="6-Chapter_5.html#cb11-1"></a><span class="co"># Model 3 - RC(1) with equality constraints on</span></span>
+<span id="cb11-2"><a href="6-Chapter_5.html#cb11-2"></a><span class="co"># MIL=ECO=MTO, ENR=SAB=OTH and ASAF=IFAA</span></span>
+<span id="cb11-3"><a href="6-Chapter_5.html#cb11-3"></a>Worries.a&lt;-Worries</span>
+<span id="cb11-4"><a href="6-Chapter_5.html#cb11-4"></a><span class="kw">levels</span>(Worries.a)&lt;-<span class="kw">factor</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>))</span>
+<span id="cb11-5"><a href="6-Chapter_5.html#cb11-5"></a>Worries.a</span></code></pre></div>
+<pre><code> [1] 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 4 4 4 4 4 3 3 3 3 3
+Levels: 1 2 3 4</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="6-Chapter_5.html#cb13-1"></a>Situations.a&lt;-Situations</span>
+<span id="cb13-2"><a href="6-Chapter_5.html#cb13-2"></a><span class="kw">levels</span>(Situations.a)&lt;-<span class="kw">factor</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">4</span>))</span>
+<span id="cb13-3"><a href="6-Chapter_5.html#cb13-3"></a>Situations.a</span></code></pre></div>
+<pre><code> [1] 1 2 3 3 4 1 2 3 3 4 1 2 3 3 4 1 2 3 3 4 1 2 3 3 4 1 2 3 3 4 1 2 3 3 4 1 2 3 3 4
+Levels: 1 2 3 4</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="6-Chapter_5.html#cb15-1"></a>m3.un&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Worries<span class="op">+</span>Situations<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Worries.a,Situations.a),<span class="dt">family=</span>poisson,</span>
+<span id="cb15-2"><a href="6-Chapter_5.html#cb15-2"></a>         <span class="dt">trace=</span>F,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+...........................................................................
+Done</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="6-Chapter_5.html#cb17-1"></a><span class="kw">model.summary</span>(m3.un)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code> Df       L2             p  AIC(L2)  BIC(L2)    Delta
+ 32 925.4714 8.207554e-174 861.4714 690.3166 30.30552</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="6-Chapter_5.html#cb20-1"></a>mu&lt;-<span class="kw">getContrasts</span>(m3.un, <span class="kw">pickCoef</span>(m3.un, <span class="st">&quot;[.]Worries.a&quot;</span>),</span>
+<span id="cb20-2"><a href="6-Chapter_5.html#cb20-2"></a>                <span class="dt">ref =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">1</span>)<span class="op">/</span><span class="dv">8</span>, <span class="dt">scaleRef =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">1</span>)<span class="op">/</span><span class="dv">8</span>,</span>
+<span id="cb20-3"><a href="6-Chapter_5.html#cb20-3"></a>                <span class="dt">scaleWeights =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">1</span>))</span>
+<span id="cb20-4"><a href="6-Chapter_5.html#cb20-4"></a>nu&lt;-<span class="kw">getContrasts</span>(m3.un, <span class="kw">pickCoef</span>(m3.un, <span class="st">&quot;[.]Situations.a&quot;</span>),</span>
+<span id="cb20-5"><a href="6-Chapter_5.html#cb20-5"></a>                <span class="dt">ref =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>)<span class="op">/</span><span class="dv">5</span>, <span class="dt">scaleRef =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>)<span class="op">/</span><span class="dv">5</span>,</span>
+<span id="cb20-6"><a href="6-Chapter_5.html#cb20-6"></a>                <span class="dt">scaleWeights =</span> <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>))</span>
+<span id="cb20-7"><a href="6-Chapter_5.html#cb20-7"></a></span>
+<span id="cb20-8"><a href="6-Chapter_5.html#cb20-8"></a>con&lt;-<span class="kw">c</span>(mu<span class="op">$</span>qvframe[,<span class="dv">1</span>][<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">4</span>)],nu<span class="op">$</span>qvframe[,<span class="dv">1</span>][<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">4</span>)])</span>
+<span id="cb20-9"><a href="6-Chapter_5.html#cb20-9"></a>m3&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Worries<span class="op">+</span>Situations<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Worries.a,Situations.a),<span class="dt">family=</span>poisson,</span>
+<span id="cb20-10"><a href="6-Chapter_5.html#cb20-10"></a>             <span class="dt">constrain=</span><span class="kw">c</span>(<span class="dv">14</span>,<span class="dv">17</span>,<span class="dv">18</span>,<span class="dv">21</span>),<span class="dt">constrainTo=</span>con,</span>
+<span id="cb20-11"><a href="6-Chapter_5.html#cb20-11"></a>             <span class="dt">trace=</span>F,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+.........................................................</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="6-Chapter_5.html#cb22-1"></a><span class="kw">summary</span>(m3);mu;nu;<span class="kw">model.summary</span>(m3.un)</span></code></pre></div>
+<pre><code>Length  Class   Mode 
+     0   NULL   NULL </code></pre>
+<pre><code>                                      Estimate Std. Error
+Mult(1, ., Situations.a).Worries.a1  0.1131301 0.11361061
+Mult(1, ., Situations.a).Worries.a2  0.4170232 0.02269737
+Mult(1, ., Situations.a).Worries.a3 -0.3368043 0.03042467
+Mult(1, ., Situations.a).Worries.a4 -0.3537867 0.08354914</code></pre>
+<pre><code>                                       Estimate Std. Error
+Mult(1, Worries.a, .).Situations.a1  0.66229120 0.02512458
+Mult(1, Worries.a, .).Situations.a2 -0.11763705 0.03837698
+Mult(1, Worries.a, .).Situations.a3  0.09189854 0.01868966
+Mult(1, Worries.a, .).Situations.a4 -0.72845124 0.02397519</code></pre>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code> Df       L2             p  AIC(L2)  BIC(L2)    Delta
+ 32 925.4714 8.207554e-174 861.4714 690.3166 30.30552</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="6-Chapter_5.html#cb28-1"></a><span class="co"># Model 4 - RC(1) with equality constraints on</span></span>
+<span id="cb28-2"><a href="6-Chapter_5.html#cb28-2"></a><span class="co"># MIL=ECO=MTO=ENR=SAB=OTH and ASAF=IFAA</span></span>
+<span id="cb28-3"><a href="6-Chapter_5.html#cb28-3"></a>Worries.b&lt;-Worries</span>
+<span id="cb28-4"><a href="6-Chapter_5.html#cb28-4"></a><span class="kw">levels</span>(Worries.b)&lt;-<span class="kw">factor</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">2</span>))</span>
+<span id="cb28-5"><a href="6-Chapter_5.html#cb28-5"></a>Worries.b</span></code></pre></div>
+<pre><code> [1] 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 2 2 2 2 2
+Levels: 1 2 3</code></pre>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="6-Chapter_5.html#cb30-1"></a>m4.un&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Worries<span class="op">+</span>Situations<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Worries.b,Situations.a),<span class="dt">family=</span>poisson,</span>
+<span id="cb30-2"><a href="6-Chapter_5.html#cb30-2"></a>         <span class="dt">trace=</span>F,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+...
+Done</code></pre>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="6-Chapter_5.html#cb32-1"></a><span class="kw">model.summary</span>(m4.un)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code> Df       L2             p  AIC(L2)  BIC(L2)   Delta
+ 33 964.1288 3.382326e-181 898.1288 721.6254 30.4467</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="6-Chapter_5.html#cb35-1"></a><span class="co"># Model 5</span></span>
+<span id="cb35-2"><a href="6-Chapter_5.html#cb35-2"></a>m5.un&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Worries<span class="op">+</span>Situations<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Worries,Situations,<span class="dt">inst=</span><span class="dv">1</span>)</span>
+<span id="cb35-3"><a href="6-Chapter_5.html#cb35-3"></a>         <span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Worries,Situations,<span class="dt">inst=</span><span class="dv">2</span>),<span class="dt">family=</span>poisson,</span>
+<span id="cb35-4"><a href="6-Chapter_5.html#cb35-4"></a>         <span class="dt">trace=</span>F,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+.........................................................................
+Done</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="6-Chapter_5.html#cb37-1"></a><span class="kw">model.summary</span>(m5.un)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code> Df       L2          p   AIC(L2)   BIC(L2)    Delta
+ 17 29.23496 0.03242004 -4.765036 -95.69102 3.980141</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="6-Chapter_5.html#cb40-1"></a><span class="co"># Model 6 - RC(2) with equality constraints on</span></span>
+<span id="cb40-2"><a href="6-Chapter_5.html#cb40-2"></a><span class="co"># ECO=MTO=MIL=ENR=SAB and ASAF=IFAA in both dimensions</span></span>
+<span id="cb40-3"><a href="6-Chapter_5.html#cb40-3"></a>Worries.c&lt;-Worries</span>
+<span id="cb40-4"><a href="6-Chapter_5.html#cb40-4"></a><span class="kw">levels</span>(Worries.c)&lt;-<span class="kw">factor</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>))</span>
+<span id="cb40-5"><a href="6-Chapter_5.html#cb40-5"></a>Worries.c</span></code></pre></div>
+<pre><code> [1] 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 4 4 4 4 4
+Levels: 1 2 3 4</code></pre>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="6-Chapter_5.html#cb42-1"></a><span class="kw">set.seed</span>(<span class="dv">12345</span>)</span>
+<span id="cb42-2"><a href="6-Chapter_5.html#cb42-2"></a>m6.un&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Worries<span class="op">+</span>Situations<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Worries.c,Situations.a,<span class="dt">inst=</span><span class="dv">1</span>)</span>
+<span id="cb42-3"><a href="6-Chapter_5.html#cb42-3"></a>         <span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Worries.c,Situations.a,<span class="dt">inst=</span><span class="dv">2</span>),<span class="dt">family=</span>poisson,</span>
+<span id="cb42-4"><a href="6-Chapter_5.html#cb42-4"></a>         <span class="dt">trace=</span>F,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+...
+Done</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="6-Chapter_5.html#cb44-1"></a><span class="kw">model.summary</span>(m6.un)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code> Df       L2             p  AIC(L2)  BIC(L2)    Delta
+ 27 853.0971 2.550771e-162 799.0971 654.6853 27.69847</code></pre>
+</div>
+<div id="表5.4" class="section level2">
+<h2><span class="header-section-number">6.2</span> 表5.4</h2>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="6-Chapter_5.html#cb47-1"></a><span class="co"># Table 5.4</span></span>
+<span id="cb47-2"><a href="6-Chapter_5.html#cb47-2"></a>Freq&lt;-<span class="kw">c</span>(<span class="dv">1096</span>,  <span class="dv">1847</span>,  <span class="dv">1255</span>,  <span class="dv">925</span>,    <span class="dv">3321</span>,  <span class="dv">6123</span>,  <span class="dv">6830</span>,  <span class="dv">5524</span>,</span>
+<span id="cb47-3"><a href="6-Chapter_5.html#cb47-3"></a>        <span class="dv">1541</span>,  <span class="dv">3134</span>,  <span class="dv">3145</span>, <span class="dv">3300</span>,    <span class="dv">1915</span>,  <span class="dv">4429</span>,  <span class="dv">7035</span>,  <span class="dv">9421</span>,</span>
+<span id="cb47-4"><a href="6-Chapter_5.html#cb47-4"></a>        <span class="dv">4183</span>,  <span class="dv">5139</span>,  <span class="dv">1857</span>, <span class="dv">1272</span>,    <span class="dv">8080</span>,  <span class="dv">8586</span>,  <span class="dv">4788</span>,  <span class="dv">4294</span>,</span>
+<span id="cb47-5"><a href="6-Chapter_5.html#cb47-5"></a>        <span class="dv">6033</span>,  <span class="dv">9211</span>,  <span class="dv">5046</span>, <span class="dv">1058</span>,   <span class="dv">28130</span>, <span class="dv">44589</span>, <span class="dv">20074</span>,  <span class="dv">3408</span>,</span>
+<span id="cb47-6"><a href="6-Chapter_5.html#cb47-6"></a>        <span class="dv">4354</span>, <span class="dv">13430</span>, <span class="dv">18670</span>, <span class="dv">9821</span>,    <span class="dv">2250</span>,  <span class="dv">9075</span>, <span class="dv">18286</span>, <span class="dv">14358</span>,</span>
+<span id="cb47-7"><a href="6-Chapter_5.html#cb47-7"></a>       <span class="dv">14587</span>, <span class="dv">31470</span>, <span class="dv">16390</span>, <span class="dv">3751</span>,    <span class="dv">8242</span>, <span class="dv">17532</span>, <span class="dv">12825</span>,  <span class="dv">3956</span>,</span>
+<span id="cb47-8"><a href="6-Chapter_5.html#cb47-8"></a>        <span class="dv">1517</span>,  <span class="dv">5820</span>,  <span class="dv">6197</span>, <span class="dv">2372</span>,     <span class="dv">721</span>,  <span class="dv">2909</span>,  <span class="dv">4141</span>,  <span class="dv">2070</span>,</span>
+<span id="cb47-9"><a href="6-Chapter_5.html#cb47-9"></a>        <span class="dv">3581</span>,  <span class="dv">9268</span>,  <span class="dv">5463</span>, <span class="dv">1007</span>,    <span class="dv">1341</span>,  <span class="dv">3808</span>,  <span class="dv">3163</span>,   <span class="dv">815</span>,</span>
+<span id="cb47-10"><a href="6-Chapter_5.html#cb47-10"></a>        <span class="dv">1454</span>,  <span class="dv">3109</span>,  <span class="dv">1055</span>,  <span class="dv">888</span>,     <span class="dv">563</span>,  <span class="dv">1909</span>,  <span class="dv">1018</span>,  <span class="dv">1051</span>,</span>
+<span id="cb47-11"><a href="6-Chapter_5.html#cb47-11"></a>        <span class="dv">3237</span>,  <span class="dv">3851</span>,   <span class="dv">377</span>,  <span class="dv">102</span>,     <span class="dv">731</span>,   <span class="dv">858</span>,   <span class="dv">247</span>,    <span class="dv">84</span>,</span>
+<span id="cb47-12"><a href="6-Chapter_5.html#cb47-12"></a>       <span class="dv">14882</span>, <span class="dv">22182</span>,  <span class="dv">5363</span>, <span class="dv">1136</span>,   <span class="dv">11650</span>, <span class="dv">15818</span>,  <span class="dv">5524</span>,  <span class="dv">2122</span>,</span>
+<span id="cb47-13"><a href="6-Chapter_5.html#cb47-13"></a>        <span class="dv">6033</span>,  <span class="dv">3475</span>,    <span class="dv">63</span>,   <span class="dv">18</span>,    <span class="dv">1603</span>,  <span class="dv">1005</span>,    <span class="dv">30</span>,    <span class="dv">16</span>,</span>
+<span id="cb47-14"><a href="6-Chapter_5.html#cb47-14"></a>        </span>
+<span id="cb47-15"><a href="6-Chapter_5.html#cb47-15"></a>        <span class="dv">5968</span>,  <span class="dv">8783</span>,  <span class="dv">7701</span>, <span class="dv">6483</span>,    <span class="dv">8733</span>, <span class="dv">14329</span>, <span class="dv">19386</span>, <span class="dv">28143</span>,</span>
+<span id="cb47-16"><a href="6-Chapter_5.html#cb47-16"></a>        <span class="dv">1011</span>,  <span class="dv">2162</span>,  <span class="dv">3536</span>, <span class="dv">6649</span>,     <span class="dv">697</span>,  <span class="dv">1299</span>,  <span class="dv">2362</span>, <span class="dv">10796</span>,</span>
+<span id="cb47-17"><a href="6-Chapter_5.html#cb47-17"></a>        <span class="dv">3214</span>,  <span class="dv">3621</span>,  <span class="dv">2485</span>, <span class="dv">3177</span>,     <span class="dv">793</span>,  <span class="dv">1134</span>,  <span class="dv">1292</span>,  <span class="dv">3597</span>,</span>
+<span id="cb47-18"><a href="6-Chapter_5.html#cb47-18"></a>       <span class="dv">11532</span>, <span class="dv">16837</span>,  <span class="dv">6975</span>, <span class="dv">1839</span>,    <span class="dv">2563</span>,  <span class="dv">2995</span>,  <span class="dv">2060</span>,  <span class="dv">1600</span>,</span>
+<span id="cb47-19"><a href="6-Chapter_5.html#cb47-19"></a>        <span class="dv">1009</span>,  <span class="dv">2719</span>,  <span class="dv">3521</span>, <span class="dv">3409</span>,     <span class="dv">296</span>,   <span class="dv">503</span>,   <span class="dv">626</span>,  <span class="dv">1273</span>,</span>
+<span id="cb47-20"><a href="6-Chapter_5.html#cb47-20"></a>        <span class="dv">1586</span>,  <span class="dv">3025</span>,  <span class="dv">1726</span>,  <span class="dv">668</span>,     <span class="dv">245</span>,   <span class="dv">415</span>,   <span class="dv">238</span>,   <span class="dv">218</span>,</span>
+<span id="cb47-21"><a href="6-Chapter_5.html#cb47-21"></a>         <span class="dv">387</span>,   <span class="dv">941</span>,   <span class="dv">564</span>,  <span class="dv">316</span>,      <span class="dv">86</span>,   <span class="dv">138</span>,    <span class="dv">79</span>,    <span class="dv">48</span>,</span>
+<span id="cb47-22"><a href="6-Chapter_5.html#cb47-22"></a>         <span class="dv">994</span>,  <span class="dv">1988</span>,   <span class="dv">542</span>,  <span class="dv">145</span>,     <span class="dv">158</span>,   <span class="dv">259</span>,   <span class="dv">101</span>,    <span class="dv">56</span>,</span>
+<span id="cb47-23"><a href="6-Chapter_5.html#cb47-23"></a>         <span class="dv">171</span>,   <span class="dv">409</span>,   <span class="dv">223</span>,  <span class="dv">245</span>,      <span class="dv">65</span>,   <span class="dv">172</span>,    <span class="dv">99</span>,   <span class="dv">174</span>,</span>
+<span id="cb47-24"><a href="6-Chapter_5.html#cb47-24"></a>         <span class="dv">293</span>,   <span class="dv">290</span>,    <span class="dv">67</span>,   <span class="dv">31</span>,      <span class="dv">32</span>,    <span class="dv">62</span>,    <span class="dv">18</span>,    <span class="dv">30</span>,</span>
+<span id="cb47-25"><a href="6-Chapter_5.html#cb47-25"></a>        <span class="dv">4288</span>,  <span class="dv">4916</span>,  <span class="dv">1452</span>,  <span class="dv">766</span>,     <span class="dv">616</span>,   <span class="dv">794</span>,   <span class="dv">347</span>,   <span class="dv">300</span>,</span>
+<span id="cb47-26"><a href="6-Chapter_5.html#cb47-26"></a>         <span class="dv">370</span>,   <span class="dv">186</span>,     <span class="dv">3</span>,    <span class="dv">4</span>,      <span class="dv">67</span>,    <span class="dv">37</span>,     <span class="dv">5</span>,     <span class="dv">2</span>)</span>
+<span id="cb47-27"><a href="6-Chapter_5.html#cb47-27"></a></span>
+<span id="cb47-28"><a href="6-Chapter_5.html#cb47-28"></a>Income&lt;-<span class="kw">gl</span>(<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">192</span>)</span>
+<span id="cb47-29"><a href="6-Chapter_5.html#cb47-29"></a>Occ&lt;-<span class="kw">gl</span>(<span class="dv">12</span>,<span class="dv">8</span>,<span class="dv">192</span>)</span>
+<span id="cb47-30"><a href="6-Chapter_5.html#cb47-30"></a>E1&lt;-<span class="kw">gl</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">192</span>)</span>
+<span id="cb47-31"><a href="6-Chapter_5.html#cb47-31"></a>E2&lt;-<span class="kw">gl</span>(<span class="dv">2</span>,<span class="dv">96</span>,<span class="dv">192</span>)</span>
+<span id="cb47-32"><a href="6-Chapter_5.html#cb47-32"></a>Educ&lt;-E2<span class="op">:</span>E1</span>
+<span id="cb47-33"><a href="6-Chapter_5.html#cb47-33"></a><span class="kw">levels</span>(Educ)&lt;-<span class="dv">1</span><span class="op">:</span><span class="dv">4</span></span>
+<span id="cb47-34"><a href="6-Chapter_5.html#cb47-34"></a></span>
+<span id="cb47-35"><a href="6-Chapter_5.html#cb47-35"></a><span class="co">#nEduc&lt;-as.numeric(Educ)</span></span>
+<span id="cb47-36"><a href="6-Chapter_5.html#cb47-36"></a><span class="co">#nAttitude&lt;-as.numeric(Attitude)</span></span>
+<span id="cb47-37"><a href="6-Chapter_5.html#cb47-37"></a><span class="co">#Attitude.c&lt;-Attitude</span></span>
+<span id="cb47-38"><a href="6-Chapter_5.html#cb47-38"></a><span class="co">#levels(Attitude.c)&lt;-c(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;3&quot;)</span></span>
+<span id="cb47-39"><a href="6-Chapter_5.html#cb47-39"></a>Table&lt;-<span class="kw">data.frame</span>(Freq,Income,Occ,Educ)</span>
+<span id="cb47-40"><a href="6-Chapter_5.html#cb47-40"></a><span class="co">########################################################################################</span></span>
+<span id="cb47-41"><a href="6-Chapter_5.html#cb47-41"></a></span>
+<span id="cb47-42"><a href="6-Chapter_5.html#cb47-42"></a><span class="co"># Table 5.5</span></span>
+<span id="cb47-43"><a href="6-Chapter_5.html#cb47-43"></a><span class="co"># Model 1: Complete Independence</span></span>
+<span id="cb47-44"><a href="6-Chapter_5.html#cb47-44"></a>m1&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Educ<span class="op">+</span>Occ<span class="op">+</span>Income,<span class="dt">data=</span>Table,<span class="dt">family=</span>poisson,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span>
+<span id="cb47-45"><a href="6-Chapter_5.html#cb47-45"></a><span class="kw">model.summary</span>(m1) </span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code>  Df       L2 p  AIC(L2)  BIC(L2)    Delta
+ 174 586906.2 0 586558.2 584536.9 33.84897</code></pre>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="6-Chapter_5.html#cb50-1"></a><span class="co"># Model 2: Conditional Independence</span></span>
+<span id="cb50-2"><a href="6-Chapter_5.html#cb50-2"></a>m2&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Educ<span class="op">*</span>Occ<span class="op">+</span>Income<span class="op">*</span>Occ,<span class="dt">data=</span>Table,<span class="dt">family=</span>poisson,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span>
+<span id="cb50-3"><a href="6-Chapter_5.html#cb50-3"></a><span class="kw">model.summary</span>(m2)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code>  Df      L2 p AIC(L2)  BIC(L2)    Delta
+ 108 27957.4 0 27741.4 26486.78 6.003195</code></pre>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="6-Chapter_5.html#cb53-1"></a><span class="co"># Model 3: All two-way interaction</span></span>
+<span id="cb53-2"><a href="6-Chapter_5.html#cb53-2"></a>m3&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Educ<span class="op">*</span>Occ<span class="op">+</span>Income<span class="op">*</span>Occ<span class="op">+</span>Educ<span class="op">*</span>Income,<span class="dt">data=</span>Table,<span class="dt">family=</span>poisson,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span>
+<span id="cb53-3"><a href="6-Chapter_5.html#cb53-3"></a><span class="kw">model.summary</span>(m3)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code> Df       L2 p  AIC(L2)  BIC(L2)    Delta
+ 99 6540.396 0 6342.396 5192.331 2.635334</code></pre>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="6-Chapter_5.html#cb56-1"></a><span class="co"># Model 4: RC(1)+RL(1) partial association</span></span>
+<span id="cb56-2"><a href="6-Chapter_5.html#cb56-2"></a>m4&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Educ<span class="op">+</span>Occ<span class="op">+</span>Income<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Occ,Educ)<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Occ,Income),</span>
+<span id="cb56-3"><a href="6-Chapter_5.html#cb56-3"></a>        <span class="dt">data=</span>Table,<span class="dt">family=</span>poisson,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+.........................................................................
+Done</code></pre>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="6-Chapter_5.html#cb58-1"></a><span class="kw">model.summary</span>(m4)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code>  Df       L2 p  AIC(L2)  BIC(L2)    Delta
+ 161 253618.9 0 253296.9 251426.6 21.93752</code></pre>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="6-Chapter_5.html#cb61-1"></a><span class="co"># Model 5: Model 4 with consistent row (occupation) scores</span></span>
+<span id="cb61-2"><a href="6-Chapter_5.html#cb61-2"></a>m5&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Educ<span class="op">+</span>Occ<span class="op">+</span>Income<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Occ,Educ<span class="op">+</span>Income),</span>
+<span id="cb61-3"><a href="6-Chapter_5.html#cb61-3"></a>        <span class="dt">data=</span>Table,<span class="dt">family=</span>poisson,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+..........................................................................................
+..............................................
+Done</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="6-Chapter_5.html#cb63-1"></a><span class="kw">model.summary</span>(m5)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code>  Df     L2 p AIC(L2)  BIC(L2)    Delta
+ 176 580146 0  579794 577749.4 34.02388</code></pre>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="6-Chapter_5.html#cb66-1"></a>mu&lt;-<span class="kw">getContrasts</span>(m5, <span class="kw">pickCoef</span>(m5, <span class="st">&quot;[.]Occ&quot;</span>)[<span class="dv">1</span><span class="op">:</span><span class="dv">12</span>],</span>
+<span id="cb66-2"><a href="6-Chapter_5.html#cb66-2"></a>       <span class="dt">ref =</span> <span class="st">&quot;mean&quot;</span>, <span class="dt">scaleRef =</span> <span class="st">&quot;mean&quot;</span>,<span class="dt">scaleWeights =</span> <span class="st">&quot;unit&quot;</span>)</span>
+<span id="cb66-3"><a href="6-Chapter_5.html#cb66-3"></a>mu</span></code></pre></div>
+<pre><code>                                   Estimate   Std. Error
+Mult(1, ., Educ + Income).Occ1   0.33839063 0.0008640428
+Mult(1, ., Educ + Income).Occ2   0.21498414 0.0005596694
+Mult(1, ., Educ + Income).Occ3   0.16684069 0.0007135237
+Mult(1, ., Educ + Income).Occ4   0.27819124 0.0005931120
+Mult(1, ., Educ + Income).Occ5   0.18522878 0.0006430725
+Mult(1, ., Educ + Income).Occ6   0.17800946 0.0006694356
+Mult(1, ., Educ + Income).Occ7  -0.12247946 0.0020470139
+Mult(1, ., Educ + Income).Occ8  -0.05945973 0.0017761063
+Mult(1, ., Educ + Income).Occ9  -0.36163327 0.0028438260
+Mult(1, ., Educ + Income).Occ10 -0.52644741 0.0029566216
+Mult(1, ., Educ + Income).Occ11  0.16967565 0.0007019976
+Mult(1, ., Educ + Income).Occ12 -0.46130072 0.0029820415</code></pre>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="6-Chapter_5.html#cb68-1"></a><span class="co"># Model 6: RC(1)+RL(1)+CL(1) partial association</span></span>
+<span id="cb68-2"><a href="6-Chapter_5.html#cb68-2"></a>m6&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Educ<span class="op">+</span>Occ<span class="op">+</span>Income<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Occ,Educ)<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Occ,Income)<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Educ,Income),</span>
+<span id="cb68-3"><a href="6-Chapter_5.html#cb68-3"></a>        <span class="dt">data=</span>Table,<span class="dt">family=</span>poisson,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+.........................................................................
+Done</code></pre>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="6-Chapter_5.html#cb70-1"></a><span class="kw">model.summary</span>(m6)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code>  Df       L2 p  AIC(L2)  BIC(L2)    Delta
+ 154 167714.2 0 167406.2 165617.2 16.84677</code></pre>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="6-Chapter_5.html#cb73-1"></a><span class="co"># Model 7: Model 6 with consistent row (occupation) scores</span></span>
+<span id="cb73-2"><a href="6-Chapter_5.html#cb73-2"></a>m7&lt;-<span class="kw">gnm</span>(Freq<span class="op">~</span>Educ<span class="op">+</span>Occ<span class="op">+</span>Income<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Occ,Educ<span class="op">+</span>Income)<span class="op">+</span><span class="kw">Mult</span>(<span class="dv">1</span>,Educ,Income),</span>
+<span id="cb73-3"><a href="6-Chapter_5.html#cb73-3"></a>        <span class="dt">data=</span>Table,<span class="dt">family=</span>poisson,<span class="dt">tolerance =</span> <span class="fl">1e-12</span>)</span></code></pre></div>
+<pre><code>Initialising
+Running start-up iterations..
+Running main iterations...................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+...........
+Done</code></pre>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="6-Chapter_5.html#cb75-1"></a><span class="kw">model.summary</span>(m7)</span></code></pre></div>
+<pre><code>[1] &quot;Model Summary:&quot;</code></pre>
+<pre><code>  Df       L2 p  AIC(L2) BIC(L2)    Delta
+ 169 545514.3 0 545176.3  543213 31.30187</code></pre>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="6-Chapter_5.html#cb78-1"></a>mu&lt;-<span class="kw">getContrasts</span>(m7, <span class="kw">pickCoef</span>(m7, <span class="st">&quot;[.]Occ&quot;</span>),</span>
+<span id="cb78-2"><a href="6-Chapter_5.html#cb78-2"></a>                 <span class="dt">ref =</span> <span class="st">&quot;mean&quot;</span>, <span class="dt">scaleRef =</span> <span class="st">&quot;mean&quot;</span>,<span class="dt">scaleWeights =</span> <span class="st">&quot;unit&quot;</span>)</span>
+<span id="cb78-3"><a href="6-Chapter_5.html#cb78-3"></a>mu</span></code></pre></div>
+<pre><code>                                   Estimate  Std. Error
+Mult(1, ., Educ + Income).Occ1  -0.60162667 0.001624233
+Mult(1, ., Educ + Income).Occ2  -0.17978630 0.001640694
+Mult(1, ., Educ + Income).Occ3  -0.03148963 0.001714147
+Mult(1, ., Educ + Income).Occ4   0.39959683 0.001127586
+Mult(1, ., Educ + Income).Occ5   0.32643104 0.001187228
+Mult(1, ., Educ + Income).Occ6   0.40809823 0.001123581
+Mult(1, ., Educ + Income).Occ7  -0.05232457 0.001723636
+Mult(1, ., Educ + Income).Occ8  -0.03112601 0.001713929
+Mult(1, ., Educ + Income).Occ9  -0.17530724 0.001647652
+Mult(1, ., Educ + Income).Occ10 -0.18239249 0.001636530
+Mult(1, ., Educ + Income).Occ11  0.28025194 0.001245468
+Mult(1, ., Educ + Income).Occ12 -0.16032512 0.001669009</code></pre>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="6-Chapter_5.html#cb80-1"></a><span class="co"># Model 8: model 6 with consistent row, column and layer scores</span></span>
+<span id="cb80-2"><a href="6-Chapter_5.html#cb80-2"></a><span class="co"># currently, this might not be fitted with gnm!</span></span></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="5-Chapter_4.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="7-Chapter_6.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Association_Models.pdf", "Association_Models.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
