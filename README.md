@@ -60,7 +60,7 @@ Duncan (1979) については`uniform_association_model.R`で，Yamaguchi (1987)
 
 <a id="anchor4"></a>
 # 『カテゴリカルデータの連関モデル』
-サポートサイトとしては，Raymond Sin-Kwok WongによるStudent Study Site for Association Models （https://studysites.sagepub.com/wongstudy/ ）がすでに存在ます．
+サポートサイトとしては，Raymond Sin-Kwok WongによるStudent Study Site for Association Models （https://studysites.sagepub.com/wongstudy/ ）があります．
 ここでは本書で十分に説明されなかった部分を中心にフォローしたいと思います．
 
 以下のサイトにRのコードと結果をまとめています．
