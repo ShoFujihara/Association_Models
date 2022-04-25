@@ -3,6 +3,8 @@
 
 
 
+- パッケージは`tidyverse`（データセットの処理のため），`magrittr`（パイプ演算子），`broom`（回帰係数の整理），`gnm`（連関分析の処理のため）を使用する．
+
 
 ```r
 library(tidyverse)
@@ -12,17 +14,190 @@ library(gnm)
 ```
 
 
-## 表2.1 (p.8)
+## 対比について
 
-- クロス表に周辺度数を追加する場合は，`addmargins`を用いる．
+まず，デフォルトでの`contrasts`を確認したい．`factor`変数については`contr.treatment`，`ordered`変数については`contr.poly`という対比が用いられている．`contr.treatment`は基準となっている水準とそれぞれの水準を対比する．`contr.poly`は直交多項式（orthogonal polynomials）に基づいた対比を行う．
 
 
 ```r
-# default
-options(contrasts = c(factor = "contr.treatment", ordered = "contr.poly"))
+# デフォルトのcontrastsを確認
+options('contrasts')
+```
 
+```
+$contrasts
+        unordered           ordered 
+"contr.treatment"      "contr.poly" 
+```
+
+
+```r
+# defaultのcontrastsの設定（ここでは特に意味はない．constrastをいじった後にデフォルトに戻す）
+options(contrasts = c(factor = "contr.treatment", ordered = "contr.poly"))
+```
+
+
+よくわからない場合は，以下のプログラムを試すとよい．
+
+
+```r
+x <- c("A","B","C","D","E")
+x
+```
+
+```
+[1] "A" "B" "C" "D" "E"
+```
+
+```r
+# 基準カテゴリが0となるような対比
+contr.treatment(x)
+```
+
+```
+  B C D E
+A 0 0 0 0
+B 1 0 0 0
+C 0 1 0 0
+D 0 0 1 0
+E 0 0 0 1
+```
+
+```r
+# 合計が0となるような対比
+contr.sum(x)
+```
+
+```
+  [,1] [,2] [,3] [,4]
+A    1    0    0    0
+B    0    1    0    0
+C    0    0    1    0
+D    0    0    0    1
+E   -1   -1   -1   -1
+```
+
+```r
+# 回帰分析の例（contr.treatmentを使用）
+options(contrasts = c(factor = "contr.treatment", ordered = "contr.poly"))
+fit_ct <- lm(hwy ~ class, data = mpg)
+summary(fit_ct)
+```
+
+```
+
+Call:
+lm(formula = hwy ~ class, data = mpg)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8.1429 -1.8788 -0.2927  1.1803 15.8571 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       24.800      1.507  16.454  < 2e-16 ***
+classcompact       3.498      1.585   2.206   0.0284 *  
+classmidsize       2.493      1.596   1.561   0.1198    
+classminivan      -2.436      1.818  -1.340   0.1815    
+classpickup       -7.921      1.617  -4.898 1.84e-06 ***
+classsubcompact    3.343      1.611   2.075   0.0391 *  
+classsuv          -6.671      1.567  -4.258 3.03e-05 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.37 on 227 degrees of freedom
+Multiple R-squared:  0.6879,	Adjusted R-squared:  0.6797 
+F-statistic: 83.39 on 6 and 227 DF,  p-value: < 2.2e-16
+```
+
+```r
+tidy(fit_ct) 
+```
+
+```
+# A tibble: 7 × 5
+  term            estimate std.error statistic  p.value
+  <chr>              <dbl>     <dbl>     <dbl>    <dbl>
+1 (Intercept)        24.8       1.51     16.5  1.42e-40
+2 classcompact        3.50      1.59      2.21 2.84e- 2
+3 classmidsize        2.49      1.60      1.56 1.20e- 1
+4 classminivan       -2.44      1.82     -1.34 1.81e- 1
+5 classpickup        -7.92      1.62     -4.90 1.84e- 6
+6 classsubcompact     3.34      1.61      2.07 3.91e- 2
+7 classsuv           -6.67      1.57     -4.26 3.03e- 5
+```
+
+```r
+# 回帰分析の例（contr.sumを使用）
+options(contrasts = c(factor = "contr.sum", ordered = "contr.poly"))
+fit_cs <- lm(hwy ~ class, data = mpg)
+summary(fit_cs)
+```
+
+```
+
+Call:
+lm(formula = hwy ~ class, data = mpg)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8.1429 -1.8788 -0.2927  1.1803 15.8571 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  23.7007     0.3089  76.730  < 2e-16 ***
+class1        1.0993     1.3108   0.839    0.403    
+class2        4.5972     0.5177   8.880  < 2e-16 ***
+class3        3.5920     0.5416   6.633 2.39e-10 ***
+class4       -1.3371     0.9127  -1.465    0.144    
+class5       -6.8219     0.5842 -11.678  < 2e-16 ***
+class6        4.4422     0.5720   7.766 2.77e-13 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.37 on 227 degrees of freedom
+Multiple R-squared:  0.6879,	Adjusted R-squared:  0.6797 
+F-statistic: 83.39 on 6 and 227 DF,  p-value: < 2.2e-16
+```
+
+```r
+tidy(fit_cs)
+```
+
+```
+# A tibble: 7 × 5
+  term        estimate std.error statistic   p.value
+  <chr>          <dbl>     <dbl>     <dbl>     <dbl>
+1 (Intercept)    23.7      0.309    76.7   2.44e-164
+2 class1          1.10     1.31      0.839 4.03e-  1
+3 class2          4.60     0.518     8.88  2.07e- 16
+4 class3          3.59     0.542     6.63  2.39e- 10
+5 class4         -1.34     0.913    -1.46  1.44e-  1
+6 class5         -6.82     0.584   -11.7   5.53e- 25
+7 class6          4.44     0.572     7.77  2.77e- 13
+```
+
+```r
+# デフォルトに戻す
+options(contrasts = c(factor = "contr.treatment", ordered = "contr.poly"))
+```
+
+
+
+
+## 表2.1 (p.8)
+
+- p.8の表2.1を再現する．
+- クロス表に周辺度数を追加する場合は，`addmargins`を用いる．
+
+
+
+```r
+# 度数
 Freq <- c( 40, 250,
           160,3000)
+
+# 行列を作成し，表とする．
 tab_2.1 <- matrix(Freq, nrow = 2, ncol = 2, byrow = TRUE) %>% as.table()
 
 # A. 度数（周辺度数の追加）
@@ -61,6 +236,10 @@ Sum  200 3250 3450
 ```
 [1] 3
 ```
+
+
+- 集計データを作成し，`gnm`を適用することでオッズ比を求めてみたい．
+
 
 ```r
 # 度数のベクトル
@@ -101,7 +280,7 @@ freq_tab_2.1
 ```
 
 ```
-# A tibble: 4 x 3
+# A tibble: 4 × 3
    Freq COMM  SUP  
   <dbl> <fct> <fct>
 1    40 1     1    
@@ -144,18 +323,33 @@ Number of iterations: 2
 ```
 
 ```r
-# Odds ratios
-fit$coefficients[["COMM2:SUP2"]] %>% exp()
+# Odds ratios fit$coefficientsのCOMM2:SUP2の要素のみを取り出し，指数関数expを適用
+fit$coefficients["COMM2:SUP2"] %>% exp()
 ```
 
 ```
-[1] 3
+COMM2:SUP2 
+         3 
 ```
 
 
 ## 表2.3 (p.32)
 
 ```r
+# デフォルトのcontrasts
+options('contrasts')
+```
+
+```
+$contrasts
+        unordered           ordered 
+"contr.treatment"      "contr.poly" 
+```
+
+```r
+# defaultのcontrastsの設定（ここでは特に意味はない．constrastをいじった後にデフォルトに戻す）
+options(contrasts = c(factor = "contr.treatment", ordered = "contr.poly"))
+
 Freq <- c( 39, 50, 18,  4,
           140,178, 85, 23,
           108,195, 97, 23,
@@ -163,20 +357,6 @@ Freq <- c( 39, 50, 18,  4,
            78,250,150, 55,
            50,200,208, 74,
             8, 29, 46, 21)
-
-# コントラスト
-options('contrasts')
-```
-
-```
-$contrasts
-           factor           ordered 
-"contr.treatment"      "contr.poly" 
-```
-
-```r
-# default
-options(contrasts = c(factor = "contr.treatment", ordered = "contr.poly"))
 
 # データを表形式に変換
 tab_2.3A <- matrix(Freq, nrow = 7, ncol = 4, byrow = TRUE) %>% as.table()
@@ -205,6 +385,8 @@ Conservative                         50      200   208             74
 Strongly conservative                 8       29    46             21
 ```
 
+
+
 ```r
 # 度数，行変数，列変数からなる集計データを作成
 polviews <- gl(n = 7, k = 4)
@@ -214,7 +396,7 @@ freq_tab_2.3A
 ```
 
 ```
-# A tibble: 28 x 3
+# A tibble: 28 × 3
     Freq polviews fefam
    <dbl> <fct>    <fct>
  1    39 1        1    
@@ -230,18 +412,47 @@ freq_tab_2.3A
 # … with 18 more rows
 ```
 
+- なお`tab_2.3A`に対して，data.frameを適用しても集計データは作成される．行変数は`Var1`，列変数は`Var2`となるので，名前を`rename`で修正している．
+
+
+```r
+data.frame(tab_2.3A) %>% 
+  tibble() %>% 
+  rename(polviews = Var1,
+         fefam = Var2)
+```
+
+```
+# A tibble: 28 × 3
+   polviews              fefam              Freq
+   <fct>                 <fct>             <dbl>
+ 1 Strongly liberal      Strongly Disagree    39
+ 2 Liberal               Strongly Disagree   140
+ 3 Slightly liberal      Strongly Disagree   108
+ 4 Moderate              Strongly Disagree   238
+ 5 Slightly conservative Strongly Disagree    78
+ 6 Conservative          Strongly Disagree    50
+ 7 Strongly conservative Strongly Disagree     8
+ 8 Strongly liberal      Disagree             50
+ 9 Liberal               Disagree            178
+10 Slightly liberal      Disagree            195
+# … with 18 more rows
+```
+
+
+
 ```r
 # 行変数と列変数の整数値を作成
 freq_tab_2.3A %<>% 
-  mutate(Rscore = as.numeric(polviews),
-         Cscore = as.numeric(fefam))
+  mutate(Rscore = as.integer(polviews),
+         Cscore = as.integer(fefam))
 freq_tab_2.3A
 ```
 
 ```
-# A tibble: 28 x 5
+# A tibble: 28 × 5
     Freq polviews fefam Rscore Cscore
-   <dbl> <fct>    <fct>  <dbl>  <dbl>
+   <dbl> <fct>    <fct>  <int>  <int>
  1    39 1        1          1      1
  2    50 1        2          1      2
  3    18 1        3          1      3
@@ -259,6 +470,7 @@ freq_tab_2.3A
 
 
 ```r
+# 引数となるobjはgnmの結果
 model.summary <- function(obj){
   aic <- obj$deviance - obj$df * 2 # AIC(L2)
   bic <- obj$deviance - obj$df * log(sum(obj$y)) #BIC(L2)
@@ -287,6 +499,7 @@ O <- freq_tab_2.3A %>% gnm(Freq ~ polviews + fefam,
                            family = poisson, 
                            data = ., 
                            tolerance = 1e-12)
+# 結果
 summary(O)
 ```
 
@@ -324,11 +537,12 @@ Number of iterations: 5
 ```
 
 ```r
+# モデル適合度
 model.summary(O)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 O                      18  212.  65.1  8.09     1
@@ -344,6 +558,7 @@ U <- freq_tab_2.3A %>% gnm(Freq ~ polviews + fefam + Rscore:Cscore,
                            family = poisson, 
                            data = ., 
                            tolerance = 1e-12)
+# 結果
 summary(U)
 ```
 
@@ -382,11 +597,12 @@ Number of iterations: 4
 ```
 
 ```r
+# モデル適合度
 model.summary(U)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 U                      17  20.1 -118.  2.77 0.732
@@ -394,16 +610,29 @@ model.summary(U)
 
 
 - 行効果モデル
+- polviewsのすべてを足すと0になる．
+
 
 ```r
 # 3. R: Row Effect Model
-# contrast
+# contrastを修正している．
 options(contrasts = c(factor = "contr.sum", ordered = "contr.treatment"))
+options('contrasts')
+```
+
+```
+$contrasts
+           factor           ordered 
+      "contr.sum" "contr.treatment" 
+```
+
+```r
 R <- freq_tab_2.3A %>%
   gnm(Freq ~ polviews + fefam + Cscore*polviews, 
       family = poisson, 
       data = ., 
       tolerance = 1e-12)
+# 結果
 summary(R)
 ```
 
@@ -451,16 +680,32 @@ Number of iterations: 4
 ```
 
 ```r
+# モデル適合度
 model.summary(R)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 R                      12  15.9 -81.8  2.47 0.804
 ```
 
+- polviews1からpolviews6までの結果が表示されているが，polviews7は示されていない．
+- すべてを足すと0となることから($\sum \tau_i^A=0$)，polviews7の係数は`0-(-0.6721737)=0.6721737`となる
+
+
+```r
+# R
+R$coefficients[12:17] %>% sum()
+```
+
+```
+[1] -0.6721737
+```
+
+- contrastsをもとに戻して同様の分析を行う．
+- 今度はpolviews1の係数が省略されているが，この値は0である（$\tau_1^A=0$）．
 
 
 ```r
@@ -471,6 +716,7 @@ Ralt <- freq_tab_2.3A %>%
       family = poisson, 
       data = ., 
       tolerance = 1e-12)
+# 結果
 summary(Ralt)
 ```
 
@@ -518,11 +764,12 @@ Number of iterations: 4
 ```
 
 ```r
+# モデル適合度
 model.summary(Ralt)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 Ralt                   12  15.9 -81.8  2.47 0.804
@@ -540,6 +787,7 @@ C <- freq_tab_2.3A %>%
   gnm(Freq ~ polviews + fefam + Rscore*fefam, family = poisson, 
       data = ., 
       tolerance = 1e-12)
+# 結果
 summary(C)
 ```
 
@@ -584,11 +832,12 @@ Number of iterations: 4
 ```
 
 ```r
+# モデル適合度
 model.summary(C)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 C                      15  14.2 -108.  2.32 0.492
@@ -601,6 +850,7 @@ model.summary(C)
 options(contrasts = c(factor = "contr.treatment", ordered = "contr.poly"))
 Calt <- freq_tab_2.3A %>% 
   gnm(Freq ~ polviews + fefam + Rscore*fefam, family = poisson, data = ., tolerance = 1e-12)
+# 結果
 summary(Calt)
 ```
 
@@ -645,11 +895,12 @@ Number of iterations: 4
 ```
 
 ```r
+# モデル適合度
 model.summary(Calt)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 Calt                   15  14.2 -108.  2.32 0.492
@@ -710,6 +961,7 @@ RplusC <- freq_tab_2.3A %>%
       family = poisson, 
       data = ., 
       tolerance = 1e-12)
+# 結果
 summary(RplusC)
 ```
 
@@ -761,11 +1013,12 @@ Number of iterations: 4
 ```
 
 ```r
+# モデル適合度
 model.summary(RplusC)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 RplusC                 10  7.68 -73.8  1.77 0.340
@@ -806,6 +1059,7 @@ Residual df:         10
 ```
 
 ```r
+# 結果
 summary(RplusCalt)
 ```
 
@@ -856,11 +1110,12 @@ Number of iterations: 4
 ```
 
 ```r
+# モデル適合度
 model.summary(RplusCalt)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 RplusCalt              10  7.68 -73.8  1.77 0.340
@@ -881,7 +1136,7 @@ RC.un <- freq_tab_2.3A %>%
 ```
 Initialising
 Running start-up iterations..
-Running main iterations............................
+Running main iterations..............................
 Done
 ```
 
@@ -901,35 +1156,35 @@ Deviance Residuals:
 
 Coefficients:
                              Estimate Std. Error z value Pr(>|z|)
-(Intercept)                   2.90136         NA      NA       NA
-polviews2                     1.39045         NA      NA       NA
-polviews3                     1.42691         NA      NA       NA
-polviews4                     2.58617         NA      NA       NA
-polviews5                     1.68548         NA      NA       NA
-polviews6                     1.62513         NA      NA       NA
-polviews7                    -0.11517         NA      NA       NA
-fefam2                        0.89083         NA      NA       NA
-fefam3                        0.41717         NA      NA       NA
-fefam4                       -0.76393         NA      NA       NA
-Mult(., polviews, fefam).    -0.09443         NA      NA       NA
-Mult(1, ., fefam).polviews1  16.96714         NA      NA       NA
-Mult(1, ., fefam).polviews2  13.11793         NA      NA       NA
-Mult(1, ., fefam).polviews3   7.97749         NA      NA       NA
-Mult(1, ., fefam).polviews4   0.04632         NA      NA       NA
-Mult(1, ., fefam).polviews5  -3.36461         NA      NA       NA
-Mult(1, ., fefam).polviews6 -14.51905         NA      NA       NA
-Mult(1, ., fefam).polviews7 -24.05376         NA      NA       NA
-Mult(1, polviews, .).fefam1  -0.48312         NA      NA       NA
-Mult(1, polviews, .).fefam2  -0.06346         NA      NA       NA
-Mult(1, polviews, .).fefam3   0.26367         NA      NA       NA
-Mult(1, polviews, .).fefam4   0.41886         NA      NA       NA
+(Intercept)                  2.902622         NA      NA       NA
+polviews2                    1.390025         NA      NA       NA
+polviews3                    1.425928         NA      NA       NA
+polviews4                    2.584316         NA      NA       NA
+polviews5                    1.683243         NA      NA       NA
+polviews6                    1.621671         NA      NA       NA
+polviews7                   -0.119675         NA      NA       NA
+fefam2                       0.891354         NA      NA       NA
+fefam3                       0.418100         NA      NA       NA
+fefam4                      -0.762808         NA      NA       NA
+Mult(., polviews, fefam).    1.033032         NA      NA       NA
+Mult(1, ., fefam).polviews1  0.688369         NA      NA       NA
+Mult(1, ., fefam).polviews2  0.532325         NA      NA       NA
+Mult(1, ., fefam).polviews3  0.323935         NA      NA       NA
+Mult(1, ., fefam).polviews4  0.002411         NA      NA       NA
+Mult(1, ., fefam).polviews5 -0.135865         NA      NA       NA
+Mult(1, ., fefam).polviews6 -0.588058         NA      NA       NA
+Mult(1, ., fefam).polviews7 -0.974588         NA      NA       NA
+Mult(1, polviews, .).fefam1  1.086698         NA      NA       NA
+Mult(1, polviews, .).fefam2  0.140455         NA      NA       NA
+Mult(1, polviews, .).fefam3 -0.597146         NA      NA       NA
+Mult(1, polviews, .).fefam4 -0.947044         NA      NA       NA
 
 Std. Error is NA where coefficient has been constrained or is unidentified
 
 Residual deviance: 8.0718 on 10 degrees of freedom
 AIC: 215.43
 
-Number of iterations: 28
+Number of iterations: 30
 ```
 
 ```r
@@ -937,7 +1192,7 @@ model.summary(RC.un)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 RC.un                  10  8.07 -73.4  1.77 0.378
@@ -970,11 +1225,12 @@ RC <- freq_tab_2.3A %>%
 ```
 Initialising
 Running start-up iterations..
-Running main iterations...............................
+Running main iterations...........................
 Done
 ```
 
 ```r
+# 結果
 summary(RC)
 ```
 
@@ -1001,7 +1257,7 @@ polviews7                    0.01648    0.21938   0.075 0.940107
 fefam2                       0.91251    0.12222   7.466 8.25e-14 ***
 fefam3                       0.45574    0.20388   2.235 0.025396 *  
 fefam4                      -0.71735    0.24913  -2.879 0.003985 ** 
-Mult(., polviews, fefam).   -2.37331    0.34813  -6.817 9.27e-12 ***
+Mult(., polviews, fefam).    2.37331    0.34813   6.817 9.27e-12 ***
 Mult(1, ., fefam).polviews1  0.48165         NA      NA       NA    
 Mult(1, ., fefam).polviews2  0.37580    0.10049   3.740 0.000184 ***
 Mult(1, ., fefam).polviews3  0.23443    0.09461   2.478 0.013216 *  
@@ -1009,10 +1265,10 @@ Mult(1, ., fefam).polviews4  0.01632    0.08366   0.195 0.845376
 Mult(1, ., fefam).polviews5 -0.07749    0.09263  -0.837 0.402872    
 Mult(1, ., fefam).polviews6 -0.38425    0.10926  -3.517 0.000437 ***
 Mult(1, ., fefam).polviews7 -0.64646         NA      NA       NA    
-Mult(1, polviews, .).fefam1 -0.74812         NA      NA       NA    
-Mult(1, polviews, .).fefam2 -0.14098    0.07469  -1.888 0.059090 .  
-Mult(1, polviews, .).fefam3  0.33229    0.09162   3.627 0.000287 ***
-Mult(1, polviews, .).fefam4  0.55680         NA      NA       NA    
+Mult(1, polviews, .).fefam1  0.74812         NA      NA       NA    
+Mult(1, polviews, .).fefam2  0.14098    0.07469   1.888 0.059090 .  
+Mult(1, polviews, .).fefam3 -0.33229    0.09162  -3.627 0.000287 ***
+Mult(1, polviews, .).fefam4 -0.55680         NA      NA       NA    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -1023,7 +1279,7 @@ Std. Error is NA where coefficient has been constrained or is unidentified
 Residual deviance: 8.0718 on 10 degrees of freedom
 AIC: 215.43
 
-Number of iterations: 31
+Number of iterations: 27
 ```
 
 ```r
@@ -1047,18 +1303,19 @@ nu
 
 ```
                               Estimate Std. Error
-Mult(1, polviews, .).fefam1 -0.7481178 0.02662158
-Mult(1, polviews, .).fefam2 -0.1409760 0.04671343
-Mult(1, polviews, .).fefam3  0.3322937 0.05164241
-Mult(1, polviews, .).fefam4  0.5568002 0.04821776
+Mult(1, polviews, .).fefam1  0.7481178 0.02662158
+Mult(1, polviews, .).fefam2  0.1409760 0.04671343
+Mult(1, polviews, .).fefam3 -0.3322937 0.05164241
+Mult(1, polviews, .).fefam4 -0.5568002 0.04821776
 ```
 
 ```r
+# モデル適合度
 model.summary(RC)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 RC                     10  8.07 -73.4  1.77 0.378
@@ -1080,7 +1337,7 @@ models %>% bind_rows()
 ```
 
 ```
-# A tibble: 6 x 6
+# A tibble: 6 × 6
   `Model Description`    df     L2    BIC Delta     p
   <chr>               <int>  <dbl>  <dbl> <dbl> <dbl>
 1 O                      18 212.     65.1  8.09 1    
@@ -1117,7 +1374,7 @@ bind_rows(model_comparison(1,2),
 ```
 
 ```
-# A tibble: 4 x 4
+# A tibble: 4 × 4
   `Model Used`    df     L2        p
   <chr>        <int>  <dbl>    <dbl>
 1 1-2              1 192.   1.44e-43
@@ -1136,7 +1393,7 @@ bind_rows(model_comparison(2,4),
 ```
 
 ```
-# A tibble: 3 x 4
+# A tibble: 3 × 4
   `Model Used`    df    L2      p
   <chr>        <int> <dbl>  <dbl>
 1 2-4              2  5.89 0.0527
@@ -1330,7 +1587,7 @@ summary(RC)$coefficients %>%
 
 ```
                       Variable    Estimate Std..Error    z.value     Pr...z..
-1    Mult(., polviews, fefam). -2.37330693 0.34812532 -6.8173924 9.270782e-12
+1    Mult(., polviews, fefam).  2.37330693 0.34812532  6.8173924 9.270782e-12
 2  Mult(1, ., fefam).polviews1  0.48165420         NA         NA           NA
 3  Mult(1, ., fefam).polviews2  0.37579722 0.10049018  3.7396411 1.842832e-04
 4  Mult(1, ., fefam).polviews3  0.23443020 0.09460850  2.4778980 1.321589e-02
@@ -1338,10 +1595,10 @@ summary(RC)$coefficients %>%
 6  Mult(1, ., fefam).polviews5 -0.07748893 0.09263438 -0.8365030 4.028720e-01
 7  Mult(1, ., fefam).polviews6 -0.38424697 0.10926427 -3.5166753 4.369880e-04
 8  Mult(1, ., fefam).polviews7 -0.64646091         NA         NA           NA
-9  Mult(1, polviews, .).fefam1 -0.74811781         NA         NA           NA
-10 Mult(1, polviews, .).fefam2 -0.14097601 0.07468829 -1.8875250 5.908974e-02
-11 Mult(1, polviews, .).fefam3  0.33229365 0.09161751  3.6269668 2.867702e-04
-12 Mult(1, polviews, .).fefam4  0.55680017         NA         NA           NA
+9  Mult(1, polviews, .).fefam1  0.74811781         NA         NA           NA
+10 Mult(1, polviews, .).fefam2  0.14097601 0.07468829  1.8875250 5.908974e-02
+11 Mult(1, polviews, .).fefam3 -0.33229365 0.09161751 -3.6269668 2.867702e-04
+12 Mult(1, polviews, .).fefam4 -0.55680017         NA         NA           NA
 ```
 
 ```r
@@ -1365,10 +1622,10 @@ nu
 
 ```
                               Estimate Std. Error
-Mult(1, polviews, .).fefam1 -0.7481178 0.02662158
-Mult(1, polviews, .).fefam2 -0.1409760 0.04671343
-Mult(1, polviews, .).fefam3  0.3322937 0.05164241
-Mult(1, polviews, .).fefam4  0.5568002 0.04821776
+Mult(1, polviews, .).fefam1  0.7481178 0.02662158
+Mult(1, polviews, .).fefam2  0.1409760 0.04671343
+Mult(1, polviews, .).fefam3 -0.3322937 0.05164241
+Mult(1, polviews, .).fefam4 -0.5568002 0.04821776
 ```
 
 ## logmultパッケージの利用
@@ -1543,7 +1800,7 @@ $col
 
 
 ```r
-# コントラスト
+# コントラストを確認
 options('contrasts')
 ```
 
@@ -1556,7 +1813,11 @@ $contrasts
 ```r
 # default
 options(contrasts = c(factor = "contr.treatment", ordered = "contr.poly"))
+```
 
+
+
+```r
 ## 表2.3B
 Freq <- c(518,  95, 6, 35, 5,
          　 81,  67, 4, 49, 2,
@@ -1599,7 +1860,7 @@ freq_tab_2.3B
 ```
 
 ```
-# A tibble: 20 x 3
+# A tibble: 20 × 3
     Freq Educ  Occ  
    <dbl> <fct> <fct>
  1   518 1     1    
@@ -1633,7 +1894,7 @@ freq_tab_2.3B
 ```
 
 ```
-# A tibble: 20 x 5
+# A tibble: 20 × 5
     Freq Educ  Occ   Rscore Cscore
    <dbl> <fct> <fct>  <dbl>  <dbl>
  1   518 1     1          1      1
@@ -1805,7 +2066,7 @@ models %>% bind_rows()
 ```
 
 ```
-# A tibble: 11 x 6
+# A tibble: 11 × 6
    `Model Description`    df       L2    BIC   Delta     p
    <chr>               <int>    <dbl>  <dbl>   <dbl> <dbl>
  1 O                      12 1373.    1274.  23.9    1    
@@ -1833,7 +2094,7 @@ bind_rows(model_comparison(1,6),
 ```
 
 ```
-# A tibble: 4 x 4
+# A tibble: 4 × 4
   `Model Used`    df       L2         p
   <chr>        <int>    <dbl>     <dbl>
 1 1-6              6 1248.    1.84e-266
@@ -1856,7 +2117,7 @@ bind_rows(model_comparison(1,2),
 ```
 
 ```
-# A tibble: 5 x 4
+# A tibble: 5 × 4
   `Model Used`    df       L2         p
   <chr>        <int>    <dbl>     <dbl>
 1 1-2              1 1129.    1.52e-247

@@ -150,7 +150,7 @@ model2 <- gnm(
 ```
 FALSE Initialising
 FALSE Running start-up iterations..
-FALSE Running main iterations...................................
+FALSE Running main iterations...........................
 FALSE Done
 ```
 
@@ -182,7 +182,7 @@ model3 <- gnm(
 FALSE Initialising
 FALSE Running start-up iterations..
 FALSE Running main iterations.........................................................
-FALSE ..........................................
+FALSE ..................................
 FALSE Done
 ```
 
@@ -214,7 +214,7 @@ model4 <-
 ```
 FALSE Initialising
 FALSE Running start-up iterations..
-FALSE Running main iterations.......................
+FALSE Running main iterations................
 FALSE Done
 ```
 
@@ -270,7 +270,7 @@ model6 <-
 ```
 FALSE Initialising
 FALSE Running start-up iterations..
-FALSE Running main iterations.....
+FALSE Running main iterations......
 FALSE Done
 ```
 
@@ -306,8 +306,7 @@ FALSE ..........................................................................
 FALSE ................................................................................
 FALSE ................................................................................
 FALSE ................................................................................
-FALSE ................................................................................
-FALSE ...........................................
+FALSE ............................................................
 FALSE Done
 ```
 
@@ -321,7 +320,7 @@ FALSE [1] "Model Summary:"
 
 ```
 FALSE  Df           L2 p      AIC(L2)      BIC(L2)        Delta
-FALSE   0 2.814918e-11 0 2.814918e-11 2.814918e-11 5.268676e-09
+FALSE   0 2.855976e-11 0 2.855976e-11 2.855976e-11 4.164413e-09
 ```
 
 ```r
@@ -537,7 +536,7 @@ model9.un <- gnm(
 FALSE Initialising
 FALSE Running start-up iterations....................
 FALSE Running main iterations.........................................................
-FALSE .......................................................
+FALSE .............................................................
 FALSE Done
 ```
 
@@ -607,7 +606,7 @@ model9 <- gnm(
 FALSE Initialising
 FALSE Running start-up iterations....................
 FALSE Running main iterations.........................................................
-FALSE ...............................................
+FALSE .........................
 ```
 
 ```r
@@ -625,10 +624,10 @@ mu1
 
 ```
 FALSE                                   Estimate Std. Error
-FALSE Mult(L, ., Occ, inst = 1).Educ1 -0.6402222 0.02882211
-FALSE Mult(L, ., Occ, inst = 1).Educ2 -0.2386164 0.03949527
-FALSE Mult(L, ., Occ, inst = 1).Educ3  0.1683115 0.03139203
-FALSE Mult(L, ., Occ, inst = 1).Educ4  0.7105272 0.02071164
+FALSE Mult(L, ., Occ, inst = 1).Educ1 -0.7309442 0.07862794
+FALSE Mult(L, ., Occ, inst = 1).Educ2  0.2168538 0.14103742
+FALSE Mult(L, ., Occ, inst = 1).Educ3  0.6355624 0.08287906
+FALSE Mult(L, ., Occ, inst = 1).Educ4 -0.1214720 0.17120754
 ```
 
 ```r
@@ -636,12 +635,12 @@ nu1
 ```
 
 ```
-FALSE                                   Estimate Std. Error
-FALSE Mult(L, Educ, ., inst = 1).Occ1  0.7654028 0.02524700
-FALSE Mult(L, Educ, ., inst = 1).Occ2  0.2501417 0.04589839
-FALSE Mult(L, Educ, ., inst = 1).Occ3 -0.3979180 0.05170619
-FALSE Mult(L, Educ, ., inst = 1).Occ4 -0.2733327 0.04831936
-FALSE Mult(L, Educ, ., inst = 1).Occ5 -0.3442938 0.08637688
+FALSE                                    Estimate Std. Error
+FALSE Mult(L, Educ, ., inst = 1).Occ1  0.07059438 0.10141736
+FALSE Mult(L, Educ, ., inst = 1).Occ2 -0.48030206 0.07332532
+FALSE Mult(L, Educ, ., inst = 1).Occ3 -0.19772154 0.10545108
+FALSE Mult(L, Educ, ., inst = 1).Occ4 -0.21626011 0.06608227
+FALSE Mult(L, Educ, ., inst = 1).Occ5  0.82368933 0.03866984
 ```
 
 ```r
@@ -650,10 +649,10 @@ mu2
 
 ```
 FALSE                                   Estimate Std. Error
-FALSE Mult(L, ., Occ, inst = 2).Educ1  0.7309442 0.07862794
-FALSE Mult(L, ., Occ, inst = 2).Educ2 -0.2168538 0.14103742
-FALSE Mult(L, ., Occ, inst = 2).Educ3 -0.6355624 0.08287906
-FALSE Mult(L, ., Occ, inst = 2).Educ4  0.1214720 0.17120754
+FALSE Mult(L, ., Occ, inst = 2).Educ1 -0.6402222 0.02882211
+FALSE Mult(L, ., Occ, inst = 2).Educ2 -0.2386164 0.03949527
+FALSE Mult(L, ., Occ, inst = 2).Educ3  0.1683115 0.03139203
+FALSE Mult(L, ., Occ, inst = 2).Educ4  0.7105272 0.02071164
 ```
 
 ```r
@@ -661,12 +660,12 @@ nu2
 ```
 
 ```
-FALSE                                    Estimate Std. Error
-FALSE Mult(L, Educ, ., inst = 2).Occ1 -0.07059438 0.10141736
-FALSE Mult(L, Educ, ., inst = 2).Occ2  0.48030206 0.07332532
-FALSE Mult(L, Educ, ., inst = 2).Occ3  0.19772154 0.10545108
-FALSE Mult(L, Educ, ., inst = 2).Occ4  0.21626011 0.06608227
-FALSE Mult(L, Educ, ., inst = 2).Occ5 -0.82368933 0.03866984
+FALSE                                   Estimate Std. Error
+FALSE Mult(L, Educ, ., inst = 2).Occ1  0.7654028 0.02524700
+FALSE Mult(L, Educ, ., inst = 2).Occ2  0.2501417 0.04589839
+FALSE Mult(L, Educ, ., inst = 2).Occ3 -0.3979180 0.05170619
+FALSE Mult(L, Educ, ., inst = 2).Occ4 -0.2733327 0.04831936
+FALSE Mult(L, Educ, ., inst = 2).Occ5 -0.3442938 0.08637688
 ```
 
 ```r

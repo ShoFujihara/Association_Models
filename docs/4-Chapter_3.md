@@ -100,7 +100,7 @@ M6 <- freq_tab_3.1 %>%
 Initialising
 Running start-up iterations..
 Running main iterations.........................................................
-.............
+......
 Done
 ```
 
@@ -114,7 +114,7 @@ M7 <- freq_tab_3.1 %>%
 ```
 Initialising
 Running start-up iterations..
-Running main iterations..................................................
+Running main iterations....................................................
 Done
 ```
 
@@ -135,8 +135,7 @@ M8 <- freq_tab_3.1 %>%
 ```
 Initialising
 Running start-up iterations..
-Running main iterations.........................................................
-....
+Running main iterations...................................................
 Done
 ```
 
@@ -163,7 +162,7 @@ M %>% bind_rows()
 ```
 
 ```
-# A tibble: 8 x 6
+# A tibble: 8 × 6
   `Model Description`                                 df    L2   BIC Delta     p
   <chr>                                            <int> <dbl> <dbl> <dbl> <dbl>
 1 1. Complete independence                            72 168.  -324. 14.1  1.00 
@@ -208,7 +207,7 @@ M6_SE <- freq_tab_3.1 %>%
 Initialising
 Running start-up iterations..
 Running main iterations.........................................................
-..........................
+.........
 Done
 ```
 
@@ -259,14 +258,15 @@ M7_SE <- freq_tab_3.1 %>%
 
 ```
 Initialising
-Initial Deviance = 168.761227
+Initial Deviance = 157.282831
 Running start-up iterations
-Start-up iteration 1. Deviance = 74.557760
-Start-up iteration 2. Deviance = 72.914158
+Start-up iteration 1. Deviance = 75.103283
+Start-up iteration 2. Deviance = 72.970124
 Running main iterations
-Iteration 1. Deviance = 72.773896
+Iteration 1. Deviance = 72.774080
 Iteration 2. Deviance = 72.773834
 Iteration 3. Deviance = 72.773834
+Iteration 4. Deviance = 72.773834
 Done
 ```
 
@@ -317,42 +317,42 @@ Deviance Residuals:
 -2.09613  -0.69364  -0.06107   0.52149   2.13382  
 
 Coefficients:
-                               Estimate Std. Error z value Pr(>|z|)    
-(Intercept)                    0.494059         NA      NA       NA    
-polviews2                      1.047319   0.183771   5.699 1.20e-08 ***
-polviews3                      1.015164         NA      NA       NA    
-polviews4                      2.327750         NA      NA       NA    
-polviews5                      1.321674         NA      NA       NA    
-polviews6                      1.254444         NA      NA       NA    
-polviews7                     -0.123528         NA      NA       NA    
-fefam2                         0.993418   0.095568  10.395  < 2e-16 ***
-fefam3                         0.451237   0.104313   4.326 1.52e-05 ***
-fefam4                        -0.839900   0.148980  -5.638 1.72e-08 ***
-natfare2                       0.345798   0.085610   4.039 5.36e-05 ***
-natfare3                       0.302261   0.086847   3.480 0.000501 ***
-Mult(., polviews, fefam).      0.163148         NA      NA       NA    
-Mult(1, ., fefam).polviews1   -0.402725         NA      NA       NA    
-Mult(1, ., fefam).polviews2   -0.402725         NA      NA       NA    
-Mult(1, ., fefam).polviews3   -0.278981         NA      NA       NA    
-Mult(1, ., fefam).polviews4   -0.001962         NA      NA       NA    
-Mult(1, ., fefam).polviews5   -0.001962         NA      NA       NA    
-Mult(1, ., fefam).polviews6    0.491603         NA      NA       NA    
-Mult(1, ., fefam).polviews7    0.596753         NA      NA       NA    
-Mult(1, polviews, .).fefam1   -7.746085         NA      NA       NA    
-Mult(1, polviews, .).fefam2   -0.960123         NA      NA       NA    
-Mult(1, polviews, .).fefam3    4.698011         NA      NA       NA    
-Mult(1, polviews, .).fefam4    7.903679         NA      NA       NA    
-Mult(., polviews, natfare).    4.627056         NA      NA       NA    
-Mult(1, ., natfare).polviews1 -0.402725         NA      NA       NA    
-Mult(1, ., natfare).polviews2 -0.402725         NA      NA       NA    
-Mult(1, ., natfare).polviews3 -0.278981         NA      NA       NA    
-Mult(1, ., natfare).polviews4 -0.001962         NA      NA       NA    
-Mult(1, ., natfare).polviews5 -0.001962         NA      NA       NA    
-Mult(1, ., natfare).polviews6  0.491603         NA      NA       NA    
-Mult(1, ., natfare).polviews7  0.596753         NA      NA       NA    
-Mult(1, polviews, .).natfare1 -0.208030         NA      NA       NA    
-Mult(1, polviews, .).natfare2 -0.101990         NA      NA       NA    
-Mult(1, polviews, .).natfare3  0.207269         NA      NA       NA    
+                                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                     0.505126         NA      NA       NA    
+polviews2                       1.047319   0.183771   5.699 1.20e-08 ***
+polviews3                       1.011763         NA      NA       NA    
+polviews4                       2.316737         NA      NA       NA    
+polviews5                       1.310661         NA      NA       NA    
+polviews6                       1.229868         NA      NA       NA    
+polviews7                      -0.150993         NA      NA       NA    
+fefam2                          0.993418   0.095568  10.395  < 2e-16 ***
+fefam3                          0.451237   0.104313   4.326 1.52e-05 ***
+fefam4                         -0.839900   0.148980  -5.638 1.72e-08 ***
+natfare2                        0.345798   0.085610   4.039 5.36e-05 ***
+natfare3                        0.302261   0.086847   3.480 0.000501 ***
+Mult(., polviews, fefam).      -0.115002         NA      NA       NA    
+Mult(1, ., fefam).polviews1    -0.402725         NA      NA       NA    
+Mult(1, ., fefam).polviews2    -0.402725         NA      NA       NA    
+Mult(1, ., fefam).polviews3    -0.278981         NA      NA       NA    
+Mult(1, ., fefam).polviews4    -0.001962         NA      NA       NA    
+Mult(1, ., fefam).polviews5    -0.001962         NA      NA       NA    
+Mult(1, ., fefam).polviews6     0.491603         NA      NA       NA    
+Mult(1, ., fefam).polviews7     0.596753         NA      NA       NA    
+Mult(1, polviews, .).fefam1    10.752648         NA      NA       NA    
+Mult(1, polviews, .).fefam2     1.125752         NA      NA       NA    
+Mult(1, polviews, .).fefam3    -6.901153         NA      NA       NA    
+Mult(1, polviews, .).fefam4   -11.448868         NA      NA       NA    
+Mult(., polviews, natfare).     4.862534         NA      NA       NA    
+Mult(1, ., natfare).polviews1  -0.402725         NA      NA       NA    
+Mult(1, ., natfare).polviews2  -0.402725         NA      NA       NA    
+Mult(1, ., natfare).polviews3  -0.278981         NA      NA       NA    
+Mult(1, ., natfare).polviews4  -0.001962         NA      NA       NA    
+Mult(1, ., natfare).polviews5  -0.001962         NA      NA       NA    
+Mult(1, ., natfare).polviews6   0.491603         NA      NA       NA    
+Mult(1, ., natfare).polviews7   0.596753         NA      NA       NA    
+Mult(1, polviews, .).natfare1  -0.197893         NA      NA       NA    
+Mult(1, polviews, .).natfare2  -0.096989         NA      NA       NA    
+Mult(1, polviews, .).natfare3   0.197293         NA      NA       NA    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -386,7 +386,7 @@ M8_SE <- freq_tab_3.1 %>%  gnm(Freq ~ polviews + fefam + natfare + Mult(1, polvi
 ```
 Initialising
 Running start-up iterations..
-Running main iterations..................
+Running main iterations....
 Done
 ```
 
@@ -406,29 +406,29 @@ M8_SE_coef %>% dplyr::select(Model8 = Estimate))
 
 ```
                         Variable      Model6      Model7       Model8
-1      Mult(., polviews, fefam).  1.98292236 -1.94985651  1.941869008
-2    Mult(1, ., fefam).polviews1 -0.18890704 -0.41258265 -0.402725149
-3    Mult(1, ., fefam).polviews2 -0.45611586 -0.38551616 -0.402725149
-4    Mult(1, ., fefam).polviews3 -0.36505971 -0.26877471 -0.278981096
-5    Mult(1, ., fefam).polviews4 -0.01292237  0.02747595 -0.001961895
-6    Mult(1, ., fefam).polviews5 -0.06262362 -0.05550221 -0.001961895
-7    Mult(1, ., fefam).polviews6  0.42111705  0.49418258  0.491602614
-8    Mult(1, ., fefam).polviews7  0.66451154  0.60071720  0.596752569
-9    Mult(1, polviews, .).fefam1 -0.70268861  0.72624699 -0.732615689
-10   Mult(1, polviews, .).fefam2 -0.20817046  0.17021171 -0.162486357
-11   Mult(1, polviews, .).fefam3  0.30041075 -0.30370570  0.312887371
-12   Mult(1, polviews, .).fefam4  0.61044832 -0.59275300  0.582214676
-13   Mult(., polviews, natfare).  1.56691378 -1.43774015  1.411968172
-14 Mult(1, ., natfare).polviews1 -0.60584367 -0.41258265 -0.402725149
-15 Mult(1, ., natfare).polviews2 -0.27518966 -0.38551616 -0.402725149
-16 Mult(1, ., natfare).polviews3 -0.15821154 -0.26877471 -0.278981096
-17 Mult(1, ., natfare).polviews4  0.06460260  0.02747595 -0.001961895
-18 Mult(1, ., natfare).polviews5 -0.05050796 -0.05550221 -0.001961895
-19 Mult(1, ., natfare).polviews6  0.51153570  0.49418258  0.491602614
-20 Mult(1, ., natfare).polviews7  0.51361453  0.60071720  0.596752569
-21 Mult(1, polviews, .).natfare1 -0.60734824  0.58021189 -0.569479796
-22 Mult(1, polviews, .).natfare2 -0.16892093  0.20740348 -0.221984457
-23 Mult(1, polviews, .).natfare3  0.77626917 -0.78761536  0.791464253
+1      Mult(., polviews, fefam).  1.98292236 -1.94985651 -1.941869008
+2    Mult(1, ., fefam).polviews1  0.18890704 -0.41258265 -0.402725149
+3    Mult(1, ., fefam).polviews2  0.45611586 -0.38551616 -0.402725149
+4    Mult(1, ., fefam).polviews3  0.36505971 -0.26877471 -0.278981096
+5    Mult(1, ., fefam).polviews4  0.01292237  0.02747595 -0.001961895
+6    Mult(1, ., fefam).polviews5  0.06262362 -0.05550221 -0.001961895
+7    Mult(1, ., fefam).polviews6 -0.42111705  0.49418258  0.491602614
+8    Mult(1, ., fefam).polviews7 -0.66451154  0.60071720  0.596752569
+9    Mult(1, polviews, .).fefam1  0.70268861  0.72624699  0.732615689
+10   Mult(1, polviews, .).fefam2  0.20817046  0.17021171  0.162486357
+11   Mult(1, polviews, .).fefam3 -0.30041075 -0.30370570 -0.312887371
+12   Mult(1, polviews, .).fefam4 -0.61044832 -0.59275300 -0.582214676
+13   Mult(., polviews, natfare). -1.56691378  1.43774015  1.411968172
+14 Mult(1, ., natfare).polviews1  0.60584367 -0.41258265 -0.402725149
+15 Mult(1, ., natfare).polviews2  0.27518966 -0.38551616 -0.402725149
+16 Mult(1, ., natfare).polviews3  0.15821154 -0.26877471 -0.278981096
+17 Mult(1, ., natfare).polviews4 -0.06460260  0.02747595 -0.001961895
+18 Mult(1, ., natfare).polviews5  0.05050796 -0.05550221 -0.001961895
+19 Mult(1, ., natfare).polviews6 -0.51153570  0.49418258  0.491602614
+20 Mult(1, ., natfare).polviews7 -0.51361453  0.60071720  0.596752569
+21 Mult(1, polviews, .).natfare1 -0.60734824 -0.58021189 -0.569479796
+22 Mult(1, polviews, .).natfare2 -0.16892093 -0.20740348 -0.221984457
+23 Mult(1, polviews, .).natfare3  0.77626917  0.78761536  0.791464253
 ```
 
 
@@ -482,7 +482,7 @@ model2 <- freq_tab_3.1 %>%
 Initialising
 Running start-up iterations..
 Running main iterations.........................................................
-...............................
+...................................................
 Done
 ```
 
@@ -499,7 +499,7 @@ model3 <- freq_tab_3.1 %>%
 Initialising
 Running start-up iterations..
 Running main iterations.........................................................
-...........................................
+....................................................
 Done
 ```
 
@@ -521,43 +521,43 @@ Deviance Residuals:
 
 Coefficients:
                         Estimate Std. Error z value Pr(>|z|)
-(Intercept)              2.62859         NA      NA       NA
-R2                      -0.07202         NA      NA       NA
-R3                       1.07687         NA      NA       NA
-R4                       1.24252         NA      NA       NA
-C2                      -0.74242         NA      NA       NA
-C3                      -0.26258         NA      NA       NA
-C4                      -0.75368         NA      NA       NA
-L2                      -0.14844         NA      NA       NA
-L3                       0.33658         NA      NA       NA
-L4                      -0.02280         NA      NA       NA
-Mult(., C, inst = 1).R1 -1.15021         NA      NA       NA
-Mult(., C, inst = 1).R2 -1.82067         NA      NA       NA
-Mult(., C, inst = 1).R3 -0.44922         NA      NA       NA
-Mult(., C, inst = 1).R4  0.95358         NA      NA       NA
-Mult(R, ., inst = 1).C1 -0.09775         NA      NA       NA
-Mult(R, ., inst = 1).C2 -0.19482         NA      NA       NA
-Mult(R, ., inst = 1).C3  0.10249         NA      NA       NA
-Mult(R, ., inst = 1).C4  0.38682         NA      NA       NA
-Mult(., L, inst = 1).R1  0.60721         NA      NA       NA
-Mult(., L, inst = 1).R2  0.48280         NA      NA       NA
-Mult(., L, inst = 1).R3  0.20805         NA      NA       NA
-Mult(., L, inst = 1).R4 -0.50448         NA      NA       NA
-Mult(R, ., inst = 1).L1  1.04293         NA      NA       NA
-Mult(R, ., inst = 1).L2  0.73141         NA      NA       NA
-Mult(R, ., inst = 1).L3 -0.06269         NA      NA       NA
-Mult(R, ., inst = 1).L4 -1.18855         NA      NA       NA
-MultHomog(C, L)1         0.67719         NA      NA       NA
-MultHomog(C, L)2         0.16076         NA      NA       NA
-MultHomog(C, L)3        -0.32462         NA      NA       NA
-MultHomog(C, L)4        -0.69521         NA      NA       NA
+(Intercept)              2.72665         NA      NA       NA
+R2                      -0.06042         NA      NA       NA
+R3                       1.02751         NA      NA       NA
+R4                       1.10045         NA      NA       NA
+C2                      -0.79267         NA      NA       NA
+C3                      -0.27510         NA      NA       NA
+C4                      -0.72487         NA      NA       NA
+L2                      -0.16535         NA      NA       NA
+L3                       0.32326         NA      NA       NA
+L4                      -0.01319         NA      NA       NA
+Mult(., C, inst = 1).R1  1.11395         NA      NA       NA
+Mult(., C, inst = 1).R2  1.65956         NA      NA       NA
+Mult(., C, inst = 1).R3  0.54349         NA      NA       NA
+Mult(., C, inst = 1).R4 -0.59811         NA      NA       NA
+Mult(R, ., inst = 1).C1  0.08281         NA      NA       NA
+Mult(R, ., inst = 1).C2  0.20209         NA      NA       NA
+Mult(R, ., inst = 1).C3 -0.16324         NA      NA       NA
+Mult(R, ., inst = 1).C4 -0.51263         NA      NA       NA
+Mult(., L, inst = 1).R1 -1.34420         NA      NA       NA
+Mult(., L, inst = 1).R2 -1.08538         NA      NA       NA
+Mult(., L, inst = 1).R3 -0.51373         NA      NA       NA
+Mult(., L, inst = 1).R4  0.96872         NA      NA       NA
+Mult(R, ., inst = 1).L1 -0.46746         NA      NA       NA
+Mult(R, ., inst = 1).L2 -0.31773         NA      NA       NA
+Mult(R, ., inst = 1).L3  0.06394         NA      NA       NA
+Mult(R, ., inst = 1).L4  0.60508         NA      NA       NA
+MultHomog(C, L)1         0.62099         NA      NA       NA
+MultHomog(C, L)2         0.10456         NA      NA       NA
+MultHomog(C, L)3        -0.38082         NA      NA       NA
+MultHomog(C, L)4        -0.75141         NA      NA       NA
 
 Std. Error is NA where coefficient has been constrained or is unidentified
 
 Residual deviance: 111.83 on 41 degrees of freedom
 AIC: 452.14
 
-Number of iterations: 100
+Number of iterations: 109
 ```
 
 ```r
@@ -572,7 +572,7 @@ model4 <- freq_tab_3.1 %>%
 ```
 Initialising
 Running start-up iterations..
-Running main iterations.............................................
+Running main iterations.................................................
 Done
 ```
 
@@ -669,7 +669,7 @@ model8 <- freq_tab_3.1 %>%
 Initialising
 Running start-up iterations..
 Running main iterations.........................................................
-..........................
+.....................................
 Done
 ```
 
@@ -686,7 +686,7 @@ model9<- freq_tab_3.1 %>% gnm(Freq~R+C+L+Rscore:Cscore+Mult(1,R,C+L)+
 Initialising
 Running start-up iterations..
 Running main iterations...................................................................
-
+..........................
 Done
 ```
 
@@ -713,7 +713,7 @@ model9.extended <- freq_tab_3.1 %>% gnm(Freq~R+C+L+Rscore:Cscore+Mult(1,R,C)+
 Initialising
 Running start-up iterations..
 Running main iterations...................................................................
-..........................
+.....
 Done
 ```
 
@@ -735,46 +735,46 @@ Deviance Residuals:
 
 Coefficients:
                  Estimate Std. Error z value Pr(>|z|)    
-(Intercept)       3.56160         NA      NA       NA    
-R2               -0.94663         NA      NA       NA    
-R3               -0.71817         NA      NA       NA    
-R4               -1.55450         NA      NA       NA    
-C2               -1.58861         NA      NA       NA    
-C3               -2.05079         NA      NA       NA    
-C4               -3.48065         NA      NA       NA    
-L2               -1.38098         NA      NA       NA    
-L3               -2.25593         NA      NA       NA    
-L4               -3.81349         NA      NA       NA    
-Rscore:Cscore     0.13353    0.02520   5.300 1.16e-07 ***
-Mult(., R, C).   -0.10054         NA      NA       NA    
+(Intercept)       3.60370         NA      NA       NA    
+R2               -1.02735         NA      NA       NA    
+R3               -0.78479         NA      NA       NA    
+R4               -1.56413         NA      NA       NA    
+C2               -1.58364         NA      NA       NA    
+C3               -2.02710         NA      NA       NA    
+C4               -3.48222         NA      NA       NA    
+L2               -1.37357         NA      NA       NA    
+L3               -2.26802         NA      NA       NA    
+L4               -3.81384         NA      NA       NA    
+Rscore:Cscore     0.13353    0.02519   5.300 1.16e-07 ***
+Mult(., R, C).   -0.64987         NA      NA       NA    
 Mult(1, ., C).R1 -0.56136         NA      NA       NA    
-Mult(1, ., C).R2  0.59333         NA      NA       NA    
+Mult(1, ., C).R2  0.59332         NA      NA       NA    
 Mult(1, ., C).R3  0.39165         NA      NA       NA    
 Mult(1, ., C).R4 -0.42362         NA      NA       NA    
-Mult(1, R, .).C1  1.41773         NA      NA       NA    
-Mult(1, R, .).C2 -4.47477         NA      NA       NA    
-Mult(1, R, .).C3 -0.13452         NA      NA       NA    
-Mult(1, R, .).C4  4.66268         NA      NA       NA    
+Mult(1, R, .).C1  0.13847         NA      NA       NA    
+Mult(1, R, .).C2 -0.77314         NA      NA       NA    
+Mult(1, R, .).C3 -0.10168         NA      NA       NA    
+Mult(1, R, .).C4  0.64048         NA      NA       NA    
 Rscore:Lscore     0.24848    0.02521   9.856  < 2e-16 ***
-Mult(., R, L).    0.95021         NA      NA       NA    
+Mult(., R, L).   -0.54118         NA      NA       NA    
 Mult(1, ., L).R1 -0.56136         NA      NA       NA    
-Mult(1, ., L).R2  0.59333         NA      NA       NA    
+Mult(1, ., L).R2  0.59332         NA      NA       NA    
 Mult(1, ., L).R3  0.39165         NA      NA       NA    
 Mult(1, ., L).R4 -0.42362         NA      NA       NA    
-Mult(1, R, .).L1 -0.04835         NA      NA       NA    
-Mult(1, R, .).L2  0.80345         NA      NA       NA    
-Mult(1, R, .).L3  0.16329         NA      NA       NA    
-Mult(1, R, .).L4 -0.87000         NA      NA       NA    
+Mult(1, R, .).L1  0.05283         NA      NA       NA    
+Mult(1, R, .).L2 -1.44278         NA      NA       NA    
+Mult(1, R, .).L3 -0.31878         NA      NA       NA    
+Mult(1, R, .).L4  1.49548         NA      NA       NA    
 Cscore:Lscore     0.20270    0.02560   7.919  < 2e-16 ***
-Mult(., C, L).    1.40132         NA      NA       NA    
-Mult(1, ., L).C1 -0.01979         NA      NA       NA    
-Mult(1, ., L).C2  0.12720         NA      NA       NA    
-Mult(1, ., L).C3  0.68032         NA      NA       NA    
-Mult(1, ., L).C4 -0.06619         NA      NA       NA    
-Mult(1, C, .).L1 -0.06182         NA      NA       NA    
-Mult(1, C, .).L2 -0.24254         NA      NA       NA    
-Mult(1, C, .).L3  0.23273         NA      NA       NA    
-Mult(1, C, .).L4 -0.05328         NA      NA       NA    
+Mult(., C, L).    1.44077         NA      NA       NA    
+Mult(1, ., L).C1 -0.00840         NA      NA       NA    
+Mult(1, ., L).C2 -0.13853         NA      NA       NA    
+Mult(1, ., L).C3 -0.62824         NA      NA       NA    
+Mult(1, ., L).C4  0.03268         NA      NA       NA    
+Mult(1, C, .).L1  0.09443         NA      NA       NA    
+Mult(1, C, .).L2  0.29297         NA      NA       NA    
+Mult(1, C, .).L3 -0.22915         NA      NA       NA    
+Mult(1, C, .).L4  0.08506         NA      NA       NA    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -785,7 +785,7 @@ Std. Error is NA where coefficient has been constrained or is unidentified
 Residual deviance: 47.134 on 40 degrees of freedom
 AIC: 389.45
 
-Number of iterations: 93
+Number of iterations: 72
 ```
 
 ```r
@@ -857,25 +857,25 @@ Mult(1, R, .).C2 -0.73633         NA      NA       NA
 Mult(1, R, .).C3 -0.07638         NA      NA       NA    
 Mult(1, R, .).C4  0.65306         NA      NA       NA    
 Rscore:Lscore     0.24848    0.02515   9.879  < 2e-16 ***
-Mult(., R, L).    1.13662    0.13964   8.140  < 2e-16 ***
+Mult(., R, L).   -1.13662    0.13964  -8.140  < 2e-16 ***
 Mult(1, ., L).R1 -0.56136         NA      NA       NA    
 Mult(1, ., L).R2  0.59333         NA      NA       NA    
 Mult(1, ., L).R3  0.39165         NA      NA       NA    
 Mult(1, ., L).R4 -0.42362         NA      NA       NA    
-Mult(1, R, .).L1 -0.05054         NA      NA       NA    
-Mult(1, R, .).L2  0.66157         NA      NA       NA    
-Mult(1, R, .).L3  0.12640         NA      NA       NA    
-Mult(1, R, .).L4 -0.73743         NA      NA       NA    
+Mult(1, R, .).L1  0.05054         NA      NA       NA    
+Mult(1, R, .).L2 -0.66157         NA      NA       NA    
+Mult(1, R, .).L3 -0.12640         NA      NA       NA    
+Mult(1, R, .).L4  0.73743         NA      NA       NA    
 Cscore:Lscore     0.20270    0.02315   8.756  < 2e-16 ***
 Mult(., C, L).    0.28351    0.10068   2.816  0.00486 ** 
-Mult(1, ., L).C1 -0.33661         NA      NA       NA    
-Mult(1, ., L).C2 -0.08944         NA      NA       NA    
-Mult(1, ., L).C3  0.84069         NA      NA       NA    
-Mult(1, ., L).C4 -0.41464         NA      NA       NA    
-Mult(1, C, .).L1 -0.08991         NA      NA       NA    
-Mult(1, C, .).L2 -0.62111         NA      NA       NA    
-Mult(1, C, .).L3  0.77584         NA      NA       NA    
-Mult(1, C, .).L4 -0.06482         NA      NA       NA    
+Mult(1, ., L).C1  0.33661         NA      NA       NA    
+Mult(1, ., L).C2  0.08944         NA      NA       NA    
+Mult(1, ., L).C3 -0.84069         NA      NA       NA    
+Mult(1, ., L).C4  0.41464         NA      NA       NA    
+Mult(1, C, .).L1  0.08991         NA      NA       NA    
+Mult(1, C, .).L2  0.62111         NA      NA       NA    
+Mult(1, C, .).L3 -0.77584         NA      NA       NA    
+Mult(1, C, .).L4  0.06482         NA      NA       NA    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -907,30 +907,30 @@ Mult(1, R, .).C4  0.65306187 0.10868144
 
 ```
                     Estimate Std. Error
-Mult(1, R, .).L1 -0.05053742 0.08981862
-Mult(1, R, .).L2  0.66156822 0.06038098
-Mult(1, R, .).L3  0.12639555 0.08679365
-Mult(1, R, .).L4 -0.73742635 0.04940126
+Mult(1, R, .).L1  0.05053742 0.08981862
+Mult(1, R, .).L2 -0.66156822 0.06038098
+Mult(1, R, .).L3 -0.12639555 0.08679365
+Mult(1, R, .).L4  0.73742635 0.04940126
 ```
 
 ```
                     Estimate Std. Error
-Mult(1, ., L).C1 -0.33661004 0.30087703
-Mult(1, ., L).C2 -0.08944163 0.36058729
-Mult(1, ., L).C3  0.84069369 0.08936905
-Mult(1, ., L).C4 -0.41464201 0.32252708
+Mult(1, ., L).C1  0.33661004 0.30087703
+Mult(1, ., L).C2  0.08944163 0.36058729
+Mult(1, ., L).C3 -0.84069369 0.08936905
+Mult(1, ., L).C4  0.41464201 0.32252708
 ```
 
 ```
                     Estimate Std. Error
-Mult(1, C, .).L1 -0.08990831  0.3610226
-Mult(1, C, .).L2 -0.62111332  0.2399524
-Mult(1, C, .).L3  0.77584334  0.1519881
-Mult(1, C, .).L4 -0.06482171  0.3227342
+Mult(1, C, .).L1  0.08990831  0.3610226
+Mult(1, C, .).L2  0.62111332  0.2399524
+Mult(1, C, .).L3 -0.77584334  0.1519881
+Mult(1, C, .).L4  0.06482171  0.3227342
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 model9                 38  47.1 -231.  6.25 0.853
@@ -948,8 +948,7 @@ model10 <- freq_tab_3.1 %>% gnm(Freq~R+C+L+Rscore:Cscore+Mult(1,C,R+L)+
 Initialising
 Running start-up iterations..
 Running main iterations...................................................................
-..........................................................................................
-............................................................
+.....................................................................................
 Done
 ```
 
@@ -958,10 +957,10 @@ model.summary(model10)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
-1 model10                38  54.8 -223.  7.50 0.962
+1 model10                38  50.9 -227.  6.31 0.921
 ```
 
 ```r
@@ -976,7 +975,7 @@ model11<- freq_tab_3.1 %>% gnm(Freq~R+C+L+Rscore:Cscore+Mult(1,L,R+C)+
 Initialising
 Running start-up iterations..
 Running main iterations...................................................................
-.............
+...........
 Done
 ```
 
@@ -985,7 +984,7 @@ model.summary(model11)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 model11                38  53.6 -225.  6.58 0.952
@@ -1007,7 +1006,7 @@ model12<- freq_tab_3.1 %>% gnm(Freq~R+C+L+Rscore:Cscore+Mult(1,R,C+L)+
 Initialising
 Running start-up iterations..
 Running main iterations...................................................................
-................
+............
 Done
 ```
 
@@ -1017,7 +1016,7 @@ model.summary(model12)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 model12                39  48.6 -237.  6.57 0.860
@@ -1065,46 +1064,46 @@ Deviance Residuals:
 -1.58844  -0.76809   0.02278   0.56330   1.92999  
 
 Coefficients:
-                 Estimate Std. Error z value Pr(>|z|)    
-(Intercept)       3.58449         NA      NA       NA    
-R2               -1.00051         NA      NA       NA    
-R3               -0.70053         NA      NA       NA    
-R4               -1.39883         NA      NA       NA    
-C2               -1.63242         NA      NA       NA    
-C3               -2.13996         NA      NA       NA    
-C4               -3.65896         NA      NA       NA    
-L2               -1.36583         NA      NA       NA    
-L3               -2.16676         NA      NA       NA    
-L4               -3.74210         NA      NA       NA    
-Rscore:Cscore     0.13336    0.02542   5.246 1.55e-07 ***
-Mult(., R, C).   -0.80657         NA      NA       NA    
-Mult(1, ., C).R1  0.53827         NA      NA       NA    
-Mult(1, ., C).R2 -0.59767         NA      NA       NA    
-Mult(1, ., C).R3 -0.38941         NA      NA       NA    
-Mult(1, ., C).R4  0.44880         NA      NA       NA    
-Mult(1, R, .).C1 -0.12707         NA      NA       NA    
-Mult(1, R, .).C2  0.60502         NA      NA       NA    
-Mult(1, R, .).C3  0.08064         NA      NA       NA    
-Mult(1, R, .).C4 -0.49208         NA      NA       NA    
-cov_rcl           0.22423    0.01709  13.123  < 2e-16 ***
-Mult(., R, L).    0.90628         NA      NA       NA    
-Mult(1, ., L).R1  0.53827         NA      NA       NA    
-Mult(1, ., L).R2 -0.59767         NA      NA       NA    
-Mult(1, ., L).R3 -0.38941         NA      NA       NA    
-Mult(1, ., L).R4  0.44880         NA      NA       NA    
-Mult(1, R, .).L1  0.00258         NA      NA       NA    
-Mult(1, R, .).L2 -0.88692         NA      NA       NA    
-Mult(1, R, .).L3 -0.20816         NA      NA       NA    
-Mult(1, R, .).L4  0.87418         NA      NA       NA    
-Mult(., C, L).    0.80133         NA      NA       NA    
-Mult(1, ., L).C1  0.06908         NA      NA       NA    
-Mult(1, ., L).C2 -0.01996         NA      NA       NA    
-Mult(1, ., L).C3 -0.65631         NA      NA       NA    
-Mult(1, ., L).C4  0.16741         NA      NA       NA    
-Mult(1, C, .).L1  0.06092         NA      NA       NA    
-Mult(1, C, .).L2  0.41886         NA      NA       NA    
-Mult(1, C, .).L3 -0.33023         NA      NA       NA    
-Mult(1, C, .).L4  0.13138         NA      NA       NA    
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        3.60174         NA      NA       NA    
+R2                -0.99730         NA      NA       NA    
+R3                -0.69791         NA      NA       NA    
+R4                -1.39857         NA      NA       NA    
+C2                -1.63317         NA      NA       NA    
+C3                -2.14603         NA      NA       NA    
+C4                -3.65814         NA      NA       NA    
+L2                -1.23680         NA      NA       NA    
+L3                -2.30775         NA      NA       NA    
+L4                -3.71670         NA      NA       NA    
+Rscore:Cscore      0.13336    0.02542   5.246 1.55e-07 ***
+Mult(., R, C).     1.34715         NA      NA       NA    
+Mult(1, ., C).R1  -0.53827         NA      NA       NA    
+Mult(1, ., C).R2   0.59766         NA      NA       NA    
+Mult(1, ., C).R3   0.38941         NA      NA       NA    
+Mult(1, ., C).R4  -0.44880         NA      NA       NA    
+Mult(1, R, .).C1  -0.07812         NA      NA       NA    
+Mult(1, R, .).C2   0.36021         NA      NA       NA    
+Mult(1, R, .).C3   0.04625         NA      NA       NA    
+Mult(1, R, .).C4  -0.29666         NA      NA       NA    
+cov_rcl            0.22423    0.01709  13.123  < 2e-16 ***
+Mult(., R, L).    -0.05365         NA      NA       NA    
+Mult(1, ., L).R1  -0.53827         NA      NA       NA    
+Mult(1, ., L).R2   0.59766         NA      NA       NA    
+Mult(1, ., L).R3   0.38941         NA      NA       NA    
+Mult(1, ., L).R4  -0.44880         NA      NA       NA    
+Mult(1, R, .).L1   0.04513         NA      NA       NA    
+Mult(1, R, .).L2 -14.98159         NA      NA       NA    
+Mult(1, R, .).L3  -3.51509         NA      NA       NA    
+Mult(1, R, .).L4  14.76951         NA      NA       NA    
+Mult(., C, L).    -0.91607         NA      NA       NA    
+Mult(1, ., L).C1   0.39659         NA      NA       NA    
+Mult(1, ., L).C2   0.48932         NA      NA       NA    
+Mult(1, ., L).C3   1.15215         NA      NA       NA    
+Mult(1, ., L).C4   0.29416         NA      NA       NA    
+Mult(1, C, .).L1   0.04239         NA      NA       NA    
+Mult(1, C, .).L2   0.34299         NA      NA       NA    
+Mult(1, C, .).L3  -0.28609         NA      NA       NA    
+Mult(1, C, .).L4   0.10156         NA      NA       NA    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -1171,30 +1170,30 @@ L2               -1.39736    0.10537 -13.261  < 2e-16 ***
 L3               -2.13230    0.17235 -12.372  < 2e-16 ***
 L4               -3.74831    0.27154 -13.804  < 2e-16 ***
 Rscore:Cscore     0.13336    0.02490   5.357 8.48e-08 ***
-Mult(., R, C).   -0.64007    0.13725  -4.663 3.11e-06 ***
-Mult(1, ., C).R1  0.53827         NA      NA       NA    
-Mult(1, ., C).R2 -0.59766         NA      NA       NA    
-Mult(1, ., C).R3 -0.38941         NA      NA       NA    
-Mult(1, ., C).R4  0.44880         NA      NA       NA    
+Mult(., R, C).    0.64007    0.13725   4.663 3.11e-06 ***
+Mult(1, ., C).R1 -0.53827         NA      NA       NA    
+Mult(1, ., C).R2  0.59766         NA      NA       NA    
+Mult(1, ., C).R3  0.38941         NA      NA       NA    
+Mult(1, ., C).R4 -0.44880         NA      NA       NA    
 Mult(1, R, .).C1 -0.18108         NA      NA       NA    
 Mult(1, R, .).C2  0.74146         NA      NA       NA    
 Mult(1, R, .).C3  0.08067         NA      NA       NA    
 Mult(1, R, .).C4 -0.64105         NA      NA       NA    
 cov_rcl           0.22423    0.01636  13.707  < 2e-16 ***
-Mult(., R, L).    1.13998    0.13669   8.340  < 2e-16 ***
-Mult(1, ., L).R1  0.53827         NA      NA       NA    
-Mult(1, ., L).R2 -0.59766         NA      NA       NA    
-Mult(1, ., L).R3 -0.38941         NA      NA       NA    
-Mult(1, ., L).R4  0.44880         NA      NA       NA    
+Mult(., R, L).   -1.13998    0.13669  -8.340  < 2e-16 ***
+Mult(1, ., L).R1 -0.53827         NA      NA       NA    
+Mult(1, ., L).R2  0.59766         NA      NA       NA    
+Mult(1, ., L).R3  0.38941         NA      NA       NA    
+Mult(1, ., L).R4 -0.44880         NA      NA       NA    
 Mult(1, R, .).L1  0.04544         NA      NA       NA    
 Mult(1, R, .).L2 -0.66170         NA      NA       NA    
 Mult(1, R, .).L3 -0.12210         NA      NA       NA    
 Mult(1, R, .).L4  0.73836         NA      NA       NA    
-Mult(., C, L).   -0.27613    0.10158  -2.718  0.00656 ** 
-Mult(1, ., L).C1 -0.27770         NA      NA       NA    
-Mult(1, ., L).C2 -0.13959         NA      NA       NA    
-Mult(1, ., L).C3  0.84752         NA      NA       NA    
-Mult(1, ., L).C4 -0.43024         NA      NA       NA    
+Mult(., C, L).    0.27613    0.10158   2.718  0.00656 ** 
+Mult(1, ., L).C1  0.27770         NA      NA       NA    
+Mult(1, ., L).C2  0.13959         NA      NA       NA    
+Mult(1, ., L).C3 -0.84752         NA      NA       NA    
+Mult(1, ., L).C4  0.43024         NA      NA       NA    
 Mult(1, C, .).L1 -0.01743         NA      NA       NA    
 Mult(1, C, .).L2  0.65220         NA      NA       NA    
 Mult(1, C, .).L3 -0.74916         NA      NA       NA    
@@ -1214,10 +1213,10 @@ Number of iterations: 3
 
 ```
                        Estimate Std. Error
-Mult(1, ., C + L).R1  0.5382715 0.07940991
-Mult(1, ., C + L).R2 -0.5976649 0.06869502
-Mult(1, ., C + L).R3 -0.3894076 0.08390695
-Mult(1, ., C + L).R4  0.4488010 0.08495489
+Mult(1, ., C + L).R1 -0.5382715 0.07940991
+Mult(1, ., C + L).R2  0.5976649 0.06869502
+Mult(1, ., C + L).R3  0.3894076 0.08390695
+Mult(1, ., C + L).R4 -0.4488010 0.08495489
 ```
 
 ```
@@ -1238,10 +1237,10 @@ Mult(1, R, .).L4  0.7383601 0.04862532
 
 ```
                    Estimate Std. Error
-Mult(1, ., L).C1 -0.2776974 0.30818568
-Mult(1, ., L).C2 -0.1395889 0.36977790
-Mult(1, ., L).C3  0.8475231 0.08001496
-Mult(1, ., L).C4 -0.4302368 0.32326672
+Mult(1, ., L).C1  0.2776974 0.30818568
+Mult(1, ., L).C2  0.1395889 0.36977790
+Mult(1, ., L).C3 -0.8475231 0.08001496
+Mult(1, ., L).C4  0.4302368 0.32326672
 ```
 
 ```
@@ -1253,7 +1252,7 @@ Mult(1, C, .).L4  0.11439226  0.3321123
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 model12                39  48.6 -237.  6.57 0.860
@@ -1272,7 +1271,7 @@ model15<- freq_tab_3.1 %>%
 ```
 Initialising
 Running start-up iterations..
-Running main iterations.................................................
+Running main iterations.............................................
 Done
 ```
 
@@ -1292,29 +1291,29 @@ Deviance Residuals:
 
 Coefficients:
                      Estimate Std. Error z value Pr(>|z|)    
-(Intercept)           3.57316         NA      NA       NA    
-R2                   -0.96403         NA      NA       NA    
-R3                   -0.68081         NA      NA       NA    
-R4                   -1.42280         NA      NA       NA    
-C2                   -1.67264         NA      NA       NA    
-C3                   -2.17739         NA      NA       NA    
-C4                   -3.68263         NA      NA       NA    
-L2                   -1.44956         NA      NA       NA    
-L3                   -2.16749         NA      NA       NA    
-L4                   -3.78598         NA      NA       NA    
+(Intercept)           3.55761         NA      NA       NA    
+R2                   -0.91260         NA      NA       NA    
+R3                   -0.63882         NA      NA       NA    
+R4                   -1.41825         NA      NA       NA    
+C2                   -1.69473         NA      NA       NA    
+C3                   -2.18317         NA      NA       NA    
+C4                   -3.67131         NA      NA       NA    
+L2                   -1.47976         NA      NA       NA    
+L3                   -2.17511         NA      NA       NA    
+L4                   -3.75639         NA      NA       NA    
 Rscore:Cscore         0.13307    0.02552   5.215 1.84e-07 ***
-Mult(., R, C + L).    0.42235         NA      NA       NA    
-Mult(1, ., C + L).R1  0.79131         NA      NA       NA    
-Mult(1, ., C + L).R2 -1.01157         NA      NA       NA    
-Mult(1, ., C + L).R3 -0.68058         NA      NA       NA    
-Mult(1, ., C + L).R4  0.63184         NA      NA       NA    
-Mult(1, R, . + L).C1  0.21278         NA      NA       NA    
-Mult(1, R, . + L).C2 -0.66899         NA      NA       NA    
-Mult(1, R, . + L).C3 -0.01786         NA      NA       NA    
-Mult(1, R, . + L).C4  0.66458         NA      NA       NA    
-Mult(1, R, C + .).L2 -1.20506         NA      NA       NA    
-Mult(1, R, C + .).L3 -0.30408         NA      NA       NA    
-Mult(1, R, C + .).L4  1.18104         NA      NA       NA    
+Mult(., R, C + L).   -3.77945         NA      NA       NA    
+Mult(1, ., C + L).R1 -0.14642         NA      NA       NA    
+Mult(1, ., C + L).R2  0.21422         NA      NA       NA    
+Mult(1, ., C + L).R3  0.14801         NA      NA       NA    
+Mult(1, ., C + L).R4 -0.11452         NA      NA       NA    
+Mult(1, R, . + L).C1  0.15660         NA      NA       NA    
+Mult(1, R, . + L).C2 -0.33600         NA      NA       NA    
+Mult(1, R, . + L).C3  0.02776         NA      NA       NA    
+Mult(1, R, . + L).C4  0.40901         NA      NA       NA    
+Mult(1, R, C + .).L2 -0.67321         NA      NA       NA    
+Mult(1, R, C + .).L3 -0.16988         NA      NA       NA    
+Mult(1, R, C + .).L4  0.65980         NA      NA       NA    
 cov_rcl               0.22862    0.01709  13.377  < 2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
@@ -1326,7 +1325,7 @@ Std. Error is NA where coefficient has been constrained or is unidentified
 Residual deviance: 55.984 on 44 degrees of freedom
 AIC: 390.3
 
-Number of iterations: 49
+Number of iterations: 45
 ```
 
 ```r
@@ -1334,7 +1333,7 @@ model.summary(model15)
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 model15                44  56.0 -266.  6.83 0.894
@@ -1378,10 +1377,10 @@ Deviance Residuals:
 
 Coefficients:
                  Estimate Std. Error z value Pr(>|z|)    
-(Intercept)       3.59119         NA      NA       NA    
-R2               -1.01458         NA      NA       NA    
-R3               -0.72208         NA      NA       NA    
-R4               -1.42727         NA      NA       NA    
+(Intercept)       3.56853         NA      NA       NA    
+R2               -0.96702         NA      NA       NA    
+R3               -0.68325         NA      NA       NA    
+R4               -1.42306         NA      NA       NA    
 C2               -1.64759    0.10152  -16.23  < 2e-16 ***
 C3               -2.17084    0.15843  -13.70  < 2e-16 ***
 C4               -3.69546    0.24129  -15.32  < 2e-16 ***
@@ -1389,25 +1388,25 @@ L2               -1.41533    0.10612  -13.34  < 2e-16 ***
 L3               -2.15885    0.17266  -12.50  < 2e-16 ***
 L4               -3.81953    0.27268  -14.01  < 2e-16 ***
 Rscore:Cscore     0.13307    0.02539    5.24  1.6e-07 ***
-Mult(., R, C).   -1.01712         NA      NA       NA    
-Mult(1, ., C).R1  0.54368         NA      NA       NA    
-Mult(1, ., C).R2 -0.59799         NA      NA       NA    
-Mult(1, ., C).R3 -0.38839         NA      NA       NA    
-Mult(1, ., C).R4  0.44270         NA      NA       NA    
-Mult(1, R, .).C1 -0.07188         NA      NA       NA    
-Mult(1, R, .).C2  0.50633         NA      NA       NA    
-Mult(1, R, .).C3  0.07936         NA      NA       NA    
-Mult(1, R, .).C4 -0.36814         NA      NA       NA    
+Mult(., R, C).    0.69311         NA      NA       NA    
+Mult(1, ., C).R1 -0.54368         NA      NA       NA    
+Mult(1, ., C).R2  0.59799         NA      NA       NA    
+Mult(1, ., C).R3  0.38839         NA      NA       NA    
+Mult(1, ., C).R4 -0.44270         NA      NA       NA    
+Mult(1, R, .).C1 -0.14739         NA      NA       NA    
+Mult(1, R, .).C2  0.70112         NA      NA       NA    
+Mult(1, R, .).C3  0.07455         NA      NA       NA    
+Mult(1, R, .).C4 -0.58215         NA      NA       NA    
 cov_rcl           0.22862    0.01643   13.91  < 2e-16 ***
-Mult(., R, L).    0.42369         NA      NA       NA    
-Mult(1, ., L).R1  0.54368         NA      NA       NA    
-Mult(1, ., L).R2 -0.59799         NA      NA       NA    
-Mult(1, ., L).R3 -0.38839         NA      NA       NA    
-Mult(1, ., L).R4  0.44270         NA      NA       NA    
-Mult(1, R, .).L1  0.05789         NA      NA       NA    
-Mult(1, R, .).L2 -1.83911         NA      NA       NA    
-Mult(1, R, .).L3 -0.42080         NA      NA       NA    
-Mult(1, R, .).L4  1.91708         NA      NA       NA    
+Mult(., R, L).   -0.93737         NA      NA       NA    
+Mult(1, ., L).R1 -0.54368         NA      NA       NA    
+Mult(1, ., L).R2  0.59799         NA      NA       NA    
+Mult(1, ., L).R3  0.38839         NA      NA       NA    
+Mult(1, ., L).R4 -0.44270         NA      NA       NA    
+Mult(1, R, .).L1  0.03963         NA      NA       NA    
+Mult(1, R, .).L2 -0.81780         NA      NA       NA    
+Mult(1, R, .).L3 -0.17674         NA      NA       NA    
+Mult(1, R, .).L4  0.87997         NA      NA       NA    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -1468,21 +1467,21 @@ L2               -1.41533    0.10551 -13.414  < 2e-16 ***
 L3               -2.15885    0.17245 -12.519  < 2e-16 ***
 L4               -3.81953    0.27221 -14.032  < 2e-16 ***
 Rscore:Cscore     0.13307    0.02492   5.341 9.24e-08 ***
-Mult(., R, C).    0.64172    0.13829   4.641 3.48e-06 ***
-Mult(1, ., C).R1  0.54368         NA      NA       NA    
-Mult(1, ., C).R2 -0.59799         NA      NA       NA    
-Mult(1, ., C).R3 -0.38839         NA      NA       NA    
-Mult(1, ., C).R4  0.44270         NA      NA       NA    
+Mult(., R, C).   -0.64172    0.13829  -4.641 3.48e-06 ***
+Mult(1, ., C).R1 -0.54368         NA      NA       NA    
+Mult(1, ., C).R2  0.59799         NA      NA       NA    
+Mult(1, ., C).R3  0.38839         NA      NA       NA    
+Mult(1, ., C).R4 -0.44270         NA      NA       NA    
 Mult(1, R, .).C1  0.17165         NA      NA       NA    
 Mult(1, R, .).C2 -0.74481         NA      NA       NA    
 Mult(1, R, .).C3 -0.06806         NA      NA       NA    
 Mult(1, R, .).C4  0.64122         NA      NA       NA    
 cov_rcl           0.22862    0.01640  13.939  < 2e-16 ***
-Mult(., R, L).    1.13826    0.13726   8.293  < 2e-16 ***
-Mult(1, ., L).R1  0.54368         NA      NA       NA    
-Mult(1, ., L).R2 -0.59799         NA      NA       NA    
-Mult(1, ., L).R3 -0.38839         NA      NA       NA    
-Mult(1, ., L).R4  0.44270         NA      NA       NA    
+Mult(., R, L).   -1.13826    0.13726  -8.293  < 2e-16 ***
+Mult(1, ., L).R1 -0.54368         NA      NA       NA    
+Mult(1, ., L).R2  0.59799         NA      NA       NA    
+Mult(1, ., L).R3  0.38839         NA      NA       NA    
+Mult(1, ., L).R4 -0.44270         NA      NA       NA    
 Mult(1, R, .).L1  0.04806         NA      NA       NA    
 Mult(1, R, .).L2 -0.65804         NA      NA       NA    
 Mult(1, R, .).L3 -0.13012         NA      NA       NA    
@@ -1502,10 +1501,10 @@ Number of iterations: 3
 
 ```
                        Estimate Std. Error
-Mult(1, ., C + L).R1  0.5436794 0.07818382
-Mult(1, ., C + L).R2 -0.5979869 0.06871974
-Mult(1, ., C + L).R3 -0.3883879 0.08391754
-Mult(1, ., C + L).R4  0.4426954 0.08454001
+Mult(1, ., C + L).R1 -0.5436794 0.07818382
+Mult(1, ., C + L).R2  0.5979869 0.06871974
+Mult(1, ., C + L).R3  0.3883879 0.08391754
+Mult(1, ., C + L).R4 -0.4426954 0.08454001
 ```
 
 ```
@@ -1525,7 +1524,7 @@ Mult(1, R, .).L4  0.74009523 0.04837401
 ```
 
 ```
-# A tibble: 1 x 6
+# A tibble: 1 × 6
   `Model Description`    df    L2   BIC Delta     p
   <chr>               <int> <dbl> <dbl> <dbl> <dbl>
 1 model15                44  56.0 -266.  6.83 0.894

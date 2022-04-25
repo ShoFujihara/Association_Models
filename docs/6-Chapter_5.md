@@ -98,7 +98,7 @@ model.summary(m2)
 
 ```
  Df       L2            p  AIC(L2)   BIC(L2)    Delta
- 27 121.4953 5.976555e-14 67.49532 -76.91654 9.833809
+ 27 121.4874 5.995511e-14 67.48739 -76.92448 9.838695
 ```
 
 ```r
@@ -134,7 +134,7 @@ m3.un<-gnm(Freq~Worries+Situations+Mult(1,Worries.a,Situations.a),family=poisson
 Initialising
 Running start-up iterations..
 Running main iterations...................................................................
-..................................................................................
+...............................................
 Done
 ```
 
@@ -169,8 +169,8 @@ m3<-gnm(Freq~Worries+Situations+Mult(1,Worries.a,Situations.a),family=poisson,
 Initialising
 Running start-up iterations..
 Running main iterations...................................................................
-..........................................................................................
-....................
+...........................................................................
+Done
 ```
 
 ```r
@@ -178,8 +178,50 @@ summary(m3);mu;nu;model.summary(m3.un)
 ```
 
 ```
-Length  Class   Mode 
-     0   NULL   NULL 
+
+Call:
+gnm(formula = Freq ~ Worries + Situations + Mult(1, Worries.a, 
+    Situations.a), constrain = c(14, 17, 18, 21), constrainTo = con, 
+    family = poisson, tolerance = 1e-12, trace = F)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-11.364   -4.566   -1.177    1.247   11.623  
+
+Coefficients:
+                                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                          3.50501    0.04289  81.724  < 2e-16 ***
+Worries1                             0.00000         NA      NA       NA    
+Worries2                             0.00000         NA      NA       NA    
+Worries3                             0.00000         NA      NA       NA    
+Worries4                             0.00000         NA      NA       NA    
+Worries5                             0.00000         NA      NA       NA    
+Worries6                             0.00000         NA      NA       NA    
+Worries7                             0.00000         NA      NA       NA    
+Situations1                          0.00000         NA      NA       NA    
+Situations2                          0.00000         NA      NA       NA    
+Situations3                          0.00000         NA      NA       NA    
+Situations4                          0.00000         NA      NA       NA    
+Mult(., Worries.a, Situations.a).    0.45649    0.46489   0.982 0.326138    
+Mult(1, ., Situations.a).Worries.a1  0.11313         NA      NA       NA    
+Mult(1, ., Situations.a).Worries.a2 -3.63355    3.70632  -0.980 0.326906    
+Mult(1, ., Situations.a).Worries.a3 -4.05192    4.13163  -0.981 0.326737    
+Mult(1, ., Situations.a).Worries.a4 -0.35379         NA      NA       NA    
+Mult(1, Worries.a, .).Situations.a1 -0.66229         NA      NA       NA    
+Mult(1, Worries.a, .).Situations.a2  0.21821    0.05836   3.739 0.000185 ***
+Mult(1, Worries.a, .).Situations.a3  0.01290    0.03812   0.338 0.734996    
+Mult(1, Worries.a, .).Situations.a4  0.72845         NA      NA       NA    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+Std. Error is NA where coefficient has been constrained or is unidentified
+
+Residual deviance: 1162.5 on 34 degrees of freedom
+AIC: 1360.8
+
+Number of iterations: 142
 ```
 
 ```
@@ -192,10 +234,10 @@ Mult(1, ., Situations.a).Worries.a4 -0.3537867 0.08354914
 
 ```
                                        Estimate Std. Error
-Mult(1, Worries.a, .).Situations.a1  0.66229120 0.02512458
-Mult(1, Worries.a, .).Situations.a2 -0.11763705 0.03837698
-Mult(1, Worries.a, .).Situations.a3  0.09189854 0.01868966
-Mult(1, Worries.a, .).Situations.a4 -0.72845124 0.02397519
+Mult(1, Worries.a, .).Situations.a1 -0.66229120 0.02512458
+Mult(1, Worries.a, .).Situations.a2  0.11763705 0.03837698
+Mult(1, Worries.a, .).Situations.a3 -0.09189854 0.01868966
+Mult(1, Worries.a, .).Situations.a4  0.72845124 0.02397519
 ```
 
 ```
@@ -228,7 +270,7 @@ m4.un<-gnm(Freq~Worries+Situations+Mult(1,Worries.b,Situations.a),family=poisson
 ```
 Initialising
 Running start-up iterations..
-Running main iterations......................................................
+Running main iterations............................................................
 Done
 ```
 
@@ -256,7 +298,11 @@ m5.un<-gnm(Freq~Worries+Situations+Mult(1,Worries,Situations,inst=1)
 Initialising
 Running start-up iterations..
 Running main iterations...................................................................
-.............................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+..........................................................................................
+.........................................................................
 Done
 ```
 
@@ -270,7 +316,7 @@ model.summary(m5.un)
 
 ```
  Df       L2          p   AIC(L2)   BIC(L2)    Delta
- 17 29.02881 0.03426137 -4.971188 -95.89718 4.068589
+ 17 29.36242 0.03132697 -4.637583 -95.56357 3.927879
 ```
 
 ```r
@@ -414,12 +460,8 @@ m4<-gnm(Freq~Educ+Occ+Income+Mult(1,Occ,Educ)+Mult(1,Occ,Income),
 ```
 Initialising
 Running start-up iterations..
-Running main iterations...................................................................
-..........................................................................................
-..........................................................................................
-..........................................................................................
-..........................................................................................
-.........................................................................
+Running main iterations.........................................................
+........
 Done
 ```
 
@@ -432,8 +474,8 @@ model.summary(m4)
 ```
 
 ```
-  Df       L2 p  AIC(L2)  BIC(L2)    Delta
- 161 253618.9 0 253296.9 251426.6 21.93752
+  Df       L2 p  AIC(L2) BIC(L2)    Delta
+ 148 70860.99 0 70564.99 68845.7 11.16939
 ```
 
 ```r
@@ -445,9 +487,9 @@ m5<-gnm(Freq~Educ+Occ+Income+Mult(1,Occ,Educ+Income),
 ```
 Initialising
 Running start-up iterations..
-Running main iterations...................................................................
-..........................................................................................
-..............................................
+Running main iterations.........................................................
+................................................................................
+..........................................
 Done
 ```
 
@@ -460,8 +502,8 @@ model.summary(m5)
 ```
 
 ```
-  Df     L2 p AIC(L2)  BIC(L2)    Delta
- 176 580146 0  579794 577749.4 34.02388
+  Df       L2 p  AIC(L2)  BIC(L2)    Delta
+ 158 185515.3 0 185199.3 183363.8 18.26686
 ```
 
 ```r
@@ -471,36 +513,32 @@ mu
 ```
 
 ```
-                                   Estimate   Std. Error
-Mult(1, ., Educ + Income).Occ1   0.33839063 0.0008640428
-Mult(1, ., Educ + Income).Occ2   0.21498414 0.0005596694
-Mult(1, ., Educ + Income).Occ3   0.16684069 0.0007135237
-Mult(1, ., Educ + Income).Occ4   0.27819124 0.0005931120
-Mult(1, ., Educ + Income).Occ5   0.18522878 0.0006430725
-Mult(1, ., Educ + Income).Occ6   0.17800946 0.0006694356
-Mult(1, ., Educ + Income).Occ7  -0.12247946 0.0020470139
-Mult(1, ., Educ + Income).Occ8  -0.05945973 0.0017761063
-Mult(1, ., Educ + Income).Occ9  -0.36163327 0.0028438260
-Mult(1, ., Educ + Income).Occ10 -0.52644741 0.0029566216
-Mult(1, ., Educ + Income).Occ11  0.16967565 0.0007019976
-Mult(1, ., Educ + Income).Occ12 -0.46130072 0.0029820415
+                                   Estimate  Std. Error
+Mult(1, ., Educ + Income).Occ1  -0.54805987 0.001793134
+Mult(1, ., Educ + Income).Occ2  -0.38746682 0.001271727
+Mult(1, ., Educ + Income).Occ3  -0.21717857 0.001291161
+Mult(1, ., Educ + Income).Occ4  -0.14398575 0.001002368
+Mult(1, ., Educ + Income).Occ5  -0.08607017 0.001273939
+Mult(1, ., Educ + Income).Occ6   0.15776750 0.001820890
+Mult(1, ., Educ + Income).Occ7   0.05029005 0.002500252
+Mult(1, ., Educ + Income).Occ8   0.14092026 0.002598170
+Mult(1, ., Educ + Income).Occ9   0.02379483 0.003466324
+Mult(1, ., Educ + Income).Occ10  0.39930723 0.004697125
+Mult(1, ., Educ + Income).Occ11  0.10479535 0.001779509
+Mult(1, ., Educ + Income).Occ12  0.50588597 0.004258340
 ```
 
 ```r
 # Model 6: RC(1)+RL(1)+CL(1) partial association
-m6<-gnm(Freq~Educ+Occ+Income+Mult(1,Occ,Educ)+Mult(1,Occ,Income)+Mult(1,Educ,Income),
+m6 <- gnm(Freq~Educ+Occ+Income+Mult(1,Occ,Educ)+Mult(1,Occ,Income)+Mult(1,Educ,Income),
         data=Table,family=poisson,tolerance = 1e-12)
 ```
 
 ```
 Initialising
 Running start-up iterations..
-Running main iterations...................................................................
-..........................................................................................
-..........................................................................................
-..........................................................................................
-..........................................................................................
-.........................................................................
+Running main iterations.........................................................
+......................
 Done
 ```
 
@@ -514,23 +552,21 @@ model.summary(m6)
 
 ```
   Df       L2 p  AIC(L2)  BIC(L2)    Delta
- 154 167714.2 0 167406.2 165617.2 16.84677
+ 143 42101.44 0 41815.44 40154.24 8.274821
 ```
 
 ```r
 # Model 7: Model 6 with consistent row (occupation) scores
-m7<-gnm(Freq~Educ+Occ+Income+Mult(1,Occ,Educ+Income)+Mult(1,Educ,Income),
+m7 <- gnm(Freq~Educ+Occ+Income+Mult(1,Occ,Educ+Income)+Mult(1,Educ,Income),
         data=Table,family=poisson,tolerance = 1e-12)
 ```
 
 ```
 Initialising
 Running start-up iterations..
-Running main iterations...................................................................
-..........................................................................................
-..........................................................................................
-..........................................................................................
-...........
+Running main iterations.........................................................
+................................................................................
+.........................................................................
 Done
 ```
 
@@ -543,30 +579,30 @@ model.summary(m7)
 ```
 
 ```
-  Df       L2 p  AIC(L2) BIC(L2)    Delta
- 169 545514.3 0 545176.3  543213 31.30187
+  Df       L2 p  AIC(L2)  BIC(L2)    Delta
+ 153 174073.1 0 173767.1 171989.8 17.80335
 ```
 
 ```r
-mu<-getContrasts(m7, pickCoef(m7, "[.]Occ"),
+mu <- getContrasts(m7, pickCoef(m7, "[.]Occ"),
                  ref = "mean", scaleRef = "mean",scaleWeights = "unit")
 mu
 ```
 
 ```
                                    Estimate  Std. Error
-Mult(1, ., Educ + Income).Occ1  -0.60162667 0.001624233
-Mult(1, ., Educ + Income).Occ2  -0.17978630 0.001640694
-Mult(1, ., Educ + Income).Occ3  -0.03148963 0.001714147
-Mult(1, ., Educ + Income).Occ4   0.39959683 0.001127586
-Mult(1, ., Educ + Income).Occ5   0.32643104 0.001187228
-Mult(1, ., Educ + Income).Occ6   0.40809823 0.001123581
-Mult(1, ., Educ + Income).Occ7  -0.05232457 0.001723636
-Mult(1, ., Educ + Income).Occ8  -0.03112601 0.001713929
-Mult(1, ., Educ + Income).Occ9  -0.17530724 0.001647652
-Mult(1, ., Educ + Income).Occ10 -0.18239249 0.001636530
-Mult(1, ., Educ + Income).Occ11  0.28025194 0.001245468
-Mult(1, ., Educ + Income).Occ12 -0.16032512 0.001669009
+Mult(1, ., Educ + Income).Occ1   0.56931429 0.001883457
+Mult(1, ., Educ + Income).Occ2   0.37928161 0.001275097
+Mult(1, ., Educ + Income).Occ3   0.22247516 0.001381547
+Mult(1, ., Educ + Income).Occ4   0.17045561 0.001046926
+Mult(1, ., Educ + Income).Occ5   0.05464251 0.001423421
+Mult(1, ., Educ + Income).Occ6  -0.16380722 0.001871288
+Mult(1, ., Educ + Income).Occ7  -0.07890623 0.002667870
+Mult(1, ., Educ + Income).Occ8  -0.14504188 0.002680434
+Mult(1, ., Educ + Income).Occ9  -0.04282708 0.003676179
+Mult(1, ., Educ + Income).Occ10 -0.39013284 0.004810546
+Mult(1, ., Educ + Income).Occ11 -0.09178943 0.001794307
+Mult(1, ., Educ + Income).Occ12 -0.48366450 0.004397647
 ```
 
 ```r

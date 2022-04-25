@@ -1,5 +1,5 @@
 
-# 補足のノート
+# 補足のノート {-}
 
 
 
@@ -59,6 +59,7 @@ SES well mild modelrate impared
 
 
 ## 集計データの作成
+- 表のデータではなく，各変数の組み合わせとその度数からなるデータを作成する．
 - 度数はまず1行目について数値を並べ（1行1列から1行$I$列まで），次に2行目について数値を並べる（2行1列から2行$I$列まで）．これを`Freq`とする．
 - 例として「編者による序文」の親の職業と精神的健康の例で考えてみる．これは$6\times4$のクロス表なので，まず1行1列から1行4列までの数字を入力し，次に2行1列から2行4列まで入力する．これを3行目から6行目まで繰り返す．表との対応を考えて適当な改行をいれるのもよい．ただしRは改行を入れても入れなくても，単に数値の列（ベクトル）として扱う．
 
@@ -203,7 +204,6 @@ Col
 Levels: 1 2 3 4 5
 ```
 
-
 - `gl`はGenerate Factor Levelsという関数で，`rep`に似ているが，数値ではなく因子を結果として出力する．
 - 1から`n`までの数字をぞれぞれ`k`回繰り返して出力する．
 
@@ -244,7 +244,7 @@ Col
 Levels: 1 2 3 4
 ```
 
-- `Freq`，`Row`，`Col`からデータを作成する．`data.frame`と`tibble`のどちらでもよいが，
+- 以上より，`Freq`，`Row`，`Col`の3つの変数が作成された．これらからなるデータを作成する．`data.frame`と`tibble`のどちらでもよいが，
 `tibble`の場合は表示させた後に，データの構造（`<dbl> <fct> <fct>`）が表示される．
 
 
@@ -288,7 +288,7 @@ d
 ```
 
 ```
-# A tibble: 24 x 3
+# A tibble: 24 × 3
     Freq Row   Col  
    <dbl> <fct> <fct>
  1    64 1     1    
@@ -317,7 +317,7 @@ d
 24    71 6     4    
 ```
 
-- 以上をまとめると次のようになる．
+- 以上をまとめると次のようになる．本書のプログラム例では`gl`を使うことが多いのでここで使用方法を覚えておこう．
 
 
 ```r
@@ -331,7 +331,7 @@ d
 ```
 
 ```
-# A tibble: 24 x 3
+# A tibble: 24 × 3
     Freq Row   Col  
    <dbl> <fct> <fct>
  1    64 1     1    
@@ -359,6 +359,9 @@ d
 23    54 4     5    
 24    71 4     6    
 ```
+
+
+
 
 ## GLMとGNMの結果の比較
 - glmとgnmでは適合度や係数は同じだが，出力されるものが異なる．
@@ -1145,7 +1148,7 @@ freq_tab_2.3A
 ```
 
 ```
-# A tibble: 28 x 3
+# A tibble: 28 × 3
     Freq polviews fefam
    <dbl> <fct>    <fct>
  1    39 1        1    
@@ -1603,7 +1606,7 @@ bind_rows(model.summary(O),
 ```
 
 ```
-# A tibble: 4 x 6
+# A tibble: 4 × 6
   `Model Description`    df        L2       BIC    Delta     p
   <chr>               <int>     <dbl>     <dbl>    <dbl> <dbl>
 1 O                      18  2.12e+ 2  6.51e+ 1 8.09e+ 0 1    
@@ -1653,7 +1656,7 @@ freq_tab_2.3B
 ```
 
 ```
-# A tibble: 20 x 3
+# A tibble: 20 × 3
     Freq Educ  Occ  
    <dbl> <fct> <fct>
  1   518 1     1    
@@ -1893,7 +1896,7 @@ bind_rows(model.summary(O),
 ```
 
 ```
-# A tibble: 4 x 6
+# A tibble: 4 × 6
   `Model Description`    df        L2       BIC    Delta     p
   <chr>               <int>     <dbl>     <dbl>    <dbl> <dbl>
 1 O                      12  1.37e+ 3  1.27e+ 3 2.39e+ 1 1    
@@ -2153,7 +2156,7 @@ bind_rows(
 ```
 
 ```
-# A tibble: 5 x 6
+# A tibble: 5 × 6
   `Model Description`    df      L2      BIC    Delta     p
   <chr>               <int>   <dbl>    <dbl>    <dbl> <dbl>
 1 fit_O                  49 9.54e+2  5.55e+2 1.66e+ 1 1    
