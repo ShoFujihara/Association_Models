@@ -30,3 +30,10 @@ glmとgnmの結果の比較
 位相モデル
 xie
 パッケージ
+目的
+rのスクリプト
+bookdowngitbook-default
+個票データから集計データを作成
+tab:unnamed-chunk-11
+サポートページバージョン情報
+対比について
